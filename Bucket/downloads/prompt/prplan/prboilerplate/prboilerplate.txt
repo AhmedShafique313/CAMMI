@@ -1,0 +1,17 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced B2B PR Specialist, we need your assistance in crafting a boilerplate for our company's press releases that aligns precisely with our business idea and resonates with our target audience. The boilerplate should succinctly encapsulate who we are, what we do, and why it matters, ensuring it clearly reflects our market positioning and value proposition. It must be compelling, concise, and crafted to help journalists instantly understand the significance of our company and encourage them to explore further.
+
+Here's the information you'll need about our company, product/service, target audience, and brand positioning:
+Business Idea: {{businessidea}}
+Summary of Target Audience: {{summaryoftargetaudience}}
+Brand Position: {{brandposition}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,25 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a funnel optimization expert, your mission is to employ the AARRR (Pirate Metrics) framework to our business model. Map out the customer journey from discovery to referral, ensuring each stage of the funnel is optimized. Identify key metrics for each stage, propose tactics to improve these metrics, and suggest methods to measure the outcomes. Please incorporate our customer behavior data to inform your strategies.
+
+Please structure your response as follows:
+
+Mapping of the Customer Journey:
+Key Metrics for Each Stage:
+Proposed Tactics:
+Measurement Methods:
+
+Here is the information about our customer journey, behavior data, and metrics at each stage of the funnel: Business idea:{{businessidea}}, Summary of atrget audience: {{summaryoftargetaudience}},Customerjourney: {{customerjourney}} 
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

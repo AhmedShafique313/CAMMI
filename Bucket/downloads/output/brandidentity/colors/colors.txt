@@ -1,0 +1,47 @@
+Primary Color Palette:
+
+Deep Navy Blue:
+HEX: #0A2351
+RGB: 10, 35, 81
+CMYK: 100, 92, 36, 39
+
+This rich, deep blue hue conveys a sense of trust, professionalism, and reliability, reflecting the brand's commitment to delivering high-quality, industry-specific templates. It instills a feeling of confidence and expertise, resonating with the target audience's aspirations for excellence and measurable impact.
+
+Vibrant Orange:
+HEX: #FF6B00
+RGB: 255, 107, 0
+CMYK: 0, 58, 100, 0  
+
+The energetic orange accent adds a burst of warmth and creativity, symbolizing the brand's innovative approach to empowering marketing professionals. It evokes a sense of passion, enthusiasm, and forward momentum, aligning with the platform's mission of streamlining marketing processes and driving sustainable growth.
+
+Secondary Accent Colors:
+
+Teal:
+HEX: #008080
+RGB: 0, 128, 128
+CMYK: 100, 0, 30, 50
+
+This calming teal hue represents the brand's commitment to sustainability and ethical practices. It suggests a harmonious balance between innovation and environmental consciousness, appealing to the target audience's values and desire for responsible business practices.
+
+Warm Gray:
+HEX: #8D8D8D
+RGB: 141, 141, 141
+CMYK: 0, 0, 0, 45
+
+The warm gray tone provides a neutral foundation, allowing the primary and accent colors to shine while maintaining a professional and sophisticated aesthetic. It represents the brand's grounding in practicality and efficiency, resonating with the target audience's need for streamlined workflows and data-driven solutions.
+
+Neutral Supportive Colors:
+
+Light Gray:
+HEX: #F2F2F2
+RGB: 242, 242, 242
+CMYK: 0, 0, 0, 5
+
+This light, airy gray serves as a versatile background or supporting color, creating a clean and modern canvas for the brand's visual elements. It represents the platform's user-friendly interface and commitment to simplicity, ensuring a seamless and intuitive experience for marketing professionals.
+
+Off-White:
+HEX: #FAFAFA
+RGB: 250, 250, 250
+CMYK: 0, 0, 0, 2
+
+The off-white hue provides a warm, inviting base, complementing the primary and accent colors while maintaining a sense of sophistication. It represents the brand's approachability and customer-centric focus, ensuring a welcoming and inclusive environment for marketing professionals across diverse industries and backgrounds.

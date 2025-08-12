@@ -1,0 +1,28 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an adept Social Media Copywriter, your task is to draft an enticing Instagram bio for our brand. We'll supply you with our brand details, product/service information, target audience, and brand voice. You'll have to distill our brand's identity into a catchy and concise bio, 
+keeping in mind the 100-character limit. The Instagram bio should be engaging, reflect our brand personality and include a call to action. 
+
+For this task, consider the following information:
+
+Business Idea: {{businessidea}}
+
+Target Audience Description: {{summaryoftargetaudience}}
+
+Brand Voice: {{brandguidelines}}
+
+Target Personas: {{buyerpersonas}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,19 @@
+"As an expert Consumer Psychologist with a strong understanding of Freud's Psychoanalytic Theory, your assignment is to delve deep into the subconscious desires influencing our target audience's behavior. Employ the product and audience information, identified pain points, and desired end state in your analysis.
+
+Particularly, consider the interplay between the id (our basic instincts), the ego (the mediator), and the superego (our moral compass) in guiding these behaviors. Your response will serve as a roadmap for our marketing strategy, helping us to resonate more profoundly with our audience at an emotional level. Remember, your insights should be clear, succinct, and readily applicable.
+
+Please structure your response as follows:
+
+Psychoanalytics Analysis of Target Audience
+
+Id-Driven Desires:
+
+Ego-Mediated Compromises:
+
+Superego-Influenced Behaviors:
+
+Recommendations for Marketing Focus:
+
+
+
+Here is the information you'll need {{businessidea}}:",{{targetaudience}} {{psychographicsegmentation}} {{latentpainpoints}} {{dreamstate}}

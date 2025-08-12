@@ -1,0 +1,34 @@
+
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned Market Analyst, your task is to conduct a highly contextualized Situation Analysis for our brand, ensuring every insight is directly aligned with our business idea, value proposition, and market objectives. This analysis must reflect an in-depth understanding of our unique positioning, competitive environment, and the specific challenges and opportunities our business faces.
+
+Your Situation Analysis must include:
+
+SWOT Analysis: Provide a detailed evaluation of our brand’s Strengths, Weaknesses, Opportunities, and Threats, ensuring:
+
+Strengths highlight the competitive advantages rooted in our product/service offering.
+
+Weaknesses address internal limitations that are relevant to our business model.
+
+Opportunities focus on specific market trends, customer needs, and gaps that our business can leverage.
+
+Threats identify external risks from competitors, market dynamics, and industry challenges that are relevant to our positioning.
+
+All points must reflect how they directly influence or impact our business idea and strategy execution.
+
+Your insights will guide strategic decisions, ensuring we are well-positioned to capitalize on opportunities and mitigate risks effectively.
+
+Here is all the information you need to craft your content:
+Business Idea: {{businessidea}}
+Summary of Target Audience: {{summaryoftargetaudience}}
+Market Research Summary: {{marketresearchsummary}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

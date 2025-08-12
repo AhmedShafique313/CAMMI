@@ -1,0 +1,11 @@
+"As an expert in growth marketing, your mission is to apply the Bullseye Framework to our business. Your comprehensive plan should include a thoughtful exploration of potential marketing channels, prioritizing the ones that align best with our unique context. From there, identify key success metrics for each channel, set up hypotheses to test, and propose a budget allocation for the experimental phase. The objective is to identify the highest potential channels for growth, focusing on both short-term wins and long-term viability.
+
+Please structure your response as follows:
+
+Potential Marketing Channels:
+Rationale for Prioritization:
+Key Success Metrics:
+Hypotheses to Test:
+Budget Allocation:
+
+Here is the required information about our product/service, our defined success metrics: {{businessidea}}",{{whatissuccessforthisbusiness}} {{explainationofbusinessmodel}} {{metricsthatmatterkpis}} {{coreproblemsthisbusinesssolves}} {{businessgoals}}

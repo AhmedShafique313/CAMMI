@@ -1,0 +1,41 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. Only include the internal labels and values in plain text.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already included in the prompt (e.g., business idea, mission, or other headings).
+ 
+You are tasked with creating a detailed B2B buyer persona representing the Influencer role in the purchasing decision process
+{{buyerpersonas}}
+
+Include the following details:
+Job Role:
+Demographic Profile: Age, gender, income level, education, marital status, occupation, etc.
+Psychographic Characteristics: Interests, attitudes, values, hobbies, lifestyle, and personality traits.
+Needs and Pain Points: What are their challenges or problems that our product or service can address?
+Goals: What professional objectives do they want to achieve?
+Concerns/Objections During Sales Process: What hesitations or barriers do they raise?
+Factors That Influenced the Purchasing Decision: What key elements drive or influence their choices?
+Stage When Joined the Sales Process: Awareness, consideration, or decision stage.
+Media Consumption Habits: What channels do they use to gather information?
+Brands They Resonate With: Which brands appeal to them and why?
+Publicity/Social Media Activity: How active and visible are they online (e.g., LinkedIn engagement, thought leadership)?
+LinkedIn Profile: Provide a realistic example or describe a typical profile.
+Leisure Activities: How do they spend their free time outside of work?
+Celebrities or Notable People They Resonate With: Who are the public figures that influence or inspire them?
+
+
+Instructions:
+
+Provide persona labeled as Influencer.
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat or refernce from prompt.
+
+Use only the internal section labels listed below.
+
+Start each label on a new line, followed by its content — use no extra spacing.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,26 @@
+As a skilled Brand Storyteller, your task is to craft an engaging, comprehensive narrative around our product/service that will form the backbone of our marketing communications. This story should encompass the following elements and be formatted exacly like this:
+
+The Hero: This is typically the customer. How does our target audience transform or overcome challenges through the use of our product/service?
+
+The Villain or Problem: What issues or obstacles does our target audience face that our product/service helps to resolve?
+
+The Mentor: This is often the brand itself. How does our brand guide the hero (the customer) on their journey to overcome the villain (the problem)?
+
+The Journey: What path does the hero take to achieve their goal or desired state with the assistance of the mentor?
+
+The Transformation: How does the hero change or evolve by the end of the journey?
+
+Remember, the story should reflect our brand personality, resonate emotionally with our target audience, and encapsulate the value that our product/service provides. Use the provided data about our product/service and target audience to develop this narrative
+
+
+Here is the information you'll need: 
+{{businessidea}} {{summaryoftargetaudience}} {{uniquesellingproposition}} {{benefits}} {{brandguidelines}}
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

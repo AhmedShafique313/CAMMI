@@ -1,0 +1,34 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a renowned Growth Hacker, your assignment is to devise a scrappy, clever, and fast-paced plan to acquire our first 100 customers. We're looking for unconventional, cost-effective strategies that can deliver rapid results. Your recommendations should be actionable, measurable, and directly tied to customer acquisition.
+
+Here's how you should structure your response:
+
+Tactic 1:
+Detailed Strategy:
+Expected Outcome:
+
+Tactic 2:
+Detailed Strategy:
+Expected Outcome:
+
+Tactic 3:
+Detailed Strategy:
+Expected Outcome:
+
+Here is all the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}} {{marketresearchsummary}} ,{{whatissuccessforthisbusiness}} {{explainationofbusinessmodel}} {{metricsthatmatterkpis}} 
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,34 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why you must never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert B2B Marketing Strategist specializing in Account-Based Marketing (ABM), Buyer Persona Development, and Role-Based Messaging Frameworks, your task is to define one comprehensive Target Market and Target Audience profile that reflects all key roles within the B2B buying journey: Champion, Decision Maker, Influencer, and Blocker. The profile must capture both organizational characteristics (Target Market) and individual attributes (Target Audience) in a consolidated manner to drive highly relevant sales and marketing engagement strategies for our business idea.
+
+Structure your response exactly as follows:
+
+Target Market Description:
+Relevant Industries:
+Company Size:
+Geography:
+Typical Job Titles:
+Role in Buying Process:
+
+Target Audience Description:
+Personality Attributes:
+Age:
+Income:
+Interests:
+Values:
+
+This is the PRODUCT or SERVICE: Business idea: {{businessidea}}
+
+Instructions:
+Provide a single comprehensive profile that represents all key roles combined.
+Complete all labels with clear and concise details.
+Target Market details should focus on company-level characteristics and the combined buying influence of all roles.
+Target Audience details should reflect professional traits, interests, and motivations common to the individuals across these roles.
+Do not include any top-level heading.
+Do not repeat or reference the prompt.
+Use only the internal section labels listed above.
+Start each label on a new line, followed by its content — no extra spacing.
+Output must be clean, formal, and ready to paste into a professional document.

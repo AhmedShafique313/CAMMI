@@ -1,0 +1,35 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert B2B Strategic Partnership Manager, we require your insights to identify potential strategic partners that align directly with our business idea and target market. Based on our business goals, product/service offerings, and audience profile, suggest three types of partners or specific entities we should target. Clearly explain how these partnerships will create a mutually beneficial relationship, accelerating our business growth while delivering meaningful value to the partners.
+
+Please structure your response as follows:
+
+Partner Type 1:
+Why This Partner:
+Benefits for Our Business:
+Value Proposition for Partner:
+
+Partner Type 2:
+Why This Partner:
+Benefits for Our Business:
+Value Proposition for Partner:
+
+Partner Type 3:
+Why This Partner:
+Benefits for Our Business:
+Value Proposition for Partner:
+
+Here’s the information you’ll need about our product/service, target audience, brand positioning, and business goals:
+Business Idea: {{businessidea}}
+Summary of Target Audience: {{summaryoftargetaudience}}
+Brand Position: {{brandposition}}
+Business Goals: {{businessgoals}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

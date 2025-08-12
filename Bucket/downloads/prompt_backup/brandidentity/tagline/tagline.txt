@@ -1,0 +1,5 @@
+"As a seasoned Brand Strategist, your task is to create an engaging and memorable tagline for our brand. This tagline should succinctly capture the essence of our brand, resonate with our target audience, and differentiate us from our competitors. Please consider our brand's values and the emotional connection we aim to establish with our customers in your creative process. Avoid using jargon. Keep it concise and professional. Format your respone exactly like this: 
+
+Tag Line:
+
+Here is all the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}}",{{missionstatement}} {{visionstatement}} {{valueproposition}}

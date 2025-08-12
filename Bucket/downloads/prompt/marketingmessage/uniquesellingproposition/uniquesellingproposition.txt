@@ -1,0 +1,34 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a Strategic Positioning Expert, your task is to craft a Unique Selling Proposition (USP) that sharply differentiates our product/service from direct competitors in the same industry. The USP must reflect a deep understanding of our target audience’s needs, desires, and pain points while positioning us as the superior choice.
+
+For competitor analysis, focus specifically on businesses that offer similar solutions or operate within the same market space as our product/service. Identify where these competitors fall short and how our offering fills that gap with clear, measurable advantages.
+
+Structure your response by addressing the following:
+
+Target Audience: Define who our product/service is intended for, pinpointing their specific challenges, goals, and unmet needs.
+
+Value Proposition: Describe how our product/service provides a solution that directly addresses these pain points in a distinctive and valuable way.
+
+Benefits and Features: Detail the key features of our product/service and how they translate into practical, high-impact benefits for our target audience.
+
+Competitor Comparison: Analyze the key players in our niche or market segment. Specify exactly how our product/service is superior—whether through innovative features, superior user experience, customization, pricing advantage, or customer support excellence. Be precise and factual about the gaps we address that competitors do not.
+
+Emotional Connection: Highlight how our USP will resonate emotionally with our audience, whether through trust, empowerment, ease, or aspirational goals.
+
+Finalize with a USP Statement: Craft a clear, compelling, and succinct USP statement in one sentence that communicates the unique advantage our product/service offers over existing alternatives.
+
+Here is the information you’ll need:
+Business Idea: {{businessidea}}
+Summary of Target Audience: {{summaryoftargetaudience}}
+Need Analysis: {{needsanalysis}}
+Competitive Analysis: {{competitiveanalysis}}
+
+Instructions:
+Provide a concise and professional answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,31 @@
+You are generating document-ready text. The document already includes top-level section headings. Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a Funnel Optimization Expert specializing in Growth Hacking, Conversion Rate Optimization (CRO), and Data-Driven B2B Marketing Funnels, your mission is to implement the AARRR (Acquisition, Activation, Retention, Referral, Revenue) Pirate Metrics Framework into our business model for maximum lead conversion efficiency and long-term client engagement. Your task is to strategically map the end-to-end customer journey of our B2B solution, ensuring every touchpoint—from first contact to post-sale referral—is optimized for seamless progression through the funnel.
+
+For each funnel stage, you are to:
+Define the Critical Key Metrics that reflect buyer intent, decision-making progress, and sales velocity.
+Recommend Data-Backed Tactics leveraging behavioral insights, pain point triggers, and personalized outreach strategies to improve those metrics.
+Outline Precise Measurement Methods using KPIs, marketing analytics dashboards, and CRM performance tracking to evaluate funnel performance improvements.
+
+Ensure your strategies are fully aligned with our target audience’s B2B purchase behaviors, decision cycles, and key buying motivations. Utilize analytical rigor, customer journey mapping, and practical marketing automation strategies to propose actionable solutions that will:
+Enhance lead-to-customer conversion rates.
+Increase Customer Lifetime Value (CLV).
+Boost Retention and Referral velocity.
+
+Please structure your response exactly as follows:
+
+Mapping of the Customer Journey:
+Key Metrics for Each Stage:
+Proposed Tactics:
+Measurement Methods:
+
+Here is the information about our customer journey, behavior data, and metrics at each stage of the funnel: Business idea:{{businessidea}}, Summary of target audience:{{summaryoftargetaudience}}, Customer journey:{{customerjourney}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

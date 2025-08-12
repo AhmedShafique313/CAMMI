@@ -1,0 +1,11 @@
+"As an expert Consumer Psychologist, your task is to identify the Desired End State of our target audience. Based on the provided information, analyze and elucidate the desired end state the target audience aspires to reach. Your response should deeply probe our audience's aspirations like their hopes, dreams, and desires. Their motivations like why they want to achieve the dream state and what's driving them. Their emotional rewards like how achieving the dream state will make them feel.  Your insights will guide and assist us in better tailoring our product or service to help our users reach their desired state. Format your response like this: 
+
+Dream State for [Insert Product or Service] Target Audience 
+
+Aspirations: 
+
+Motivations: 
+
+Emotional State: 
+
+Here is the information you need for your analysis: {{businessidea}}:",{{targetaudience}},{{psychographicsegmentation}} {{latentpainpoints}}

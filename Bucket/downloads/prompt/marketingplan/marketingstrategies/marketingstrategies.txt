@@ -1,0 +1,35 @@
+You are generating document-ready text. The document already includes top-level section headings. Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points to enhance clarity.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert B2B Marketing Strategist, your role is to develop a comprehensive, actionable Marketing Strategy for our product/service, focusing on both quick-win tactics and sustainable growth levers. Your strategy should effectively address the 4Ps of Marketing — Product, Price, Place, and Promotion — with a creative and business-centric approach.
+
+Product: Define how our product’s core features and benefits directly meet the pain points and aspirations of our target audience. Suggest any innovative product enhancements or service add-ons that can elevate its market appeal.
+
+Price: Recommend a pricing strategy that balances profitability, perceived value, and competitive positioning. Explore innovative pricing models (subscription, usage-based, bundling) that can serve as differentiators.
+
+Place: Identify the most effective distribution and sales channels to reach our target audience. Suggest untapped or under-utilized platforms and partnerships that can expand our reach with minimal friction.
+
+Promotion: Outline high-impact communication strategies to build brand awareness, generate qualified leads, and drive conversions. This should include a mix of proven tactics (content marketing, paid ads, partnerships) and creative initiatives (viral campaigns, thought leadership, influencer collaborations) that align with our brand positioning.
+
+Each recommendation must:
+
+Align with our marketing objectives.
+
+Be designed for easy execution with high ROI.
+
+Consider current market dynamics, customer behaviors, and competitor strategies.
+
+Here is the information you'll need:
+Business Idea: {{businessidea}}
+Target Audience Overview: {{summaryoftargetaudience}}
+Situational Analysis: {{situationalanalysis}}
+Marketing Objectives: {{marketingobjectives}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.
+

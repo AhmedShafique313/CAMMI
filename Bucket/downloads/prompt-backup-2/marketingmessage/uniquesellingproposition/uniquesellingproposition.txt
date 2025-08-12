@@ -1,0 +1,26 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Marketing Strategist, your task is to develop a unique selling proposition (USP) for our proposed product/service. A USP sets our offering apart from the competition by highlighting the unique benefits and features that make it the best choice for the target audience. 
+In your response, consider the following aspects:
+Target Audience: Who is the product/service aimed at? What are their specific needs, desires, and pain points?
+Value Proposition: What does our product/service offer that addresses these needs and stands out from the competition?
+Benefits and Features: What are the unique features of our product/service, and how do they translate into tangible benefits for our customers?
+Competitor Comparison: Why is our product/service a better choice compared to our competitors? What do we offer that they don't?
+Emotional Connection: How can our USP resonate emotionally with our target audience?
+
+Your response should be concise, insightful, and ready for action. It should culminate in a clear and compelling USP statement that encapsulates the unique value of our product/service. This USP will guide our marketing strategy and help us effectively communicate our offering's value 
+to the target audience. Here is the information you'll need.: Business idea:{{businessidea}}, Summary of Target audience:{{summaryoftargetaudience}}, Need analysis:{{needsanalysis}}, Competitive analysis{{competitiveanalysis}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

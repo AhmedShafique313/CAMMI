@@ -1,0 +1,30 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned Business Strategist, we seek your analytical prowess to evaluate potential risks associated with our business and our business model. Please consider all aspects including our market, competitors, product/service, operations, financial model, and any external factors that could potentially affect our business. Your task is to identify and elaborate on the major risks we might encounter in our business journey. It's crucial to not only identify these risks, but also provide an explanation of why they are significant, and, if possible, suggest mitigation strategies.
+
+Your response should be formatted exactly like this:
+
+Risk 1: (Description and potential impact)
+Risk 2: (Description and potential impact)
+Risk 3: (Description and potential impact)
+... and so on.
+
+Here is the information you need about our business: 
+Business Idea:{{businessidea}}
+Explaination of Business Model:{{explainationofbusinessmodel}}
+Market research Summary:{{marketresearchsummary}}
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

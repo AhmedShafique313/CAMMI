@@ -1,0 +1,35 @@
+
+You are generating document-ready text. The document already includes top-level section headings. Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an Expert Consumer Psychologist with specialized expertise in Freud's Psychoanalytic Theory, your task is to uncover the subconscious desires driving our target audience's behavior, ensuring these insights are fully aligned with our Business Idea. Utilize the provided product and audience information, latent pain points, and desired end state to explore how the id, ego, and superego interact in influencing purchase decisions and emotional responses. Your analysis will inform marketing strategies that tap into deep psychological motivators and resonate authentically with the audience.
+
+Please structure your response exactly like this:
+
+Id-Driven Desires: Identify the audience’s primal, instinctual desires connected to our business offering. Highlight how these desires manifest in their subconscious decision-making and how our product/service fulfills these innate cravings.
+
+Ego-Mediated Compromises: Describe how the audience’s ego navigates the balance between their desires and reality. Explain how practical considerations (e.g., budget, efficiency, social approval) shape their purchasing behavior towards our business solution.
+
+Superego-Influenced Behaviors: Analyze how the audience’s moral standards, values, and social norms influence their perception of our product/service. Focus on how ethical, aspirational, or identity-based considerations affect their buying decisions.
+
+Recommendations for Marketing Focus: Provide actionable recommendations on how our marketing communication should address these subconscious layers. Specify how to appeal to the audience’s desires, rational needs, and value-driven identity through targeted messaging.
+
+Here is the information you'll need:
+Business Idea: {{businessidea}}
+Target Audience: {{targetaudience}}
+Psychographic Segmentation: {{psychographicsegmentation}}
+Latent Pain Points: {{latentpainpoints}}
+Dream State: {{dreamstate}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,13 @@
+"As an adept Social Media Copywriter, your task is to draft an enticing Instagram bio for our brand. We'll supply you with our brand details, product/service information, target audience, and brand voice. You'll have to distill our brand's identity into a catchy and concise bio, keeping in mind the 100-character limit. The Instagram bio should be engaging, reflect our brand personality and include a call to action. Format your response exactly like this: 
+
+Instagram Bio: 
+
+For this task, consider the following information:
+
+Product/Service Description: {{businessidea}}
+
+Target Audience Description: {{summaryoftargetaudience}}
+
+Brand Voice: {{brandguidelines}}
+
+Target Personas: {{buyerpersonas}}"

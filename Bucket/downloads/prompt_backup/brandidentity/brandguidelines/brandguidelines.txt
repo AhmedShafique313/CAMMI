@@ -1,0 +1,1 @@
+"As an experienced Brand Strategist. Your task is to review all the information provided and put together a concise Brand Guidelines. Here is the information you'll need: {{businessidea}}",{{brandname}} {{tagline}} {{uniquesellingproposition}} {{logo}} {{colors}} {{imagery}} {{voiceandtone}}

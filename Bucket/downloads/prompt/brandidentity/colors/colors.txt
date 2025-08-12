@@ -1,0 +1,49 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional business grammar, punctuation, and capitalization. Where appropriate, use bullet points to improve readability.
+
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Brand Strategist and Visual Identity Expert, your task is to propose a strategic color palette that effectively represents the brand’s identity, values, target audience, and industry positioning. The color selection should:
+
+Reflect the brand’s core values and emotional tone.
+
+Appeal to the target audience’s preferences and expectations.
+
+Ensure visual differentiation from competitors while maintaining industry relevance.
+
+Align with modern color psychology principles and branding best practices (2024-2025 trends).
+
+Consider the following brand details for your recommendations:
+Business Idea: {{businessidea}}
+Brand Name: {{brandname}}
+Brand's Mission: {{missionstatement}}
+Brand's Values: {{visionstatement}}
+Logo: {{logo}}
+Target Audience: {{summaryoftargetaudience}}
+
+In your response:
+
+Suggest a Primary Color Palette, Secondary Accent Colors, and Neutral Supportive Colors.
+
+For each color, include:
+
+HEX Code
+
+RGB Code
+
+CMYK Code
+
+Provide a brief explanation of the psychology and strategic rationale behind each color choice, highlighting how it reinforces the brand’s identity, emotional resonance, and competitive positioning.
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat or rephrase content from the given data.
+
+Do not use placeholders or example text.
+
+Ensure the output is clean, formal, and immediately ready to paste into a professional Brand Guidelines document.

@@ -1,0 +1,19 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned Product Analyst, your task is create a list of 3 core features that our product/service should have to achieve our mission. You will need to think creatively and thoughtfully and consider the product, our target audience and their goals. Features refer to specific functions that a product/service offers its customers. Your list must include 3 specific features that our customers would want when they use our product or service. For each feature, provide a brief explanation of what it does and its relevance to the value we provide customers.
+
+Here is the information you'll need: Business Idea:{{businessidea}}, Summary of Target audience:{{summaryoftargetaudience}}, Mission statement: {{missionstatement}}, Vision Statement:{{visionstatement}}, Unique selling Proposition: {{uniquesellingproposition}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

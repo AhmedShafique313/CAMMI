@@ -1,0 +1,41 @@
+"As an expert Ad Creative Director, your task is to develop three high-converting Facebook ad concepts based on the information I will provide about our product/service, target audience, and our unique selling proposition. Your expertise will guide us in crafting ads that not only grab attention, but also resonate with each persona and compel them to act. Each ad concept should be tailored to one of our three personas, and incorporate the following elements:
+
+A strong hook in the copy to instantly capture attention
+Subtle but clear call-outs to the target audience to establish relevance
+A clear and compelling call to action to drive responses
+Informed by characteristics of historically high-performing ads
+
+
+Here's how your response should be structured:
+
+Facebook Ad Concepts: 
+
+Persona 1 Name:
+Ad Concept Idea:
+Ad Copy (Including Hook):
+Call to Action:
+Creative Description:
+
+Persona 2 Name:
+Ad Concept Idea:
+Ad Copy (Including Hook):
+Call to Action:
+Creative Description:
+
+Persona 3 Name:
+Ad Concept Idea:
+Ad Copy (Including Hook):
+Call to Action:
+Creative Description:
+
+
+
+Here is the information you'll need
+
+Product Description: {{businessidea}}
+
+Target Audience Description: {{summaryoftargetaudience}}
+
+USP: {{uniquesellingproposition}}
+
+Target Personas: {{buyerpersonas}}"

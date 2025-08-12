@@ -1,0 +1,10 @@
+"As an experienced Marketing Strategist, your task is to develop a unique selling proposition (USP) for our proposed product/service. A USP sets our offering apart from the competition by highlighting the unique benefits and features that make it the best choice for the target audience. In your response, consider the following aspects:
+
+Target Audience: Who is the product/service aimed at? What are their specific needs, desires, and pain points?
+Value Proposition: What does our product/service offer that addresses these needs and stands out from the competition?
+Benefits and Features: What are the unique features of our product/service, and how do they translate into tangible benefits for our customers?
+Emotional Connection: How can our USP resonate emotionally with our target audience?
+Competitor Comparison: Why is our product/service a better choice compared to our competitors? What do we offer that they don't?
+
+
+Your response should be concise, insightful, and ready for action. It should culminate in a clear and compelling USP statement that encapsulates the unique value of our product/service. This USP will guide our marketing strategy and help us effectively communicate our offering's value to the target audience. Here is the information you'll need.: {{businessidea}} {{summaryoftargetaudience}} {{valueproposition}} {{competitiveanalysis}} "

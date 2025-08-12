@@ -1,0 +1,17 @@
+"As an expert Sales Strategist, your task is to analyze and recommend the best sales channels for our product/service. Provide an explanation for each recommended channel, outlining its advantages and potential strategies for leveraging it.
+
+Here's the structure your response should follow:
+
+Recommended Sales Channel 1:
+Rationale:
+Potential Strategies:
+
+Recommended Sales Channel 2:
+Rationale:
+Potential Strategies:
+
+Recommended Sales Channel 3:
+Rationale:
+Potential Strategies:
+
+Here is all the information you need to craft your content: {{businessidea}}",{{businessdescription}} {{whatissuccessforthisbusiness}} {{explainationofbusinessmodel}} {{metricsthatmatterkpis}}

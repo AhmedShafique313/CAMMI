@@ -1,0 +1,19 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an accomplished Marketing Strategist, your task is to define the Marketing Objectives for our brand. These goals should be SMART (Specific, Measurable, Achievable, Relevant, Time-bound) and align with our overall business objectives. Your objectives could cover aspects such as brand awareness, market share, customer acquisition, customer retention, sales volume, revenue, or profitability. Please provide a detailed description of each objective and explain why it's important and how it contributes to our broader business goals.
+
+Here is all the information you need to craft your content: Business idea:{{businessidea}}, Summary of Target audience: {{summaryoftargetaudience}} , Market search summary:{{marketresearchsummary}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

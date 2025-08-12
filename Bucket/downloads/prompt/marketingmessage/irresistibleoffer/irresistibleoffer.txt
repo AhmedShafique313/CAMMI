@@ -1,0 +1,34 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced B2B Marketing Strategist, your task is to design an irresistible, high-value offer that positions our product/service as the obvious choice for our business clients. Your strategy must be aligned with the specific pain points, priorities, and purchasing behaviors of B2B decision-makers. This is not about offering discounts—it’s about creating an offer so relevant and valuable that it becomes a strategic business solution for our target audience.
+
+You are to frame the offer with these components:
+
+Unique Value Proposition: Clearly communicate the business outcomes our product/service delivers, and how it uniquely addresses the critical challenges faced by our B2B customers, positioning us as a strategic partner, not just a vendor.
+
+Bonus Value: Recommend additional business-oriented benefits that strengthen the core offer, such as exclusive consulting sessions, priority support, custom integrations, or ROI-driven assessments.
+
+Urgency and Scarcity: Propose a mechanism to drive urgency for decision-makers, such as limited-time onboarding packages, early adopter benefits, or exclusive availability for a capped number of clients.
+
+Risk Reversal: Formulate strategies that reduce perceived organizational risk, such as performance-based guarantees, satisfaction commitments, or flexible opt-out options for enterprise clients.
+
+Clear and Compelling Call-To-Action (CTA): Draft a CTA that is direct, action-oriented, and clearly communicates the immediate business advantage of responding now.
+
+Ensure the offer is structured to resonate with B2B buyers, aligns with our brand voice, and is designed to convert leads into long-term business relationships.
+
+Here is the information you’ll need:
+Business Idea: {{businessidea}}
+Summary of Target Audience: {{summaryoftargetaudience}}
+Brand Guidelines: {{brandguidelines}}
+Unique Selling Proposition: {{uniquesellingproposition}}
+Features: {{features}}
+Benefits: {{benefits}}
+
+Instructions:
+Provide a precise and concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

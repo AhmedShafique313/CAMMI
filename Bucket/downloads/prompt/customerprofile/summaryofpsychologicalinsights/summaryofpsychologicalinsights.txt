@@ -1,0 +1,22 @@
+You are generating document-ready text. The document already includes top-level section headings. Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned Consumer Psychologist, your task is to distill the essential insights from our analysis of the target audience using Steven Reiss's 16 Human Desires, Freud's Psychoanalytic Theory, and Carl Rogers' Humanistic Theory.
+Create a concise, actionable summary that effectively encapsulates these psychological insights in the context of our B2B business model, target audience’s professional aspirations, emotional drivers, and buying behavior. This summary will serve as a guide for our marketing team, informing our approach to campaign development, messaging, and audience engagement.
+It should help us deeply connect with our audience by addressing their intrinsic motivations, decision-making processes, and professional challenges, while aligning with their psychological traits and business needs.
+Remember, the goal is not to include every detail, but rather to highlight the most relevant insights that can meaningfully inform our B2B marketing strategies and sales initiatives.
+
+Stevenreiss's 16 human desires:{{stevenreisss16humandesires}}, freuds psychoanalytic theory:{{freudspsychoanalytictheory}}, carlrogers humanistic theory:{{carlrogershumanistictheory}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

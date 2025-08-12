@@ -1,0 +1,40 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Influencer Marketing Strategist, your assignment is to craft a personalized influencer marketing plan for our brand. We'll supply you with detailed product/service information, target personas, customer analysis, and marketing objectives. In your plan, please focus on the following aspects:
+
+Influencer Selection: Identify the type of creators that would be a good fit for our brand and resonate with our target audience. Consider factors such as influencer niche, audience demographics, engagement rate, and authenticity.
+Innovative Tactics: Propose innovative and clever tactics for partnering with these influencers. How can we leverage their unique strengths and audiences to promote our brand in a way that feels natural and engaging?
+Viral Campaign Ideas: Brainstorm ideas for influencer-led campaigns that have the potential to go viral. Think of creative concepts that encourage user participation, shareability, and buzz.
+
+Please structure your respones exactly like this:
+
+Ideal Influencer Profile:
+Preferred Platforms:
+Selection Criteria:
+Innovative Tactics:
+
+Collaborative Content Ideas:
+Partnership Models:
+Audience Engagement:
+Viral Campaign Ideas:
+
+Campaign Concept 1:
+Campaign Concept 2:
+Campaign Concept 3:
+
+
+Here is all the information you need to craft your content: Business Idea:{{businessidea}}, summary of Target audience:{{summaryoftargetaudience}}, Brand guidelines:{{brandguidelines}} ,Market Objectives:{{marketingobjectives}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

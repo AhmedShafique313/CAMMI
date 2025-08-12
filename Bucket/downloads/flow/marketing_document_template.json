@@ -1,0 +1,292 @@
+[
+  {
+    "heading": "Business Foundation",
+    "sections": [
+      {
+        "subheading": "Mission Statement",
+        "s3_path": "s3://cammi/output/businessplan/missionstatement/missionstatement.txt"
+      },
+      {
+        "subheading": "Vision Statement",
+        "s3_path": "s3://cammi/output/businessplan/visionstatement/visionstatement.txt"
+      },
+      {
+        "subheading": "Business Description",
+        "s3_path": "s3://cammi/output/businessplan/businessdescription/businessdescription.txt"
+      },
+      {
+        "subheading": "Core Problems This Business Solves",
+        "s3_path": "s3://cammi/output/businessplan/coreproblemsthisbusinesssolves/coreproblemsthisbusinesssolves.txt"
+      },
+      {
+        "subheading": "Explanation of Business Model",
+        "s3_path": "s3://cammi/output/businessplan/explainationofbusinessmodel/explainationofbusinessmodel.txt"
+      },
+      {
+        "subheading": "Value Proposition",
+        "s3_path": "s3://cammi/output/businessplan/valueproposition/valueproposition.txt"
+      },
+      {
+        "subheading": "Value Proposition Short",
+        "s3_path": "s3://cammi/output/businessplan/valuepropositionshort/valuepropositionshort.txt"
+      },
+      {
+        "subheading": "What is Success for This Business",
+        "s3_path": "s3://cammi/output/businessplan/whatissuccessforthisbusiness/whatissuccessforthisbusiness.txt"
+      },
+      {
+        "subheading": "Business Goals",
+        "s3_path": "s3://cammi/output/businessplan/businessgoals/businessgoals.txt"
+      },
+      {
+        "subheading": "Metrics that Matter (KPIs)",
+        "s3_path": "s3://cammi/output/businessplan/metricsthatmatterkpis/metricsthatmatterkpis.txt"
+      }
+    ]
+  },
+  {
+    "heading": "Market Research & Insights",
+    "sections": [
+      {
+        "subheading": "Needs Analysis",
+        "s3_path": "s3://cammi/output/marketresearch/needsanalysis/needsanalysis.txt"
+      },
+      {
+        "subheading": "Market Size Analysis",
+        "s3_path": "s3://cammi/output/marketresearch/marketsizeanalysis/marketsizeanalysis.txt"
+      },
+      {
+        "subheading": "Market Trend Analysis",
+        "s3_path": "s3://cammi/output/marketresearch/markettrendanalysis/markettrendanalysis.txt"
+      },
+      {
+        "subheading": "Competitive Analysis",
+        "s3_path": "s3://cammi/output/marketresearch/competitiveanalysis/competitiveanalysis.txt"
+      },
+      {
+        "subheading": "Market Research Summary",
+        "s3_path": "s3://cammi/output/marketresearch/marketresearchsummary/marketresearchsummary.txt"
+      }
+    ]
+  },
+  {
+    "heading": "Audience Persona & Behavioral Insights",
+    "sections": [
+      {
+        "subheading": "Target Market",
+        "s3_path": "s3://cammi/output/customerprofile/targetaudience/targetaudience.txt"
+      },
+      {
+        "subheading": "Ideal Customer Profile: Champion",
+        "s3_path": "s3://cammi/output/customerprofile/persona1/persona1.txt"
+      },
+      {
+        "subheading": "Ideal Customer Profile: Decision Maker",
+        "s3_path": "s3://cammi/output/customerprofile/persona2/persona2.txt"
+      },
+      {
+        "subheading": "Ideal Customer Profile: Influencer",
+        "s3_path": "s3://cammi/output/customerprofile/persona3/persona3.txt"
+      },
+      {
+        "subheading": "Ideal Customer Profile: Blockers",
+        "s3_path": "s3://cammi/output/customerprofile/persona4/persona4.txt"
+      },
+      {
+        "subheading": "Customer Journey",
+        "s3_path": "s3://cammi/output/marketresearch/customerjourney/customerjourney.txt"
+      }
+    ]
+  },
+  {
+    "heading": "Brand Identity & Messaging",
+    "sections": [
+      {
+        "subheading": "Brand Name",
+        "s3_path": "s3://cammi/output/brandidentity/brandname/brandname.txt"
+      },
+      {
+        "subheading": "Tag Line",
+        "s3_path": "s3://cammi/output/brandidentity/tagline/tagline.txt"
+      },
+      {
+        "subheading": "Imagery",
+        "s3_path": "s3://cammi/output/brandidentity/imagery/imagery.txt"
+      },
+      {
+        "subheading": "Voice and Tone",
+        "s3_path": "s3://cammi/output/brandidentity/voiceandtone/voiceandtone.txt"
+      },
+      {
+        "subheading": "Brand Guidelines",
+        "s3_path": "s3://cammi/output/brandidentity/brandguidelines/brandguidelines.txt"
+      },
+      {
+        "subheading": "Brand Position",
+        "s3_path": "s3://cammi/output/marketresearch/brandposition/brandposition.txt"
+      }
+    ]
+  },
+  {
+    "heading": "Messaging & Communication Framework",
+    "sections": [
+      {
+        "subheading": "Unique Selling Proposition",
+        "s3_path": "s3://cammi/output/marketingmessage/uniquesellingproposition/uniquesellingproposition.txt"
+      },
+      {
+        "subheading": "Features",
+        "s3_path": "s3://cammi/output/marketingmessage/features/features.txt"
+      },
+      {
+        "subheading": "Benefits",
+        "s3_path": "s3://cammi/output/marketingmessage/benefits/benefits.txt"
+      },
+      {
+        "subheading": "Story Telling",
+        "s3_path": "s3://cammi/output/marketingmessage/storytelling/storytelling.txt"
+      },
+      {
+        "subheading": "Clear Call to Action",
+        "s3_path": "s3://cammi/output/marketingmessage/clearcalltoaction/clearcalltoaction.txt"
+      },
+      {
+        "subheading": "Irresistible Offer",
+        "s3_path": "s3://cammi/output/marketingmessage/irresistibleoffer/irresistibleoffer.txt"
+      }
+    ]
+  },
+  {
+    "heading": "Marketing Strategy & Execution Plan",
+    "sections": [
+      {
+        "subheading": "Situational Analysis",
+        "s3_path": "s3://cammi/output/marketingplan/situationalanalysis/situationalanalysis.txt"
+      },
+      {
+        "subheading": "Marketing Objectives",
+        "s3_path": "s3://cammi/output/marketingplan/marketingobjectives/marketingobjectives.txt"
+      },
+      {
+        "subheading": "Marketing Strategies",
+        "s3_path": "s3://cammi/output/marketingplan/marketingstrategies/marketingstrategies.txt"
+      },
+      {
+        "subheading": "Tactics and Action Plans",
+        "s3_path": "s3://cammi/output/marketingplan/tacticsandactionplans/tacticsandactionplans.txt"
+      },
+      {
+        "subheading": "Performance Metrics and KPI's",
+        "s3_path": "s3://cammi/output/marketingplan/performancemetricsandkpis/performancemetricsandkpis.txt"
+      },
+      {
+        "subheading": "Influencer Strategy",
+        "s3_path": "s3://cammi/output/marketingplan/influencerstrategy/influencerstrategy.txt"
+      }
+    ]
+  },
+  {
+    "heading": "Social Media Content Plan",
+    "sections": [
+      {
+        "subheading": "Content Pillars",
+        "s3_path": "s3://cammi/output/socialmediacontent/contentpillars/contentpillars.txt"
+      },
+      {
+        "subheading": "Content Pillar 1 (10 Ideas)",
+        "s3_path": "s3://cammi/output/socialmediacontent/contentpillar110ideas/contentpillar110ideas.txt"
+      },
+      {
+        "subheading": "Content Pillar 2 (10 Ideas)",
+        "s3_path": "s3://cammi/output/socialmediacontent/contentpillar210ideas/contentpillar210ideas.txt"
+      },
+      {
+        "subheading": "Content Pillar 3 (10 Ideas)",
+        "s3_path": "s3://cammi/output/socialmediacontent/contentpillar310ideas/contentpillar310ideas.txt"
+      },
+      {
+        "subheading": "Content Pillar 4 (10 Ideas)",
+        "s3_path": "s3://cammi/output/socialmediacontent/contentpillar410ideas/contentpillar410ideas.txt"
+      },
+      {
+        "subheading": "Content Pillar 5 (10 Ideas)",
+        "s3_path": "s3://cammi/output/socialmediacontent/contentpillar510ideas/contentpillar510ideas.txt"
+      }
+    ]
+  },
+  {
+    "heading": "Sales & PR Strategy",
+    "sections": [
+      {
+        "subheading": "Sales Channels",
+        "s3_path": "s3://cammi/output/salesstrategy/saleschannels/saleschannels.txt"
+      },
+      {
+        "subheading": "Go to Market Strategy",
+        "s3_path": "s3://cammi/output/salesstrategy/gotomarketstrategy/gotomarketstrategy.txt"
+      },
+      {
+        "subheading": "PR Strategy",
+        "s3_path": "s3://cammi/output/prplan/prstrategy/prstrategy.txt"
+      },
+      {
+        "subheading": "Strategic Partner Strategy",
+        "s3_path": "s3://cammi/output/prplan/strategicpartnerstrategy/strategicpartnerstrategy.txt"
+      },
+      {
+        "subheading": "PR Boiler Plate",
+        "s3_path": "s3://cammi/output/prplan/prboilerplate/prboilerplate.txt"
+      }
+    ]
+  },
+  {
+    "heading": "Growth & Fundraising",
+    "sections": [
+      {
+        "subheading": "Fastest Way to First 100 Customers",
+        "s3_path": "s3://cammi/output/growthplan/fastestwaytofirst100customers/fastestwaytofirst100customers.txt"
+      },
+      {
+        "subheading": "Business Model Risks",
+        "s3_path": "s3://cammi/output/raisingcapital/businessmodelrisks/businessmodelrisks.txt"
+      }
+    ]
+  },
+  {
+    "heading": "Inspirational Insights",
+    "sections": [
+      {
+        "subheading": "Advice from Steve Jobs",
+        "s3_path": "s3://cammi/output/justforfun/advicefromstevejobs/advicefromstevejobs.txt"
+      },
+      {
+        "subheading": "Advice from Elon Musk",
+        "s3_path": "s3://cammi/output/justforfun/advicefromelonmusk/advicefromelonmusk.txt"
+      },
+      {
+        "subheading": "Advice from Jeff Bezos",
+        "s3_path": "s3://cammi/output/justforfun/advicefromjeffbezos/advicefromjeffbezos.txt"
+      },
+      {
+        "subheading": "Advice from Peter Thiel",
+        "s3_path": "s3://cammi/output/justforfun/advicefrompeterthiel/advicefrompeterthiel.txt"
+      },
+      {
+        "subheading": "Advice from Mark Zuckerberg",
+        "s3_path": "s3://cammi/output/justforfun/advicefrommarkzuckerberg/advicefrommarkzuckerberg.txt"
+      },
+      {
+        "subheading": "Advice from Paul Graham",
+        "s3_path": "s3://cammi/output/justforfun/advicefrompaulgraham/advicefrompaulgraham.txt"
+      },
+      {
+        "subheading": "Advice from Ried Hoffman",
+        "s3_path": "s3://cammi/output/justforfun/advicefromriedhoffman/advicefromriedhoffman.txt"
+      },
+      {
+        "subheading": "Advice from Niel Patel",
+        "s3_path": "s3://cammi/output/justforfun/advicefromnielpatel/advicefromnielpatel.txt"
+      }
+    ]
+  }
+]

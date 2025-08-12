@@ -1,0 +1,5 @@
+"As a experienced Business Strategist, you are entrusted with shaping our company's vision statement. Develop a very concise and clear statement that defines our organization's purpose, values, and core objectives. This statement should convey our commitment to delivering value to customers, while aligning with our overall vision and guiding principles. Your output should be structured like this:
+
+VISION STATEMENT: 
+
+Here is all the information you need to craft your content: {{businessidea}} {{missionstatement}}", {{summaryoftargetaudience}}

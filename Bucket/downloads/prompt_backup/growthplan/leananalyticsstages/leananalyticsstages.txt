@@ -1,0 +1,10 @@
+"As a data-driven growth strategist, your task is to leverage the Lean Analytics Stages to draft a strategic growth plan for our business. Analyze our business model and key metrics in the context of each stage. Define the specific goals we should target and the key performance indicators (KPIs) that will signify progress. Include customer pain points and our solution's unique value proposition when considering customer acquisition and retention strategies.
+
+Please structure your response as follows:
+
+Goals for Each Stage:
+Relevant KPIs:
+Customer Acquisition Strategies:
+Customer Retention Strategies:
+
+Here is the information you'll need about our business model, key metrics, and our customer base:{{businessidea}} {{summaryoftargetaudience}}",{{whatissuccessforthisbusiness}} {{explainationofbusinessmodel}} {{metricsthatmatterkpis}} {{coreproblemsthisbusinesssolves}} {{businessgoals}}

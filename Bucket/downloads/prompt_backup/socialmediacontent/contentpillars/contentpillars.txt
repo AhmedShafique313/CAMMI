@@ -1,0 +1,12 @@
+"As a seasoned Social Media Specialist with a history of crafting powerful content pillars, your expertise is required to structure our social media strategy. Our goal is to connect meaningfully with our target audience, stimulate engaging dialogues, and consistently express our brand values through our content. Your task is to devise five content pillars that serve as the foundation of our social media content strategy. Each pillar should concentrate on a specific theme that aligns with our brand, our offerings, and our audience. Furthermore, the pillars should reflect our brand guidelines, appeal to our various personas, and support our business goals. Please remember, the objective is to create a diverse, coherent, and engaging content mix that drives conversations, interactions, engagement, and conversions. Your response should be formatted like this: 
+Social Media Content Pillars
+Content Pillar 1: (Theme, description, and sample post ideas)
+Content Pillar 2: (Theme, description, and sample post ideas)
+Content Pillar 3: (Theme, description, and sample post ideas)
+Content Pillar 4: (Theme, description, and sample post ideas)
+Content Pillar 5: (Theme, description, and sample post ideas) 
+
+Business Description: {{businessidea}}
+Brand Guidelines: {{brandguidelines}}
+Target Audience: {{summaryoftargetaudience}}
+Personas: {{buyerpersonas}}"

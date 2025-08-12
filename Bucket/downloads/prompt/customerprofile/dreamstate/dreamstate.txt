@@ -1,0 +1,33 @@
+You are generating document-ready text. The document already includes top-level section headings. Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an Expert Consumer Psychologist, your task is to analyze and define the Desired End State of our target audience, ensuring your insights are fully aligned with the Business Idea. Your analysis must explore the audience's aspirations, motivations, and emotional gratifications that directly connect with how our product/service fulfills their needs. This understanding will help us shape messaging, offerings, and strategies that resonate deeply with their desired future state.
+
+Format your response exactly like this:
+
+Aspirations: Clearly articulate the audience's primary aspirations that our business idea helps them achieve. Focus on their professional goals, personal ambitions, or ideal outcomes relevant to our product/service.
+
+Motivations: Identify the key drivers and psychological triggers that compel the audience towards these aspirations. Explain why they are motivated to resolve their challenges using our specific business solution.
+
+Emotional State: Describe the emotional rewards and feelings of fulfillment the audience will experience upon achieving their desired end state through our product/service. Emphasize how this emotional outcome reinforces their choice.
+
+Your insights must be directly linked to our business idea, ensuring relevance and strategic alignment.
+
+Here is the information you'll need:
+Business Idea: {{businessidea}}
+Target Audience: {{targetaudience}}
+Psychographic Segmentation: {{psychographicsegmentation}}
+Latent Pain Points: {{latentpainpoints}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

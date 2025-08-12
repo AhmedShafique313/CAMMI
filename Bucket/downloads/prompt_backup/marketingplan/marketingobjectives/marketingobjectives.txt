@@ -1,0 +1,3 @@
+"As an accomplished Marketing Strategist, your task is to define the Marketing Objectives for our brand. These goals should be SMART (Specific, Measurable, Achievable, Relevant, Time-bound) and align with our overall business objectives. Your objectives could cover aspects such as brand awareness, market share, customer acquisition, customer retention, sales volume, revenue, or profitability. Please provide a detailed description of each objective and explain why it's important and how it contributes to our broader business goals.
+
+Here is all the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}}", {{marketresearchsummary}}

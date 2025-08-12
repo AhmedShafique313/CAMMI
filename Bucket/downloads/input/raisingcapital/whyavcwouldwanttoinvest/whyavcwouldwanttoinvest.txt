@@ -1,0 +1,1 @@
+s3://cammi/prompt/businessidea/businessidea/businessidea.txt, output/businessplan/explainationofbusinessmodel/explainationofbusinessmodel.txt, output/marketresearch/marketresearchsummary/marketresearchsummary.txt, output/salesstrategy/gotomarketstrategy/gotomarketstrategy.txt 

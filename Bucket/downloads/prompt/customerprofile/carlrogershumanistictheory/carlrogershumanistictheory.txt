@@ -1,0 +1,38 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an Expert Consumer Psychologist specializing in Humanistic Psychology, your role is to conduct a deep psychological analysis of our target audience, guided by Carl Rogers’ principles. Given the information about our product and target audience, delve into their pursuit of self-actualization, the dynamics of their self-concept, their need for positive regard, and any state of congruence or incongruence they may be experiencing.
+
+Your task is to interpret these humanistic psychology elements and articulate how our product or service can resonate with and support our audience on their journey towards personal growth, fulfillment, and a more authentic self.
+
+Structure your response exactly like this:
+
+Interpretation of Self-Actualization Needs: Based on the audience data, what might be their goals in their quest for self-actualization?
+
+Understanding of the Self-Concept: How does our audience perceive themselves, and how does this perception influence their interaction with our product or service?
+
+Role of Positive Regard: How can our product or service fulfill the audience’s need for positive regard from themselves and others?
+
+State of Congruence or Incongruence: Do any identified pain points indicate a state of incongruence? How can our product or service facilitate greater congruence for the audience?
+
+Your comprehensive analysis, grounded in Rogers' Humanistic Theory, will provide strategic insights to help us connect more profoundly with our audience's psychological drivers. Ensure your output is clear, insightful, and actionable.
+
+Here is the information you'll need:
+Business Idea: {{businessidea}}
+Target Audience: {{targetaudience}}
+Psychographic Segmentation: {{psychographicsegmentation}}
+Latent Pain Points: {{latentpainpoints}}
+Dream State: {{dreamstate}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

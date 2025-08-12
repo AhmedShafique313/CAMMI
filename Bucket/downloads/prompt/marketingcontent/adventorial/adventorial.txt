@@ -1,0 +1,32 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an accomplished Copywriter with expertise in persuasive storytelling and advertorial writing for high-conversion content, your task is to craft a powerful advertorial for our product/service. This content must seamlessly blend engaging, value-driven information with a subtle promotional narrative that resonates with the pain points, aspirations, and lifestyle of our target audience. Your storytelling must highlight our product’s key features, unique benefits, and competitive edge, while naturally guiding the reader towards a clear next step. Ensure the tone, language, and style stay perfectly aligned with our brand voice and audience expectations.
+
+Your advertorial must include:
+
+A captivating headline addressing the audience's core challenge or desired transformation.
+
+A compelling introduction that instantly connects and builds curiosity.
+
+Informative, benefit-driven body content that educates while subtly introducing our product/service as the ideal solution.
+
+A persuasive call to action that encourages immediate engagement or conversion.
+
+Please provide the advertorial in the following format:
+
+Headline:
+Introduction:
+Body:
+Call to Action:
+
+Here is all the information you need to craft your content: Business model:{{businessidea}}, Summary of Target audience:{{summaryoftargetaudience}}, Voice and tone:{{voiceandtone}}, Features:{{features}}, Benefits:{{benefits}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.
+

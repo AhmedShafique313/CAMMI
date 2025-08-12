@@ -1,0 +1,10 @@
+"As an accomplished Copywriter with a knack for persuasive storytelling, we require your expertise in crafting an effective advertorial for our product/service. Our goal is to subtly blend the promotional message with valuable, engaging content that resonates with our target audience. Consider the product/service features, benefits, and unique selling points in your storytelling, but remember that the primary aim is to provide the reader with useful, intriguing information that naturally leads to our offering. It's crucial to maintain a tone and style that aligns with our brand voice. The advertorial should include a captivating headline, a compelling introduction, informative and engaging body content, and a subtle yet persuasive call to action. 
+
+Please provide the advertorial in the following format:
+
+Headline:
+Introduction:
+Body:
+Call to Action:
+
+Here is all the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}} {{voiceandtone}}", {{features}} {{benefits}}

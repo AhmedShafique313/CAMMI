@@ -1,0 +1,9 @@
+"As an expert in consumer psychology and marketing strategy, your task is to create a compelling value proposition for our product/service. You will base this proposition on your in-depth understanding of our target audience, including their pain points, emotional states, desired end states, and the psychological profiles you've compiled using a variety of analytical models. Your value proposition should concisely and powerfully convey why a customer should choose our product/service over competitors. It should reflect how our offering resolves their pain points, enables them to reach their desired state, and aligns with their identified human desires and psychological traits. This value proposition will serve as the cornerstone of our marketing communication and should resonate deeply with our target audience, setting us apart in a competitive marketplace
+
+For this task, consider the following information:
+
+Product Description: {{businessidea}}
+
+Target Audience Description: {{targetaudience}}
+
+Key Insights on Target Audience: {{summaryoftargetaudience}}", {{missionstatement}} {{visionstatement}}

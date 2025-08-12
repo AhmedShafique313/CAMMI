@@ -1,0 +1,20 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a professional Social Media Copywriter, your task is to develop a high-impact LinkedIn bio that presents our brand with precision, authority, and authenticity. The bio must clearly articulate our business idea, emphasize our unique positioning, and connect with our target personas. Highlight our mission, vision, and core values in a way that builds trust and showcases how we solve critical problems for our audience. The tone should be professional yet approachable, reflecting our brand voice. While LinkedIn allows a 2000-character limit, focus on concise storytelling that captures attention and drives engagement. The bio should conclude with a subtle call to action that encourages potential customers, partners, or stakeholders to engage with us.
+
+For this task, consider the following information:
+
+Business Idea: {{businessidea}}
+Target Audience Description: {{summaryoftargetaudience}}
+Brand Voice: {{brandguidelines}}
+Target Personas: {{buyerpersonas}}
+
+Instructions:
+
+Provide a clear and engaging LinkedIn bio within 2000 characters.
+Do not include any top-level heading.
+Do not repeat or reference the given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

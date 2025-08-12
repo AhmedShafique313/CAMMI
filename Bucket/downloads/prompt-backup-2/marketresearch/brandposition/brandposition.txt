@@ -1,0 +1,28 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Brand Strategist, we require your expertise in crafting a compelling brand positioning for our company. Your work should articulate how our brand is unique, why it's relevant to our target audience, and how it differentiates from competitors in the market.
+
+Your response should be insightful, actionable, and should clearly delineate our place in the market landscape. The goal is to create a brand positioning statement that will guide our marketing and product development efforts.
+
+Please structure your response as follows:
+
+Target Audience Definition: Clearly define our target audience, including their needs and wants.
+Market Definition: Identify the market in which we operate and how our brand fits within it.
+Brand Promise: Outline the key benefit that makes us unique in our market.
+Reason to Believe: Provide supporting reasons why our target audience can trust our brand promise.
+Here's the information you'll need about our product/service, target audience, competitive landscape, and business goals. Busniess Idea:{{businessidea}}, Summary of Target audience:{{summaryoftargetaudience}}, Comptitive analysis:{{competitiveanalysis}}, What is success for this business:{{whatissuccessforthisbusiness}}
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,18 @@
+"As an expert Strategic Partner Manager, we need your insights to identify potential strategic partners. Based on our business goals, product/service offerings, and target audience, suggest three types of partners or specific entities we should target. Explain how these partnerships could create a win-win scenario, accelerating our business while providing value to the potential partners.
+
+Please structure your response as follows:
+
+Partner Type 1:
+Why This Partner:
+Benefits for Our Business:
+Value Proposition for Partner:
+Partner Type 2:
+Why This Partner:
+Benefits for Our Business:
+Value Proposition for Partner:
+Partner Type 3:
+Why This Partner:
+Benefits for Our Business:
+Value Proposition for Partner:
+
+Here's the information you'll need about our product/service, target audience, brand positioning, and business goals: {{businessidea}} {{summaryoftargetaudience}} {{brandposition}} {{businessgoals}}"

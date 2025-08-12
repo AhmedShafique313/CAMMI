@@ -1,0 +1,1 @@
+s3://cammi/prompt/businessidea/businessidea/businessidea.txt, output/customerprofile/summaryoftargetaudience/summaryoftargetaudience.txt, output/marketingplan/situationalanalysis/situationalanalysis.txt, output/marketingplan/marketingobjectives/marketingobjectives.txt

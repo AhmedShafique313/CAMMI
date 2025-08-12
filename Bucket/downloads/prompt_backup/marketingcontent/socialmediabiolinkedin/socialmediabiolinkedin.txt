@@ -1,0 +1,13 @@
+"As a professional Social Media Copywriter, your task is to craft a LinkedIn bio that accurately and professionally represents our brand. We'll provide you with our brand details, product/service information, target audience, and brand voice. LinkedIn allows for a more generous 2000 character limit, but strive for brevity and clarity. Highlight our company's mission, vision, and core values, and explain what sets us apart in the market. Format your response exactly like this: 
+
+Linkedin Bio: 
+
+For this task, consider the following information:
+
+Product Description: {{businessidea}}
+
+Target Audience Description: {{summaryoftargetaudience}}
+
+Brand Voice: {{brandguidelines}}
+
+Target Personas: {{buyerpersonas}}"

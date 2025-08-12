@@ -1,0 +1,11 @@
+"What are the core problems that this business solves, provide your response exactly like this: 
+
+Problems [INSERT BUSINESS NAME] Solves: 
+
+Problem 1: Provide a concise direct answer to the core problem the product/service solves
+
+Problem 2: Provide a concise direct answer to the core problem the product/service solves
+
+Problem 3: Provide a concise direct answer to the core problem the product/service solves
+
+{{businessidea}}", {{valuepropositionshort}} {{businessdescription}}

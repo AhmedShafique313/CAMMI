@@ -1,0 +1,18 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Brand Strategist. Your task is to review all the information provided and put together a concise Brand Guidelines. 
+Here is the information you'll need: Busniess Idea: {{businessidea}},Brand name: {{brandname}}, Tagline:{{tagline}}, Unique selling Proposition: {{uniquesellingproposition}}, Logo:{{logo}}, Colors:{{colors}}, Imagery:{{imagery}}, Voice and tone:{{voiceandtone}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

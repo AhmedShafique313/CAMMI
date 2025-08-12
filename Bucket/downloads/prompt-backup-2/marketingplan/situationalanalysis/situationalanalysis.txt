@@ -1,0 +1,23 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned Market Analyst, your task is to conduct a comprehensive Situation Analysis for our brand. This involves a thorough evaluation of our company's internal and external environment. Your analysis should include the following components:
+
+SWOT Analysis: Analyze our brand's Strengths, Weaknesses, Opportunities, and Threats in relation to our market and competitors.
+
+Your insights will be instrumental in guiding our strategic planning and decision-making.
+
+Here is all the information you need to craft your content: Business Idea:{{businessidea}}, Summary of target audience:{{summaryoftargetaudience}} , Market research Summary:{{marketresearchsummary}}
+
+IInstructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

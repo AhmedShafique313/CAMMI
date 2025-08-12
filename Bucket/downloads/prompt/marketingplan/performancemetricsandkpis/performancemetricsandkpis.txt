@@ -1,0 +1,25 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a proficient B2B Marketing Analyst, your task is to define the Performance Metrics and Key Performance Indicators (KPIs) that are fully aligned with our business idea and objectives. These KPIs will measure the success of our marketing plan across brand awareness, website traffic, lead generation, account engagement, customer acquisition, sales growth, and ROI.
+
+For each metric:
+Describe the metric and explain why it is important for our business idea.
+Explain how the metric will be measured and tracked.
+Define the target value or range that aligns with our business goals and growth objectives.
+
+Ensure all metrics and KPIs are directly relevant to our business model, address the needs of our target audience, and align with our marketing strategies and objectives.
+
+Here is all the information you need to craft your content:
+Business Idea: {{businessidea}}
+Summary of Target Audience: {{summaryoftargetaudience}}
+Marketing Objectives: {{marketingobjectives}}
+Marketing Strategies: {{marketingstrategies}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

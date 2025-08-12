@@ -1,0 +1,45 @@
+You are generating document-ready text. The document already includes top-level section headings. Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert Ad Creative Director specializing in social media advertising and direct-response copywriting, your task is to develop four high-converting Facebook ad concepts tailored to our defined personas. These ads must strategically combine attention-grabbing hooks, relevance-driven audience call-outs, and strong conversion-focused CTAs, while reflecting the behavioral traits, needs, and emotional triggers of each persona. Your ad concepts should draw inspiration from characteristics of historically high-performing Facebook ads, ensuring visual and textual alignment with our unique selling proposition and customer journey stages.
+
+Each ad concept should follow this exact structure:
+
+Persona 1 Name:
+Ad Concept Idea:
+Ad Copy (Including Hook):
+Call to Action:
+Creative Description:
+
+Persona 2 Name:
+Ad Concept Idea:
+Ad Copy (Including Hook):
+Call to Action:
+Creative Description:
+
+Persona 3 Name:
+Ad Concept Idea:
+Ad Copy (Including Hook):
+Call to Action:
+Creative Description:
+
+Persona 4 Name:
+Ad Concept Idea:
+Ad Copy (Including Hook):
+Call to Action:
+Creative Description:
+
+Here is the information you'll need:
+Business idea: {{businessidea}}
+Target Audience Description: {{summaryoftargetaudience}}
+Unique Selling Proposition: {{uniquesellingproposition}}
+Target Personas: {{buyerpersonas}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.
+

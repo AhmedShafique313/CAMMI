@@ -1,0 +1,15 @@
+"As a proficient Market Research Analyst, your task is to estimate the potential market size for our proposed product/service. Please provide an in-depth evaluation of the market size based on available data or reasonable assumptions. In your analysis, consider factors like the total number of potential customers, the potential sales volume, and the overall revenue potential.
+
+Your response should be formatted exactly like this:
+
+Market Size Analysis:
+
+Total Addressable Market (TAM): The revenue opportunity available for our product/service, assuming 100% market share.
+
+Serviceable Available Market (SAM): The portion of TAM that our product/service can capture based on factors like geographical constraints and distribution channels.
+
+Serviceable Obtainable Market (SOM): The realistic market share our product/service can aim to achieve in the short to medium term, considering competition and our current resources.
+
+Your detailed understanding will provide us with an estimate of our potential growth and scalability in the market.:
+
+Here is all the information you need to craft your content: {{businessidea}}, {{targetaudience}} {{needsanalysis}}"

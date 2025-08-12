@@ -1,0 +1,7 @@
+"AAs a proficient Marketing Analyst, your task is to define the Performance Metrics and Key Performance Indicators (KPIs) we will use to measure the success of our marketing plan. This could involve metrics related to brand awareness, website traffic, lead generation, customer acquisition, sales, customer retention, ROI, etc. For each metric:
+
+Describe the metric and explain why it's important.
+Explain how the metric will be measured and tracked.
+Define the target value or range for each metric.
+
+Your metrics will enable us to evaluate our marketing performance, make data-driven decisions, and continually optimize our marketing efforts. Here is all the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}}",{{marketingobjectives}} {{marketingstrategies}}

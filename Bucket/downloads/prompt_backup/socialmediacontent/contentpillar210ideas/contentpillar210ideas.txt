@@ -1,0 +1,21 @@
+"As a skilled Social Media Specialist with a keen understanding of what sparks online engagement, we need your creative abilities. Given the second content pillar from our social media strategy, your task is to conceive 10 unique, intriguing, and potentially viral content ideas. Remember, content with a higher likelihood of going viral often incorporates elements of surprise, humor, inspiration, or emotion, and tends to be easily shareable, relatable, and engaging. While developing your ideas, ensure they align with the theme and objective of our first content pillar, reflect our brand's voice, and resonate with our target audience.
+
+Content Pillar 2: (Theme, description, and examples)
+
+Based on the above content pillar, please provide:
+
+Content Pillar
+
+Content Idea 1: (Brief description)
+Content Idea 2: (Brief description)
+Content Idea 3: (Brief description)
+Content Idea 4: (Brief description)
+Content Idea 5: (Brief description)
+Content Idea 6: (Brief description)
+Content Idea 7: (Brief description)
+Content Idea 8: (Brief description)
+Content Idea 9: (Brief description)
+Content Idea 10: (Brief description)
+
+
+Here is all the information you need to craft your content: {{contentpillars}} {{businessidea}} {{summaryoftargetaudience}} {{brandguidelines}}"

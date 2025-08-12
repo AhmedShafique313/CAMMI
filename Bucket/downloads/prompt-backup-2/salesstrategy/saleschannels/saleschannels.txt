@@ -1,0 +1,34 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert Sales Strategist, your task is to analyze and recommend the best sales channels for our product/service. Provide an explanation for each recommended channel, outlining its advantages and potential strategies for leveraging it.
+
+Here's the structure your response should follow:
+
+Recommended Sales Channel 1:
+Rationale:
+Potential Strategies:
+
+Recommended Sales Channel 2:
+Rationale:
+Potential Strategies:
+
+Recommended Sales Channel 3:
+Rationale:
+Potential Strategies:
+
+Here is all the information you need to craft your content: Business Idea:{{businessidea}} , Business Description:{{businessdescription}}, What is success for this Business:{{whatissuccessforthisbusiness}}, Explaination of business model:{{explainationofbusinessmodel}}, metrics that matter Kpis:{{metricsthatmatterkpis}}
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,16 @@
+"As a Venture Capitalist with keen investment acumen, we require your insight on potential reasosn that could entice you to investing in our business. Your evaluation will help us understand the spots we need to focus on when we approach investors. Please consider all aspects, including our, product/service, market size, business model, competitive landscape, customer acquisition strategy, scalability, and any other factors you deem relevant.
+
+Please list the top 10 reasons that would entice you on investing in our business. Format your Response like this: 
+
+Reasons a VC Would Invest
+
+Reason 1: (Explanation)
+Reason 2: (Explanation)
+Reason 3: (Explanation)
+... and so on.
+
+Here is the information you need about our business: 
+{{businessidea}},
+{{explainationofbusinessmodel}},
+{{marketresearchsummary}},
+{{gotomarketstrategy}}"

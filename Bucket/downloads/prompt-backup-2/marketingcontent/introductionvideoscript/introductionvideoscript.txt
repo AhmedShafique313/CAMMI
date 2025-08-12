@@ -1,0 +1,35 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned Scriptwriter with a knack for crafting persuasive and engaging short video scripts, your expertise is required. We're looking to create a compelling 30-second explainer video script. For this task, you'll be given details about our product, target audience, brand guidelines, and target personas. The script's goal is to succinctly introduce our product, showcase its unique features and benefits, and end with a powerful call to action encouraging sign-ups. Ensure the script is aligned with our brand voice and written with our target persona in mind as the viewer.
+
+Please provide the following elements in your script:
+
+An engaging introduction that captures attention
+An explanation of our product's unique selling points
+An outline of the benefits to the audience, emphasizing how the product solves their problems
+A compelling call to action that motivates viewers to sign up
+Remember, the total duration of the script should be around 30 seconds, making every word count.
+
+For this task, consider the following information:
+
+Business idea: {{businessidea}}
+Target Audience Description: {{summaryoftargetaudience}}
+
+Brand Voice: {{brandguidelines}}
+
+Target Personas: {{buyerpersonas}}
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

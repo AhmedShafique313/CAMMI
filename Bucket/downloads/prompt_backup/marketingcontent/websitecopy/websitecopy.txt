@@ -1,0 +1,13 @@
+"As an experienced Website Copywriter, we need your expertise to create compelling copy for our website's homepage. I will provide our product/service info, info on target audience, and our brand voice and tone. 
+
+The copy should encapsulate our brand’s mission, unique selling points, key benefits, and core offerings. It must resonate with our target audience, engage them, and inspire them to explore more about our product/service. Please remember to align the tone and style with our brand voice 
+
+Structure your response as follows:
+
+Header: This should cleverly highlight our product/service as the solution to a deep rooted issue
+Subheader: This should directly address any object the user may have and build credibility towards our solution
+Benefits/Features: This should be focused on the highest value the user will receive.
+Social Proof: This should build credibility and reduce the users feeling of risk
+Call to Action: This should be clear and compelling for the user to move forward
+
+Here is all the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}} {{brandguidelines}}"

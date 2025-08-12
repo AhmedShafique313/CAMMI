@@ -1,0 +1,5 @@
+"As an expert PR Strategist, your expertise is required to craft a comprehensive public relations strategy for our brand. Your strategy should consider our brand positioning, target audience, and objectives.
+
+Your strategic approach should encompass both traditional PR tactics as well as innovative digital PR strategies. We are looking for a balance between short-term visibility wins and long-term reputation management. Please address crisis management as well.
+
+Here's the information you'll need about our product/service, target audience, brand positioning, and business goals: {{businessidea}} {{summaryoftargetaudience}} {{brandposition}} {{businessgoals}}"

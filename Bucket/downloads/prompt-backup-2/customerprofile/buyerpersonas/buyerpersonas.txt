@@ -1,0 +1,57 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+ 
+As an expert Market Research Analyst, your task is to develop four detailed B2B buyer personas using the provided target audience information, industry insights, and psychological analysis. These personas should represent the key roles in the buying process—Champion, Decision Maker, Influencer, and Blocker.
+ 
+For each persona, include the following details:
+Job Role
+ 
+Demographic Profile: Age, gender, income level, education, marital status, occupation, etc.
+ 
+Psychographic Characteristics: Interests, attitudes, values, hobbies, lifestyle, and personality traits.
+ 
+Needs and Pain Points: What are their challenges or problems that our product or service can address?
+ 
+Goals: What professional objectives do they want to achieve?
+ 
+Concerns/Objections During Sales Process: What hesitations or barriers do they raise?
+ 
+Factors That Influenced the Purchasing Decision: What key elements drive or influence their choices?
+ 
+Stage When Joined the Sales Process: Awareness, consideration, or decision stage.
+ 
+Media Consumption Habits: What channels do they use to gather information?
+ 
+Brands They Resonate With: Which brands appeal to them and why?
+ 
+Publicity/Social Media Activity: How active and visible are they online (e.g., LinkedIn engagement, thought leadership)?
+ 
+LinkedIn Profile: Provide a realistic example or describe a typical profile.
+ 
+Leisure Activities: How do they spend their free time outside of work?
+ 
+Celebrities or Notable People They Resonate With: Who are the public figures that influence or inspire them?
+ 
+Ensure that the personas are:
+ 
+Detailed yet concise, with practical insights for sales and marketing strategies.
+ 
+Realistic and relevant to the industry context.
+ 
+Presented in a clear, structured format.
+ 
+Information you'll need: Business Idea: {{businessidea}}, Summary Of Target Audience {{summaryoftargetaudience}}
+ 
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

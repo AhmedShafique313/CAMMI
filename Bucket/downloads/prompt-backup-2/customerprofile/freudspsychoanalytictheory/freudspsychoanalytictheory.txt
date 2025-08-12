@@ -1,0 +1,33 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert Consumer Psychologist with a strong understanding of Freud's Psychoanalytic Theory, your assignment is to delve deep into the subconscious desires influencing our target audience's behavior. Employ the product and audience information, identified pain points, and desired end state in your analysis.
+
+Particularly, consider the interplay between the id (our basic instincts), the ego (the mediator), and the superego (our moral compass) in guiding these behaviors. Your response will serve as a roadmap for our marketing strategy, helping us to resonate more profoundly with our audience at an emotional level. Remember, your insights should be clear, succinct, and readily applicable.
+
+Please structure your response as follows:
+
+
+Id-Driven Desires:
+
+Ego-Mediated Compromises:
+
+Superego-Influenced Behaviors:
+
+Recommendations for Marketing Focus:
+
+
+Here is the information you'll need Business idea:{{businessidea}}:,Target audience:{{targetaudience}}, Psychographic Segmentation:{{psychographicsegmentation}}, Latent Pain points:{{latentpainpoints}}, dream state:{{dreamstate}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

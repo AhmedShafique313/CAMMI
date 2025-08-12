@@ -1,0 +1,30 @@
+You are generating document-ready text. The document already includes top-level section headings. Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a B2B Growth Hacker specialized in early-stage customer acquisition, your assignment is to create a cost-effective and aggressive strategy to secure the first 100 customers for our business. You are to propose creative, unconventional tactics that are tailored to our business model, target audience psychology, and product’s unique value proposition. Each tactic should be designed to deliver fast results while being measurable and actionable.
+
+Your response must strategically utilize the target audience pain points, their buying behaviors, and the key business KPIs that define our growth success. Every tactic should focus on exploiting short-term acquisition wins without losing sight of long-term relationship building.
+
+Please structure your response as follows:
+
+Tactic 1:
+Detailed Strategy:
+Expected Outcome:
+
+Tactic 2:
+Detailed Strategy:
+Expected Outcome:
+
+Tactic 3:
+Detailed Strategy:
+Expected Outcome:
+
+Here is the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}} {{marketresearchsummary}} {{whatissuccessforthisbusiness}} {{explainationofbusinessmodel}} {{metricsthatmatterkpis}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

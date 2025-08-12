@@ -1,0 +1,31 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert Business Strategist, your task is to help us identify and define our short-term, medium-term, and long-term business goals. Based on our company's information, your objective is to craft actionable, realistic, and measurable goals that align with our overall vision and mission.
+
+Your recommendations should be strategic and consider the entirety of our business operations. They should guide us towards growth, profitability, and sustained success. Your response should be specific, concise, and ready for implementation.
+
+Please structure your response as follows:
+
+Short-Term Goals (up to 1 year): Provide a list of attainable goals that support our immediate business objectives.
+
+Medium-Term Goals (1-3 years): Identify key objectives that will facilitate our continued growth and progress over the next few years.
+
+Long-Term Goals (3-5+ years): Define ambitious but realistic goals that align with our vision for long-term success.
+
+For each set of goals, please provide a rationale and potential strategies to achieve them.
+
+Business Idea:{{businessidea}}, Market research Summary:{{marketresearchsummary}} , Mission Statement: {{missionstatement}}, Visions Statement: {{visionstatement}}, Value Proposition:{{valueproposition}}, Value Proposition Short:{{valuepropositionshort}}, Business description:{{businessdescription}}, What is success for this business:{{whatissuccessforthisbusiness}}, Explaintion of business model:{{explainationofbusinessmodel}}, Metics that matter kpis:{{metricsthatmatterkpis}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

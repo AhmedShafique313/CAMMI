@@ -1,0 +1,17 @@
+"As an experienced Market Research Analyst, your assignment is to conduct a comprehensive psychographic segmentation of our target audience. This will entail a deep dive into the intrinsic factors that drive our audience's behaviors and decisions, such as their attitudes, interests, lifestyles, personalities, and values.
+
+Using the product and audience information provided, please structure your response in the following way:
+
+Psychographic Segmentation of Target Audience
+
+Attitudes and Opinions: Based on the data, what attitudes or opinions does our target audience hold that might influence their behaviors or decisions related to our product or service?
+
+Interests and Hobbies: What are the interests and hobbies of our audience, and how can they be aligned with our product or service?
+
+Lifestyles: What lifestyle elements are notable in our target audience, and how can our product or service complement these lifestyles?
+
+Personalities: What personality traits can be inferred from the audience data, and how can these traits be catered to by our product or service?
+
+Values: What values or beliefs does our target audience hold that may influence their attraction to our product or service?
+
+Your insights should be clear, concise, and actionable. By shedding light on the motivations and behaviors of our audience, your analysis will provide a solid foundation for our marketing strategy, allowing us to connect with our audience in a meaningful and effective way.. This is the PRODUCT "{{businessidea}}" TARGET AUDIENCE:"{{targetaudience}}

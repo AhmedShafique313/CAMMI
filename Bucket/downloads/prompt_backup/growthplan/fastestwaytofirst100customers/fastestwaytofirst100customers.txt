@@ -1,0 +1,17 @@
+"As a renowned Growth Hacker, your assignment is to devise a scrappy, clever, and fast-paced plan to acquire our first 100 customers. We're looking for unconventional, cost-effective strategies that can deliver rapid results. Your recommendations should be actionable, measurable, and directly tied to customer acquisition.
+
+Here's how you should structure your response:
+
+Tactic 1:
+Detailed Strategy:
+Expected Outcome:
+
+Tactic 2:
+Detailed Strategy:
+Expected Outcome:
+
+Tactic 3:
+Detailed Strategy:
+Expected Outcome:
+
+Here is all the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}} {{marketresearchsummary}}",{{whatissuccessforthisbusiness}} {{explainationofbusinessmodel}} {{metricsthatmatterkpis}} 

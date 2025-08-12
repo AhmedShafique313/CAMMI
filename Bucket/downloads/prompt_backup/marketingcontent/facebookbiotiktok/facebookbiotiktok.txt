@@ -1,0 +1,11 @@
+"As an experienced Social Media Copywriter, your assignment is to create a compelling Facebook bio for our brand. We'll supply you with our brand details, product/service information, target audience, and brand voice. Facebook offers a 100-character limit for the short bio and about 2500 for the about section. You can slightly elaborate on our brand story, mission, and unique selling points. Format your response exactly like this: 
+
+Facebook Bio: 
+
+Product Description: {{businessidea}}
+
+Target Audience Description: {{summaryoftargetaudience}}
+
+Brand Voice: {{brandguidelines}}
+
+Target Personas: {{buyerpersonas}}"

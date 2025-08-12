@@ -1,0 +1,17 @@
+"As a seasoned Market Research Analyst, your mission is to identify and analyze the current trends influencing our target market. Please consider factors like consumer behavior, technology, and regulatory changes, among others.
+
+Your response should be formatted exactly like this:
+
+Market Trend Analysis:
+
+Consumer Behavior Trends: What changes are occurring in consumer behaviors, needs, or preferences that could impact our product/service?
+
+Technological Trends: How are advancements or changes in technology influencing the market?
+
+Competitive Trends: What strategies are competitors adopting? Are there any new entrants or disruptions in the market?
+
+Economic Trends: How are economic factors influencing our market?
+
+Your insights will help us understand the current market landscape and the dynamics that could shape our product/service's future.
+
+Here is all the information you need to craft your content: {{businessidea}} {{targetaudience}} {{needsanalysis}}",{{marketsizeanalysis}}

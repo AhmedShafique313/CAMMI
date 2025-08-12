@@ -1,0 +1,25 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a Product Marketing Strategist specialized in positioning customer-centric solutions, your task is to define the three most valuable benefits of our product/service that directly solve the pain points of our target audience. These benefits should be explicitly linked to the core features of our offering, reflecting how our solution addresses customer challenges, streamlines workflows, or delivers a measurable advantage.
+
+For each benefit, structure your response as follows:
+
+Benefit Title:
+A result-oriented statement that communicates the value delivered to the user.
+
+Explanation:
+A concise explanation of how this benefit is driven by a specific product feature and why it’s important for our target audience, considering their needs, expectations, and decision drivers.
+
+Here is the business-critical information for reference:
+Business Idea: {{businessidea}}
+Target Audience Description: {{summaryoftargetaudience}}
+Unique Selling Proposition: {{uniquesellingproposition}}
+Features: {{features}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat the given data.
+Output must be clean, formal, and ready to paste directly into a professional document.

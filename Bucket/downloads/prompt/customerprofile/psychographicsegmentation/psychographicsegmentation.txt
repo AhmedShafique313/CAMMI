@@ -1,0 +1,35 @@
+You are generating document-ready text. The document already includes top-level section headings. Never add a title or header in your response.
+
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned Market Research Analyst with expertise in B2B consumer psychology, psychographic segmentation, emotional behavior mapping, and buyer decision science, your task is to develop an in-depth psychographic segmentation of our target audience. This segmentation must align with our business idea, industry-specific challenges, and the value proposition we offer to businesses.
+
+Focus on revealing the emotional motivators, business priorities, subconscious decision triggers, professional aspirations, and psychological pain points that influence how our audience perceives and engages with our product or service in a B2B context.
+
+Structure your response using the following section labels:
+
+Attitudes and Opinions: Analyze the dominant business beliefs, operational pain points, innovation readiness, brand perception patterns, and decision-making mindsets that drive how our target audience evaluates solutions like ours.
+
+Interests and Hobbies: Identify the industry-specific interests, business efficiency pursuits, technology adoption behaviors, and personal development hobbies that align with their role and position in the purchasing process.
+
+Lifestyles: Define the professional work patterns, productivity styles, digital workflow dependencies, and collaboration habits that shape their daily operations and how our product seamlessly integrates into these lifestyle behaviors.
+
+Personalities: Describe the business leadership traits, analytical tendencies, risk profiles, and purchasing confidence levels that govern their engagement in the buying journey and relationship-building with vendors.
+
+Values: Highlight the core business values, performance expectations, sustainability commitments, and partnership standards that are critical to their selection criteria and how our product uniquely fulfills these values.
+
+This is the product: Business Idea:{{businessidea}}, Target Audience:{{targetaudience}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,5 @@
+Most Important KPI: Template Engagement Rate. Measured as the number of template downloads per active user per month. Critical for understanding user adoption and utilization of our core product offering. Informs decisions on template library expansion, user experience improvements, and marketing campaign effectiveness.
+
+Second Most Important KPI: Marketing Campaign Conversion Rate. Calculated as the percentage of leads generated from client marketing campaigns utilizing our templates that convert into paying customers. Directly tied to our value proposition of driving measurable marketing impact. Guides template design, campaign strategy recommendations, and pricing models.
+
+Third Most Important KPI: Customer Lifetime Value (CLV) to Customer Acquisition Cost (CAC) Ratio. CLV is calculated based on subscription revenue over the average customer lifespan. CAC includes all sales and marketing costs to acquire a new customer. Maintaining a CLV:CAC ratio of 3:1 or higher ensures sustainable profitability and scalability. Informs customer acquisition strategies, pricing, and resource allocation decisions.

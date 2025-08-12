@@ -1,0 +1,28 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced B2B Go-To-Market Strategist, your task is to formulate a comprehensive and actionable go-to-market (GTM) strategy that aligns with our business idea and market dynamics. Using the provided brand description, target audience insights, and business goals, your GTM strategy should outline our market entry plan, positioning approach, and growth trajectory.
+
+Please structure your response as follows:
+
+Detailed Plan:
+Expected Outcome:
+Growth Strategy:
+Detailed Plan:
+Expected Outcome:
+Potential Challenges and Solutions:
+
+Here is all the information you need to craft your content:
+Business Idea: {{businessidea}}
+Business Description: {{businessdescription}}
+What is Success for This Business: {{whatissuccessforthisbusiness}}
+Explanation of Business Model: {{explanationofbusinessmodel}}
+Metrics that Matter (KPIs): {{metricsthatmatterkpis}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

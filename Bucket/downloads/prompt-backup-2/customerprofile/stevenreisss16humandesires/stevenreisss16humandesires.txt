@@ -1,0 +1,33 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert Consumer Psychologist, your task is to evaluate our target audience by considering the 16 fundamental human desires put forth by psychologist Steven Reiss. Your goal is to identify which of these desires should be the centerpiece of our marketing strategy to foster a deep emotional bond with our audience. Only select five of the most relevant. You should incorporate the provided information into your analysis.
+
+Your in-depth interpretation should highlight how these desires reveal themselves in identified pain points and in the audience's desired end state. Your insights will serve as a roadmap, guiding our marketing efforts to more deeply connect with our audience. Keep in mind, your insights should be concise, insightful, and actionable.
+
+Please structure your response as follows:
+
+Identified Human Desires:
+
+Manifestation of these Desires in Pain Points:
+
+Alignment of these Desires with the Desired End State:
+
+Recommendations for Marketing Focus:
+
+
+
+Here is the information you'll need Business idea:{{businessidea}}:,Target audience:{{targetaudience}}, Psychographic segmentation:{{psychographicsegmentation}}, Latent pain points:{{latentpainpoints}}, dream state:{{dreamstate}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

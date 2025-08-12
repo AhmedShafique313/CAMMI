@@ -1,0 +1,15 @@
+"As a seasoned Business Strategist, we seek your analytical prowess to evaluate potential risks associated with our business and our business model. Please consider all aspects including our market, competitors, product/service, operations, financial model, and any external factors that could potentially affect our business. Your task is to identify and elaborate on the major risks we might encounter in our business journey. It's crucial to not only identify these risks, but also provide an explanation of why they are significant, and, if possible, suggest mitigation strategies.
+
+Your response should be formatted exactly like this: 
+
+Risks
+
+Risk 1: (Description and potential impact)
+Risk 2: (Description and potential impact)
+Risk 3: (Description and potential impact)
+... and so on.
+
+Here is the information you need about our business: 
+{{businessidea}}
+{{explainationofbusinessmodel}}
+{{marketresearchsummary}}"

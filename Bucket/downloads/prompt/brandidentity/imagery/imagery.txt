@@ -1,0 +1,49 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+
+If the content includes bullets, keep each bullet on a separate new line. Do not restate, rephrase, or duplicate any information already provided here (e.g., business idea, mission, tagline, or other headings).
+
+As a Visual Brand Strategist with expertise in Creative Direction, Brand Storytelling, and Audience-Centric Visual Systems, your task is to define the ideal brand imagery guidelines that will visually represent the brand’s identity across all forms of communication. Based on the provided brand information, suggest:
+
+The types of visual themes, illustration styles, and infographic designs that effectively communicate the brand’s story and unique positioning.
+
+The appropriate photography directions—such as people-centric imagery, abstract visuals, product-focused compositions, or environment-based shots—that align with the brand’s tone and audience expectations.
+
+The level of visual sophistication, vibrancy, minimalism, or boldness necessary to create a distinctive presence in the industry.
+
+Ensure that the imagery recommendations:
+
+Establish a consistent and cohesive visual identity system across digital and offline touchpoints.
+
+Enhance brand recognition, emotional connection, and audience engagement.
+
+Reflect the target audience’s preferences and aspirations, ensuring relevance and resonance.
+
+Provide a competitive visual differentiation while remaining aligned with the brand’s industry standards.
+
+Here is all the information you need to craft your content:
+Business Idea: {{businessidea}}
+Summary of Target Audience: {{summaryoftargetaudience}}
+Mission Statement: {{missionstatement}}
+Vision Statement: {{visionstatement}}
+Value Proposition: {{valueproposition}}
+Brand Name: {{brandname}}
+Tagline: {{tagline}}
+Unique Selling Proposition: {{uniquesellingproposition}}
+Logo: {{logo}}
+Colors: {{colors}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders or example text.
+
+Ensure the output is clean, formal, and directly ready to paste into a professional Brand Guidelines document.
+
+The suggestions must align with current visual branding trends, ensuring strategic consistency and audience relevance.

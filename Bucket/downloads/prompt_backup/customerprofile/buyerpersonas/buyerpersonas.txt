@@ -1,0 +1,17 @@
+"As an expert Market Research Analyst, your task is to develop three customer personas using the provided Target Audience information, identified pain points, and psychological analysis. These personas should represent different segments within our target audience and provide a deep understanding of who our customers are and what drives them.
+
+For each persona, please include:
+
+Demographic Profile: Age, gender, income level, education, marital status, occupation, etc.
+Psychographic Characteristics: Interests, attitudes, values, hobbies, lifestyle, and personality traits.
+Needs and Pain Points: What are their challenges or problems that our product or service can address?
+Motivations and Goals: What do they want to achieve in the short term and long term?
+Media Consumption Habits: What channels do they use to gather information?
+Preferred Communication Channels: How do they prefer to be contacted?
+Brands They Resonate With: Which brands appeal to them and why?
+Leisure Activities: How do they spend their free time outside of work?
+Celebrities or Notable People They Resonate With: Who are the public figures that influence or inspire them?
+
+Please provide a detailed, yet succinct, profile for each persona and give each a memorable name for easy reference. This task requires a blend of analytical rigor and creative thinking to transform the raw data into relatable, humanized customer personas.
+
+Information you'll need: {{businessidea}},{{summaryoftargetaudience}}"

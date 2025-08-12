@@ -1,0 +1,19 @@
+"As an experienced Landing Page Copywriter, your task is to develop persuasive copy for our landing page that is clear and dedicated to our target personas. The copy should clearly convey our offer's value, demonstrate how it addresses the audience’s needs or pain points, and encourage immediate action. Please ensure the tone and style align with our brand voice.
+
+Organize your response like this:
+
+Headline: 
+Subheadline:
+Introduction/Brief Description:
+Benefits/Features:
+Call to Action:
+
+For this task, consider the following information:
+
+Product Description: {{businessidea}}
+
+Target Audience Description:{{summaryoftargetaudience}}
+
+Brand Voice: {{brandguidelines}}
+
+Target Personas:", {{buyerpersonas}}

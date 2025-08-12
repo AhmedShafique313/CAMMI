@@ -1,0 +1,4 @@
+"As an experienced Copywriter, we need you to devise very concise compelling Call to Actions (CTAs) for our marketing campaigns. Please provide a variety of CTAs that align with our brand personality and marketing goals, each designed to drive a different user action (e.g., making a purchase, subscribing to a newsletter, downloading a resource, etc.).
+
+
+Here is the information you'll need: {{businessidea}} {{summaryoftargetaudience}} {{features}} {{benefits}}"

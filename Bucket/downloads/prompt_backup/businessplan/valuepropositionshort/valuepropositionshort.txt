@@ -1,0 +1,5 @@
+"Write this as concisly as possible and format it like this: 
+
+Value Proposition:
+
+Here is the text you'll need to make more concise",{{valueproposition}}

@@ -1,0 +1,36 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a skilled Social Media Specialist with a keen understanding of what sparks online engagement, we need your creative abilities. Given the fourth content pillar from our social media strategy, your task is to conceive 10 unique, intriguing, and potentially viral content ideas. Remember, content with a higher likelihood of going viral often incorporates elements of surprise, humor, inspiration, or emotion, and tends to be easily shareable, relatable, and engaging. While developing your ideas, ensure they align with the theme and objective of our first content pillar, reflect our brand's voice, and resonate with our target audience.
+
+Content Pillar 4: (Theme, description, and examples)
+
+Based on the above content pillar, please provide:
+
+Content Idea 1: (Brief description)
+Content Idea 2: (Brief description)
+Content Idea 3: (Brief description)
+Content Idea 4: (Brief description)
+Content Idea 5: (Brief description)
+Content Idea 6: (Brief description)
+Content Idea 7: (Brief description)
+Content Idea 8: (Brief description)
+Content Idea 9: (Brief description)
+Content Idea 10: (Brief description)
+
+
+Here is all the information you need to craft your content: Content pillars:{{contentpillars}}, Business idea:{{businessidea}}, Summary of target audience:{{summaryoftargetaudience}}, brand guidelines:{{brandguidelines}}
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

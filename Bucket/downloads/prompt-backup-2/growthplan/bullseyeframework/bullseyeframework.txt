@@ -1,0 +1,28 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert in growth marketing, your mission is to apply the Bullseye Framework to our business. Your comprehensive plan should include a thoughtful exploration of potential marketing channels, prioritizing the ones that align best with our unique context. From there, identify key success metrics for each channel, set up hypotheses to test, and propose a budget allocation for the experimental phase. The objective is to identify the highest potential channels for growth, focusing on both short-term wins and long-term viability.
+
+Please structure your response as follows:
+
+Potential Marketing Channels:
+Rationale for Prioritization:
+Key Success Metrics:
+Hypotheses to Test:
+Budget Allocation:
+
+Here is the required information about our product/service, our defined success metrics: Business idea:{{businessidea}} ,What is the success for this business:{{whatissuccessforthisbusiness}}, Explaination ofbusiness model:{{explainationofbusinessmodel}}, Metrics that matter kpis:{{metricsthatmatterkpis}}, Core prblem this business solves:{{coreproblemsthisbusinesssolves}}, Business goals:{{businessgoals}}
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

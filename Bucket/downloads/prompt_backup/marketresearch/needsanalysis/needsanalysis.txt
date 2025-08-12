@@ -1,0 +1,19 @@
+"As an experienced Market Research Analyst, your task is to conduct a thorough needs analysis for our proposed product/service. The goal is to understand the specific needs or problems that our offering will address. This analysis will help determine whether there's a real demand for our product/service in the marketplace.
+
+Format your response exactly like this:
+
+Needs Analysis: 
+
+Customer Needs: Based on the provided product/service description, what specific customer needs does this offering address?
+
+Existing Solutions: What are the current solutions in the market? How effectively do they address these needs?
+
+Gaps in Current Solutions: Where do the existing solutions fall short? What needs are not being met adequately?
+
+Proposed Product/Service Value Proposition: How does our proposed product/service fill these gaps? What distinct value does it offer to customers?
+
+Your response should be concise, insightful, and ready for action. Your analysis will guide us in refining our product/service concept and positioning it effectively in the market.
+
+HERE IS INFORMATION YOU'll NEED 
+
+{{businessidea}}",{{valuepropositionshort}}

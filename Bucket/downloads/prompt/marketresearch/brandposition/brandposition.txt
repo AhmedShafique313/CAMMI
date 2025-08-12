@@ -1,0 +1,30 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Brand Strategist, we require your expertise in crafting a precisely aligned and compelling brand positioning strategy for our business idea. Your task is to articulate our brand’s unique place in the market, demonstrate its relevance to our target audience’s specific needs, and highlight how we distinctly differentiate from direct competitors.
+
+Your response must be insightful and actionable, designed to guide our marketing messaging, product development, and overall brand perception. Every element of this positioning must reflect a clear understanding of our business idea, audience pain points, and competitive landscape.
+
+Please structure your response in the following format:
+
+Target Audience Definition: Clearly define who our ideal customers are, including their specific pain points, aspirations, and what they seek from a solution like ours.
+
+Market Definition: Specify the exact market in which we operate. Highlight the market dynamics, and how our brand uniquely positions itself within this space.
+
+Brand Promise: Articulate the unique core benefit or value proposition that our brand promises to deliver to our audience, ensuring it addresses their key needs better than alternatives.
+
+Reason to Believe: Provide compelling proof points that validate why our audience should trust our brand promise. This could include product/service features, differentiators, expertise, success metrics, or credibility builders.
+
+Here is the information you need:
+Business Idea: {{businessidea}}
+Summary of Target Audience: {{summaryoftargetaudience}}
+Competitive Analysis: {{competitiveanalysis}}
+What is Success for this Business: {{whatissuccessforthisbusiness}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

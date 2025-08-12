@@ -1,3 +1,4 @@
 hyperbrowser
 python-dotenv
 groq
+boto3

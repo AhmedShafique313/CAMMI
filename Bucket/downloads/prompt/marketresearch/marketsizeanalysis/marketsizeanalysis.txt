@@ -1,0 +1,30 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a proficient Market Research Analyst, your task is to estimate the potential market size for our proposed business idea. The evaluation should align with our business idea, audience scope, and realistic business goals. Your analysis should consider total market potential, accessible segments, and a realistic share we can capture in the short to medium term.
+
+Please format your response exactly like this:
+
+Total Addressable Market (TAM):
+Estimate the full revenue potential assuming 100% market penetration across all possible customer segments. Base this on the total number of customers needing our solution and average revenue per customer. Provide a brief rationale behind your estimation.
+
+Serviceable Available Market (SAM):
+Define the segment of the TAM that we can realistically reach based on operational scope, geographical reach, and distribution capabilities. Narrow down to reachable customer segments that fit our business model.
+
+Serviceable Obtainable Market (SOM):
+Provide a realistic estimation of the market share we can secure in the initial stages considering competition, current resources, and market entry barriers. This should reflect a conservative, achievable revenue figure.
+
+Your detailed insights will guide strategic planning and help forecast realistic growth potential for our business.
+
+Here is the information you’ll need:
+Business Idea: {{businessidea}}
+Target Audience: {{targetaudience}}
+Need Analysis: {{needsanalysis}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

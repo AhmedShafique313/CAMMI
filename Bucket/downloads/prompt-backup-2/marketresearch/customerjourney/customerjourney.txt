@@ -1,0 +1,53 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+Your expertise as a Customer Experience Specialist is required for this task. Given that we're launching a new brand, we're aiming to design an optimal customer journey map that adheres to best practices and ensures a superior customer experience.
+
+This comprehensive journey should chart out the entire customer lifecycle, starting from the point of discovery of our product/service to engagement and beyond. Keep in mind that we are looking to understand not only the stages a customer goes through but also their thoughts, feelings, and actions at each stage.
+
+Your customer journey map should consider the following:
+
+Awareness: How might a potential customer discover us? What channels, methods, or incentives might bring our brand to their attention?
+Consideration: Once aware, how would a potential customer evaluate our product/service against others? What information or features would they seek?
+Decision: What factors might influence the decision-making process? How can we ensure our brand is the chosen one?
+Engagement: Once a decision has been made to use our product/service, how might a customer interact with us? What would their experience look like?
+Post-Purchase: After the purchase, how would we maintain engagement and turn a customer into a promoter?
+Include potential touchpoints, channels, emotions, and pain points in each stage.
+Also, provide suggestions for opportunities to delight the customer at each step, improving their overall experience and enhancing their loyalty.
+
+Please structure your response as follows:
+
+Awareness:
+Consideration:
+Decision:
+Engagement:
+Post-Purchase:
+Touchpoints, Channels, Emotions, and Pain Points in Each Stage:
+
+Awareness:
+Consideration:
+Decision:
+Engagement:
+Post-Purchase:
+Opportunities to Delight Customers at Each Stage:
+
+Awareness:
+Consideration:
+Decision:
+Engagement:
+Post-Purchase:
+
+Here's the information you'll need about our product/service, target audience, and brand positioning Business idea:{{businessidea}}, Summary of target audience:{{summaryoftargetaudience}}, Competitive Analysis: {{competitiveanalysis}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

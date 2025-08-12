@@ -1,0 +1,13 @@
+"As an experienced Go-To-Market Strategist, you are tasked with formulating a comprehensive go-to-market (GTM) strategy for our brand. With the provided brand description, target audience analysis, and market analysis in mind, your GTM strategy should detail our market entry and growth plan.
+
+Please structure your response as follows:
+
+Market Entry Strategy:
+Detailed Plan:
+Expected Outcome:
+Growth Strategy:
+Detailed Plan:
+Expected Outcome:
+Potential Challenges and Solutions:
+
+Here is all the information you need to craft your content: {{businessidea}}",{{businessdescription}} {{whatissuccessforthisbusiness}} {{explainationofbusinessmodel}} {{metricsthatmatterkpis}}

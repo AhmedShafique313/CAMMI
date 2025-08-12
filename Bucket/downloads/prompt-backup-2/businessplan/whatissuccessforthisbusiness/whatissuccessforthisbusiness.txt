@@ -1,0 +1,18 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned business strategist, you are tasked with defining what success looks like for our product/service. Based on the detailed description of our product/service provided, please articulate a clear, measurable definition of success. Your definition should consider key how revenue is made, performance indicators 
+(KPIs) that actually matter for our business to grow revenue. Be as specific as possible about the metrics we should focus on and the benchmarks we should aim to achieve. Your insights will guide our strategy and measure our progress effectively. Here is the product/service information you'll need:: Business Idea:{{businessidea}} ,Mission Statement:{{missionstatement}}, Vision statement:{{visionstatement}}, value Proposition:{{valueproposition}}, Value proposition short:{{valuepropositionshort}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,21 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Brand Strategist with a focus on content, your task is to define our brand's voice and tone. This voice will be used in all our communications and should align with our brand's mission, values, unique selling proposition, 
+and resonate with our target audience.Please define our brand voice attributes (e.g., professional, friendly, informative, playful, etc.) and describe how these attributes align with our brand identity. In addition, define the tone of our 
+brand communication in different situations - for instance, how should our tone change when communicating about a new product launch, responding to a customer complaint, a social media post on linkedin, a blog post title, or making a company
+announcement? Please provide examples of phrases or sentences demonstrating this voice and tone in action.. Here is all the information you need to craft your content: Business Idea:{{businessidea}}, Summary of target Audience:{{summaryoftargetaudience}}, Missions Statement:{{missionstatement}}, Visions Statement:{{visionstatement}}, 
+Brand Name:{{brandname}}, Tagline:{{tagline}}, Unique Selling Proposition:{{uniquesellingproposition}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

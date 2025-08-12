@@ -1,0 +1,23 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a proficient Marketing Analyst, your task is to define the Performance Metrics and Key Performance Indicators (KPIs) we will use to measure the success of our marketing plan. This could involve metrics related to brand awareness, website traffic, lead generation, customer acquisition, sales, customer retention, ROI, etc. For each metric:
+
+Describe the metric and explain why it's important.
+Explain how the metric will be measured and tracked.
+Define the target value or range for each metric.
+
+Your metrics will enable us to evaluate our marketing performance, make data-driven decisions, and continually optimize our marketing efforts. Here is all the information you need to craft your content: Business Idea:{{businessidea}}, Summary of Target audience: {{summaryoftargetaudience}} , Marketing Objectives:{{marketingobjectives}}, Marketing Stratagies:{{marketingstrategies}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

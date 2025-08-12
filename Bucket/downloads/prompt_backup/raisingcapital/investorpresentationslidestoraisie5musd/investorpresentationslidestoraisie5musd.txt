@@ -1,0 +1,25 @@
+"As a seasoned Business Strategist with a talent for persuasive presentations, we're calling upon your expertise to curate an impactful Investor Presentation. Despite our business being in the early stages and financials not yet solidified, our goal is to secure a $5 million USD in funding. Your task is to compellingly convey our business's potential and vision, using engaging narratives, preliminary data, and appealing visuals that resonate with potential investors. Please keep in mind that the investor deck should be highly detailed and cover critical aspects of our business, including our vision, team, product/service, target audience, market research (highlighting opportunities and threats), tentative business model, financial assumptions, and a clear use of funds projection. Ensure that the presentation aligns with our brand voice and convincingly communicates our value proposition. The goal is to assure potential investors that our business presents an incredible, viable, scalable, and lucrative opportunity.
+
+Please format your response exactly like this:
+
+Investor Presentation
+Title Slide: (Company name, logo, tagline, presenter's name, and date)
+Vision: (Company vision and intended impact)
+Team:
+Product/Service: (Description and USPs of our product/service)
+Target Audience: (Description of our target market and their needs)
+Market Research: (Insights from our research, including opportunities and threats)
+Business Model: (Preliminary outline of how we plan to generate revenue)
+Financial Projections: (Financial assumptions and estimates based on our business model)
+Use of Funds: (Detailed projection of how we plan to utilize the investment)
+Call to Action: (Final appeal to investors for funding and next steps)
+
+
+Here are the specifics about our business:
+{{businessidea}}
+{{explainationofbusinessmodel}}
+{{marketresearchsummary}}
+{{uniquesellingproposition1}}
+{{gotomarketstrategy}}
+{{whyavcwouldwanttoinvest}}
+{{voiceandtone}}" {{missionstatement}} {{visionstatement}} {{valueproposition}} {{valuepropositionshort}} {{businessdescription}} {{whatissuccessforthisbusiness}} {{explainationofbusinessmodel}}

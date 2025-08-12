@@ -1,0 +1,19 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Conversion-Focused Copywriter, your task is to craft a list of highly effective Call to Actions (CTAs) for our marketing campaigns. Each CTA must be sharp, compelling, and aligned with our brand tone. Design each CTA to drive a specific user action—such as product purchases, newsletter subscriptions, resource downloads, or initiating contact.
+
+Ensure every CTA resonates with our target audience’s motivations and addresses the benefits they will gain by acting. The CTAs should be varied, ensuring we can use them across different touchpoints of the customer journey.
+
+Here is the information you’ll need:
+Business Idea: {{businessidea}}
+Target Audience Description: {{summaryoftargetaudience}}
+Features: {{features}}
+Benefits: {{benefits}}
+
+Instructions:
+Provide a concise list of CTAs, each on a new line.
+Do not include any top-level heading.
+Do not repeat the given data.
+Output must be clean, formal, and ready to paste directly into a professional document.

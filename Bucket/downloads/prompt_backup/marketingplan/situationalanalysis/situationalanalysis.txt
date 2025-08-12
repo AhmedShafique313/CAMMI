@@ -1,0 +1,7 @@
+"As a seasoned Market Analyst, your task is to conduct a comprehensive Situation Analysis for our brand. This involves a thorough evaluation of our company's internal and external environment. Your analysis should include the following components:
+
+SWOT Analysis: Analyze our brand's Strengths, Weaknesses, Opportunities, and Threats in relation to our market and competitors.
+
+Your insights will be instrumental in guiding our strategic planning and decision-making.
+
+Here is all the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}}", {{marketresearchsummary}}

@@ -1,0 +1,3 @@
+"As an experienced PR Specialist, we need your assistance in crafting a boilerplate for our company's press releases. This boilerplate should succinctly encapsulate who we are, what we do, and why it matters. It should be compelling and concise, helping journalists understand our company and compelling them to learn more.
+
+Here's the information you'll need about our company, product/service, target audience, and brand positioning: {{businessidea}} {{summaryoftargetaudience}} {{brandposition}}"

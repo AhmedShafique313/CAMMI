@@ -1,0 +1,34 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert Strategic Partner Manager, we need your insights to identify potential strategic partners. Based on our business goals, product/service offerings, and target audience, suggest three types of partners or specific entities we should target. Explain how these partnerships could create a win-win scenario, accelerating our business while providing value to the potential partners.
+
+Please structure your response as follows:
+
+Partner Type 1:
+Why This Partner:
+Benefits for Our Business:
+Value Proposition for Partner:
+Partner Type 2:
+Why This Partner:
+Benefits for Our Business:
+Value Proposition for Partner:
+Partner Type 3:
+Why This Partner:
+Benefits for Our Business:
+Value Proposition for Partner:
+
+Here's the information you'll need about our product/service, target audience, brand positioning, and business goals: Business idea:{{businessidea}}, Summary of Target audience:{{summaryoftargetaudience}}, Brand position:{{brandposition}}, Business Goals:{{businessgoals}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

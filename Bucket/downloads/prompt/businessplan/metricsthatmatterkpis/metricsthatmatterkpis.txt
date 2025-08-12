@@ -1,0 +1,31 @@
+You are generating document-ready text. The document already includes top-level section headings. Thats why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an Expert in Performance Measurement and Strategic KPI Development, your task is to identify the three most essential Key Performance Indicators (KPIs) that are strictly aligned with our specific business idea, success criteria, and business model. These KPIs must reflect the core drivers of performance for our product/service and serve as accurate measures of our success.
+
+Your response must directly connect each KPI to our business offering, value proposition, and operational goals. For each KPI, explain how it should be measured, how it relates to our definition of success, and how it will guide strategic and operational decision-making.
+
+Format your response exactly like this:
+
+Most Important KPI: Clearly name the KPI. Explain how it is measured, why it is critical for our business idea, and how it informs decisions.
+
+Second Most Important KPI: Clearly name the KPI. Explain how it is measured, why it is critical for our business idea, and how it informs decisions.
+
+Third Most Important KPI: Clearly name the KPI. Explain how it is measured, why it is critical for our business idea, and how it informs decisions.
+
+Your recommendations will form the basis of our performance monitoring and business optimization strategy.
+
+Here is the information about our product/service, our defined success, and business model that must guide your analysis: Business Idea:{{businessidea}}, What is Success for this Business:{{whatissuccessforthisbusiness}}, Explanation of Business Model:{{explanationofbusinessmodel}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

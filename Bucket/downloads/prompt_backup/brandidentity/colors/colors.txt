@@ -1,0 +1,13 @@
+"As an experienced Brand Strategist with a focus on visual design, your task is to propose a color palette that would best represent our brand. The color palette should align with our brand's values, target audience, and the mood we want to convey. Please ensure that it stands out from our competitors while remaining appropriate for our industry.
+
+Consider the following details about our brand in your recommendations:
+
+Organization Information: {{businessidea}}
+Brand Name: {{brandname}}
+Brand's mission: {{missionstatement}}
+Brand's values: {{visionstatement}}
+Logo: {{logo}}
+Target audience: {{summaryoftargetaudience}}
+
+
+In your response, please suggest a primary color palette, along with secondary and neutral colors. For each color, include the HEX, RGB, and CMYK codes, and explain the psychology behind each color choice and how they represent the brand's identity and values."

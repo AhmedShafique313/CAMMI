@@ -1,0 +1,25 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert Consumer Psychologist, your task is to identify the Desired End State of our target audience. Based on the provided information, analyze and elucidate the desired end state the target audience aspires to reach. Your response should deeply probe our audience's aspirations like their hopes, dreams, and desires. Their motivations like why they want to achieve the dream state and what's driving them. Their emotional rewards like how achieving the dream state will make them feel.  Your insights will guide and assist us in better tailoring our product or service to help our users reach their desired state. Format your response like this: 
+
+Aspirations: 
+
+Motivations: 
+
+Emotional State: 
+
+Here is the information you need for your analysis: Business idea:{{businessidea}}:,Target audience:{{targetaudience}},Psychographics segmentation:{{psychographicsegmentation}}, Latent Pain points:{{latentpainpoints}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

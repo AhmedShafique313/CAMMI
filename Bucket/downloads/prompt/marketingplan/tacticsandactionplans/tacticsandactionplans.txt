@@ -1,0 +1,30 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Marketing Specialist, your task is to develop laser-focused, actionable marketing tactics that are fully aligned with our business idea, unique selling proposition (USP), and marketing objectives. These tactics should be practical, creative, and ranked based on their immediate potential for results. Ensure each tactic is crafted with a deep understanding of our target audience's needs, preferences, and the market dynamics specific to our business.
+
+For every tactic, provide details in the following structure:
+
+Objective: Clearly specify the precise marketing goal this tactic will accomplish, ensuring it is tied to our business objectives.
+
+Audience: Define which segment of our target audience this tactic is crafted for, and why it’s relevant to them.
+
+Action Steps: Outline the exact steps needed to implement the tactic, including resources, tools, or platforms specific to our business model.
+
+Measurement: Explain how we will measure the success of this tactic using concrete KPIs, ensuring each metric reflects tangible business impact.
+
+Rank: Evaluate and rank each tactic based on its expected impact and ease of execution, with 1 being the most effective and feasible.
+
+Here is the information you need to craft your content:
+Business Idea: {{businessidea}}
+Target Audience Details: {{summaryoftargetaudience}}
+USP: {{uniquesellingproposition}}
+Marketing Objectives: {{marketingobjectives}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

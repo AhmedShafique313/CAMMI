@@ -1,0 +1,21 @@
+You are generating document-ready text. The document already includes top-level section headings. Thats why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an Experienced B2B Business Strategist specializing in crafting purpose-driven mission statements, your task is to develop a clear and concise mission statement that defines our organization's purpose, values, and core objectives. The mission must reflect our commitment to delivering unique value to our customers, align with our overall vision, and resonate with the psychological needs and expectations of our B2B target audience.
+
+Your statement should be succinct, authentic, and strictly aligned with our business idea and audience insights. It will serve as a foundational element for our brand positioning and strategic direction.
+
+Here is all the information you need to craft your content: Business Idea:{{businessidea}}, Summary of Psychological Insights:{{summaryofpsychologicalinsights}}, Summary of Target Audience:{{summaryoftargetaudience}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

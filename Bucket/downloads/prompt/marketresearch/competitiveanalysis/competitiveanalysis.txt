@@ -1,0 +1,29 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Market Research Analyst, your task is to conduct a competitive analysis specifically aligned with our business idea and target market. The objective is to identify key direct competitors, analyze their product/service offerings, and assess their strengths, weaknesses, and market strategies that may impact our positioning.
+
+Your analysis must be actionable and will help us pinpoint competitive gaps, uncover opportunities, and craft informed strategic moves.
+
+Structure your response exactly like this:
+
+Competitor Identification: Identify the largest direct competitors operating within our specific market. Mention their key products/services that directly compete with ours and highlight their current market presence.
+
+Product/Service Comparison: Analyze how these competitors’ offerings compare to ours in terms of features, pricing, customer experience, innovation, and value proposition. Clearly indicate where we stand stronger and where competitors may have an edge.
+
+Strategic Positioning: Describe how each competitor is positioned in the market. Highlight their unique selling propositions (USPs), target segments, brand perception, and key strategies they use to attract and retain customers.
+
+Here is all the information you need:
+Business Idea: {{businessidea}}
+Target Audience: {{targetaudience}}
+Need Analysis: {{needsanalysis}}
+Market Size Analysis: {{marketsizeanalysis}}
+Market Trend Analysis: {{markettrendanalysis}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

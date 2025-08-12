@@ -1,0 +1,5 @@
+"As a seasoned Product Analyst, your task is create a list of 3 core features that our product/service should have to achieve our mission. You will need to think creatively and thoughtfully and consider the product, our target audience and their goals. Features refer to specific functions that a product/service offers its customers. Your list must include 3 specific features that our customers would want when they use our product or service. For each feature, provide a brief explanation of what it does and its relevance to the value we provide customers. Format your response exactly like this: 
+
+Features: 
+
+Here is the information you'll need: {{businessidea}} {{summaryoftargetaudience}} {{missionstatement}} {{visionstatement}} {{uniquesellingproposition}}"

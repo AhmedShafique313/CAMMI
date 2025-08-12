@@ -1,0 +1,1 @@
+"As an experienced Market Research Assistant, your task is to provide a concise and actional Marketing Research Report based on the information provided:", {{needsanalysis}} {{marketsizeanalysis}} {{markettrendanalysis}} {{competitiveanalysis}}

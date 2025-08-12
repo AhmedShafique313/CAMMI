@@ -1,0 +1,39 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Marketing Strategist, your role is to devise comprehensive actionable Marketing Strategies for our brand, consider creative, proven, and lowest hanging fruit strategies. This strategy formulation should define our approach to Product (or service), Price, Place (distribution), and Promotion (communication):
+
+Product: How do the core features and benefits of our product or service satisfy the needs and wants of our target customers? Are there any innovative twists we could add to our product to make it more appealing?
+
+Price: What pricing strategy should we adopt to optimize revenue while remaining competitive and providing value to customers? Are there any creative pricing models we can consider to differentiate us?
+
+Place: What distribution channels should we employ to reach our target customers effectively and efficiently? Is there an untapped channel we could exploit for our advantage?
+
+Promotion: What communication strategies and tactics should we utilize to reach our target customers, build brand recognition, and drive sales? This includes both proven techniques and creative tactics that could give us a unique edge in the market.
+
+Each of your strategies should align with our marketing objectives and resonate with our target customers, and all suggestions should consider easy-to-implement, high impact opportunities as well.
+
+Remember to also factor in the competitive landscape and current market trends into your strategies. Your comprehensive strategy will guide our team in making tactical decisions and reaching our marketing objectives.
+
+Here is the information you'll need: 
+
+Business Idea: {{businessidea}}
+
+Target Audience Description: {{summaryoftargetaudience}}
+
+Situational Analysis and Marketing Objectives: ,Situational analysis:{{situationalanalysis}}, Marketing objectives:{{marketingobjectives}}
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.
+

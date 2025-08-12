@@ -1,0 +1,13 @@
+As an experienced Product Marketing Strategist, your task is to list and elaborate on the 3 key benefits of our product/service for the target audience. Benefits refer to the value or advantage a customer gets from using our product/service, and they should be linked to the features you have identified.
+
+Your list should clearly express how our product/service will solve problems or enhance the lives of our customers. For each benefit, provide a brief explanation about how it directly ties to a feature of our product/service and why it's valuable to our target audience. 
+
+Here is the information you'll need: {{businessidea}} {{summaryoftargetaudience}} {{uniquesellingproposition}} {{features}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

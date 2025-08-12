@@ -1,0 +1,19 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced business model analyst, your task is to create a comprehensive business model for our product/service. Using the product/service details provided, outline a business model that includes our potential revenue streams, cost structure, key resources, customer segments, 
+and unique value propositions. Your analysis should also consider the potential scalability and sustainability of the proposed model. Your insights will help shape our strategic planning and operational decisions. Here is the product/service information you'll need: Business Idea:{{businessidea}} ,
+Mission Statement:{{missionstatement}}, Vision Statement:{{visionstatement}}, Value Proposition:{{valueproposition}}, Value proposition short:{{valuepropositionshort}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

@@ -1,0 +1,19 @@
+You are generating document-ready text. The document already includes top-level section headings. Thats why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a highly skilled Copywriter specializing in business storytelling and audience engagement, your task is to craft a compelling and impactful business description. Write a concise summary that clearly communicates the essence of our company, showcases our core offerings, and highlights what makes us distinctly superior to competitors. This description must be engaging, memorable, and easily understood by our target audience, ensuring it conveys our unique value proposition in a powerful and persuasive manner.
+
+Here is all the information you need to craft your content: Business Idea:{{businessidea}}, Summary of Target Audience:{{summaryoftargetaudience}}, Mission Statement:{{missionstatement}}, Vision Statement:{{visionstatement}}, Value Proposition:{{valueproposition}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

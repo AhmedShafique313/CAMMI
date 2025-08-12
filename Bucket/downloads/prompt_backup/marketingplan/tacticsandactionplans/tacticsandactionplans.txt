@@ -1,0 +1,22 @@
+"As an experienced Marketing Specialist, your task is to develop marketing tactics that align with our core marketing objectives. These tactics should be clever, creative, focused on immediate results, and ranked. Each tactic should clearly specify the following:
+
+Objective: What specific goal is this tactic aiming to achieve? 
+
+Audience: Who is the primary target of this tactic? Is it the entire target market or a specific segment?
+
+Action Steps: What steps need to be taken to implement this tactic? Detail the process and any resources or tools that would be required.
+
+Measurement: How will the success of this tactic be measured? Specify the key performance indicators (KPIs) that will be used to assess the effectiveness of the tactic.
+
+Rank: How does this tactic stack up against the others in terms of potential impact and ease of implementation? Rank each tactic from best (1) to worst.
+
+
+Here is the information you'll need: 
+
+Product Description: {{businessidea}}
+
+Target Audience Details: {{summaryoftargetaudience}}
+
+USP: {{uniquesellingproposition}}
+
+Marketing Objectives:",{{marketingobjectives}}

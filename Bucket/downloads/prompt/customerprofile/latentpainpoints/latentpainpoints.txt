@@ -1,0 +1,31 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Consumer Psychologist, your task is to identify the latent pain points of our target audience, fully aligned with our business idea and the unique context of our product or service. These are hidden needs or problems that the audience might not explicitly express but significantly affect their decision-making and behaviors. Once addressed, these insights will create meaningful differentiation and value for our offering.
+
+Analyze the provided product and audience information to uncover these underlying challenges. Your goal is to surface pain points that influence the audience’s purchasing behavior but may remain unspoken or subconscious, impacting their journey towards choosing our solution.
+
+Please structure your response in the following way:
+
+Potential Latent Pain Points: What unspoken challenges, frustrations, or unmet needs are the audience likely experiencing, directly related to our business idea?
+
+Implications of these Pain Points: How do these hidden needs shape the audience’s purchasing behavior, decision criteria, emotional triggers, and interactions with our product or service?
+
+Ensure your insights are practical, sharply aligned with our business idea, and ready for immediate application in strategy and messaging.
+
+Product/Service: 
+Business Idea:{{businessidea}}
+Target Audience:{{targetaudience}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

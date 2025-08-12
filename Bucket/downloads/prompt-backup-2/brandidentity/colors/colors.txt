@@ -1,0 +1,28 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Brand Strategist with a focus on visual design, your task is to propose a color palette that would best represent our brand. The color palette should align with our brand's values, target audience, and the mood we want to convey. Please ensure that it stands out from our competitors while remaining appropriate for our industry.
+
+Consider the following details about our brand in your recommendations:
+Business Idea: {{businessidea}}
+Brand Name: {{brandname}}
+Brand's mission: {{missionstatement}}
+Brand's values: {{visionstatement}}
+Logo: {{logo}}
+Target audience: {{summaryoftargetaudience}}
+
+
+In your response, please suggest a primary color palette, along with secondary and neutral colors. For each color, include the HEX, RGB, and CMYK codes, and explain the psychology behind each color choice and how they represent the brand's identity and values.
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

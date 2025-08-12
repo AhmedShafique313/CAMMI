@@ -1,0 +1,22 @@
+"As a marketing expert, your job is to figure out who would probably be most interested in a specific product or service, based on a short description. Please give a brief answer that includes the most likely characteristics of the customers. This should include things like their age, gender, how much money they make, what they're interested in, their habits, and what's important to them. This should all be related to the product and how it's meant to be used. Format your response exactly like this: 
+
+Target Audience for [Instert Product or Service]
+
+Target Audience Description: 
+
+Personality Attributes:
+
+Age: 
+
+Income: 
+
+Interests: 
+
+Values: 
+
+
+
+
+
+
+This is the PRODUCT or SERVICE:", {{businessidea}}

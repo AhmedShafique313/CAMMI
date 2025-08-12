@@ -1,0 +1,34 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Marketing Strategist, your task is to create an irresistible offer for our product/service. An irresistible offer is not just about providing a discount or bonus. It's about crafting a compelling and comprehensive package that's so aligned with the customer's desires, needs, and preferences, that it becomes nearly impossible to resist. The goal is to make our target audience feel like they're getting tremendous value that they can't get anywhere else.
+
+In crafting this offer you will need to consider our offering, the actual costs to the client, and the call to action. Please format your response exactly like this:
+
+
+Unique Value Proposition: Concisely articulate the unique benefits our product/service provides and how does it solve the customer's problem in a way no other product or service can?
+
+Bonus Value: What additional value can we offer that enhances the primary value proposition? Could it be a free add-on service, an extended warranty, or a complementary product? Be creative. 
+
+Urgency and Scarcity: How can we create a sense of urgency or scarcity to encourage immediate action? Could we offer a limited-time discount, a bonus for the first few buyers, or highlight limited stock?
+
+Risk Reversal: How can we alleviate or reverse the perceived risks associated with the opt-in? Consider offering a guarantee, a bonus, or highlighting exceptional customer service.
+
+Clear and Compelling Call-To-Action (CTA): Clearly indicate what action the customer should take next and why it's in their best interest to do so. The CTA should be simple, straightforward, and emphasize the benefits the customer will receive.
+
+Your proposed offer should align with our brand values, resonate with our target audience's needs and desires, and be so enticing that it converts prospects into customers. Please provide a detailed breakdown of each element of the offer and the reasoning behind your choices.
+
+Here is the information you'll need: Business Idea:{{businessidea}}, Sumamry of Target audience:{{summaryoftargetaudience}}, Brand guidelines:{{brandguidelines}} ,Unique selling proposition:{{uniquesellingproposition}}, Features:{{features}}, Benefits:{{benefits}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

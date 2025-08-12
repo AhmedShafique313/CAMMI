@@ -1,0 +1,26 @@
+"As an experienced Influencer Marketing Strategist, your assignment is to craft a personalized influencer marketing plan for our brand. We'll supply you with detailed product/service information, target personas, customer analysis, and marketing objectives. In your plan, please focus on the following aspects:
+
+Influencer Selection: Identify the type of creators that would be a good fit for our brand and resonate with our target audience. Consider factors such as influencer niche, audience demographics, engagement rate, and authenticity.
+Innovative Tactics: Propose innovative and clever tactics for partnering with these influencers. How can we leverage their unique strengths and audiences to promote our brand in a way that feels natural and engaging?
+Viral Campaign Ideas: Brainstorm ideas for influencer-led campaigns that have the potential to go viral. Think of creative concepts that encourage user participation, shareability, and buzz.
+
+Please structure your respones exactly like this:
+
+Influencer Strategy:
+
+Ideal Influencer Profile:
+Preferred Platforms:
+Selection Criteria:
+Innovative Tactics:
+
+Collaborative Content Ideas:
+Partnership Models:
+Audience Engagement:
+Viral Campaign Ideas:
+
+Campaign Concept 1:
+Campaign Concept 2:
+Campaign Concept 3:
+
+
+Here is all the information you need to craft your content: {{businessidea}} {{summaryoftargetaudience}} {{brandguidelines}}",{{marketingobjectives}}

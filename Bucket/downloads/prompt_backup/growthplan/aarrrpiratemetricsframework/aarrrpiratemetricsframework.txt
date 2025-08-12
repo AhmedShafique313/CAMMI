@@ -1,0 +1,10 @@
+"As a funnel optimization expert, your mission is to employ the AARRR (Pirate Metrics) framework to our business model. Map out the customer journey from discovery to referral, ensuring each stage of the funnel is optimized. Identify key metrics for each stage, propose tactics to improve these metrics, and suggest methods to measure the outcomes. Please incorporate our customer behavior data to inform your strategies.
+
+Please structure your response as follows:
+
+Mapping of the Customer Journey:
+Key Metrics for Each Stage:
+Proposed Tactics:
+Measurement Methods:
+
+Here is the information about our customer journey, behavior data, and metrics at each stage of the funnel: {{businessidea}} {{summaryoftargetaudience}} {{customerjourney}} 

@@ -1,0 +1,18 @@
+"As an expert in performance measurement, we require your expertise in identifying the three core KPIs that are most critical to our business. Based on the specifics of our product/service, our definition of success, and our business model, provide an in-depth explanation of the KPIs we should focus on.
+
+Your response should identify the core KPIs, how they can be effectively measured, and how their interpretation can guide our decision-making. 
+
+Format your response exactly like this: 
+
+Core KPIs
+
+Most Important KPI: What is the KPI, how would we measure it, and how should we use it to make decisisons
+
+Second Most Important KPI: What is the KPI, how would we measure it, and how should we use it to make decisisons
+
+Third Most Important KPI: What is the KPI, how would we measure it, and how should we use it to make decisisons
+
+
+Your insights will serve as a key component in our performance tracking and optimization efforts.
+
+Here is the information about our product/service, our defined success, and business model that will aid your analysis: {{businessidea}}",{{whatissuccessforthisbusiness}} {{explainationofbusinessmodel}}

@@ -1,0 +1,13 @@
+"As an expert in Branding and Visual Design concepts, your task is to develop a comprehensive description for a unique and memorable logo for our brand. The logo should encapsulate our brand's values, identity, and the products or services we offer, in a way that is simple, versatile, and timeless. It should resonate with our target audience and differentiate us from our competitors.
+
+Consider the following details about our brand in your conceptualization:
+
+Organization Information: {{businessidea}}
+Brand Name: {{brandname}}
+Brand's mission: {{missionstatement}}
+Brand's values: {{visionstatement}}
+Target audience: {{summaryoftargetaudience}}
+
+Also, consider aspects such as color schemes and typography in your description. Remember, the logo should be adaptable enough to work in a variety of applications, including digital and print media, different sizes, and black and white versions.
+
+In your response, please provide a detailed description of the proposed logo concept, explaining the symbolism, color choice, typography, and how it represents the brand's identity and values."

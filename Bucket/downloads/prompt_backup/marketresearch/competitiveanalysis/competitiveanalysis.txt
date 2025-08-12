@@ -1,0 +1,15 @@
+"As an experienced Market Research Analyst, your task is to conduct a thorough competitive analysis for our proposed product/service. This analysis should identify our largest key competitors, assess their business and highlight their strengths and weaknesses.
+
+In your analysis, please cover the following aspects and format your response exactly like this:
+
+Competitive Analysis: 
+
+Competitor Identification: Who are the largest public direct competitors in our target market? What products/services do they offer that compete directly with ours? 
+
+Product/Service Comparison: How do the competitors' products/services compare to ours?
+
+Strategic Positioning: How are competitors positioned in the market? What is their unique selling proposition (USP)?
+
+Your response should be concise, insightful, and ready for action. Your analysis will assist us in understanding the competitive landscape and identifying opportunities and threats for our product/service.
+
+Here is all the information you need to craft your content: {{businessidea}} {{targetaudience}} {{needsanalysis}},{{marketsizeanalysis}} {{markettrendanalysis}}

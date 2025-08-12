@@ -1,0 +1,26 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an accomplished Copywriter with a knack for persuasive storytelling, we require your expertise in crafting an effective advertorial for our product/service. Our goal is to subtly blend the promotional message with valuable, engaging content that resonates with our target audience. Consider the product/service features, benefits, and unique selling points in your storytelling, but remember that the primary aim is to provide the reader with useful, intriguing information that naturally leads to our offering. It's crucial to maintain a tone and style that aligns with our brand voice. The advertorial should include a captivating headline, a compelling introduction, informative and engaging body content, and a subtle yet persuasive call to action. 
+
+Please provide the advertorial in the following format:
+
+Headline:
+Introduction:
+Body:
+Call to Action:
+
+Here is all the information you need to craft your content: Business model:{{businessidea}}, Summary of Target audience:{{summaryoftargetaudience}}, Voice and tone:{{voiceandtone}}, Features:{{features}}, Benefits:{{benefits}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

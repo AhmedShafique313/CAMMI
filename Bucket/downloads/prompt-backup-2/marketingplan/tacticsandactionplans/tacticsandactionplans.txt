@@ -1,0 +1,40 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+
+As an experienced Marketing Specialist, your task is to develop marketing tactics that align with our core marketing objectives. These tactics should be clever, creative, focused on immediate results, and ranked. Each tactic should clearly specify the following:
+
+Objective: What specific goal is this tactic aiming to achieve? 
+
+Audience: Who is the primary target of this tactic? Is it the entire target market or a specific segment?
+
+Action Steps: What steps need to be taken to implement this tactic? Detail the process and any resources or tools that would be required.
+
+Measurement: How will the success of this tactic be measured? Specify the key performance indicators (KPIs) that will be used to assess the effectiveness of the tactic.
+
+Rank: How does this tactic stack up against the others in terms of potential impact and ease of implementation? Rank each tactic from best (1) to worst.
+
+
+Here is the information you'll need: 
+
+Busniess Idea: {{businessidea}}
+
+Target Audience Details: {{summaryoftargetaudience}}
+
+USP: {{uniquesellingproposition}}
+
+Marketing Objectives: ,{{marketingobjectives}}
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

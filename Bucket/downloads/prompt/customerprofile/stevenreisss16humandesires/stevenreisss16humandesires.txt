@@ -1,0 +1,36 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert Consumer Psychologist specializing in Behavioral Science, Emotional Branding, and Motivational Psychology, your task is to evaluate our target audience by considering the 16 fundamental human desires framework by Steven Reiss. Your objective is to strategically identify which of these intrinsic desires should become the emotional anchor of our marketing strategy, enabling us to forge a profound psychological connection with our audience. Carefully select five core desires that hold the most relevance and impact.
+
+Leverage the audience’s latent emotional triggers, aspiration-driven behaviors, and subconscious motivations to reveal how these desires manifest in their unspoken pain points and desired transformational outcomes. Your analysis will act as a strategic blueprint for emotional resonance in our messaging, positioning, and customer engagement strategies. Ensure your recommendations are precise, psychology-backed, and marketing-actionable.
+
+Please structure your response as follows:
+
+Identified Human Desires:
+
+Manifestation of these Desires in Pain Points:
+
+Alignment of these Desires with the Desired End State:
+
+Recommendations for Marketing Focus:
+
+Here is the information you'll need 
+Business idea:{{businessidea}} 
+Target audience:{{targetaudience}} 
+Psychographic segmentation:{{psychographicsegmentation}}
+Latent pain points:{{latentpainpoints}}
+dream state:{{dreamstate}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

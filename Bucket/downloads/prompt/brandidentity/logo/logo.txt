@@ -1,0 +1,50 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a Brand Identity and Visual Design Specialist, your task is to develop a comprehensive description for a unique and memorable logo concept that encapsulates the brand’s core values, identity, and offering. The logo must be designed to be:
+
+Simple, versatile, and timeless, ensuring it remains effective across future applications.
+
+Emotionally resonant with the target audience’s expectations and aspirations.
+
+Visually distinctive to create a competitive advantage within the industry landscape.
+
+Adaptable for digital and print media, scalable across various sizes, and visually clear in monochrome (black & white) formats.
+
+Consider the following brand information in your conceptualization:
+Business Idea: {{businessidea}}
+Brand Name: {{brandname}}
+Brand's Mission: {{missionstatement}}
+Brand's Values: {{visionstatement}}
+Target Audience: {{summaryoftargetaudience}}
+
+In your response:
+
+Provide a detailed description of the proposed logo concept.
+
+Explain the symbolism and visual storytelling embedded in the logo design.
+
+Describe the color scheme, including the rationale behind color psychology in alignment with the brand’s emotional tone.
+
+Suggest a typography style that complements the logo’s design and represents the brand’s personality.
+
+Highlight how the logo embodies the brand’s identity, values, and differentiates it from competitors.
+
+Ensure the design is positioned for longevity, cross-platform adaptability, and visual impact in various applications.
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders or dummy text.
+
+Ensure the output is clean, formal, and directly ready to paste into a professional Brand Guidelines document.
+
+The logo concept must align with modern (2024-2025) visual identity trends and brand differentiation strategies.

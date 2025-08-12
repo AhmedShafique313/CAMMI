@@ -1,0 +1,21 @@
+You are generating document-ready text. The document already includes top-level section headings. Thats why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an experienced Brand Strategist specializing in content strategy and audience engagement, your task is to define the brand’s voice and tone guidelines. This voice will be used consistently across all communications and must align with the brand’s mission, values, unique selling proposition, and deeply resonate with the target audience. Define the brand voice attributes (e.g., professional, friendly, informative, playful, etc.) and explain how these attributes reflect the brand identity and character.
+
+Additionally, outline how the tone should adapt in various communication scenarios — such as announcing a new product launch, responding to a customer complaint, writing a LinkedIn social media post, crafting a blog post title, or delivering a formal company announcement. For each scenario, provide example phrases or sentences that demonstrate the correct application of the brand’s voice and tone.
+
+Here is all the information you need to craft your content: Business Idea:{{businessidea}}, Summary of Target Audience:{{summaryoftargetaudience}}, Mission Statement:{{missionstatement}}, Vision Statement:{{visionstatement}}, Brand Name:{{brandname}}, Tagline:{{tagline}}, Unique Selling Proposition:{{uniquesellingproposition}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

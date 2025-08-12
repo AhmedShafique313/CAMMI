@@ -1,0 +1,22 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As an expert PR Strategist, your expertise is required to craft a comprehensive public relations strategy for our brand. Your strategy should consider our brand positioning, target audience, and objectives.
+
+Your strategic approach should encompass both traditional PR tactics as well as innovative digital PR strategies. We are looking for a balance between short-term visibility wins and long-term reputation management. Please address crisis management as well. Include specific recommended media outlets, industry publications, influencers, and journalists that align with the brand and target audience. For each recommendation, include only the official website link and the page name (e.g., Press Page, Contact Page, Media Kit). Do not include emails, phone numbers, or personal contact details.
+
+Here's the information you'll need about our product/service, target audience, brand positioning, and business goals: Business idea:{{businessidea}}, Summary of Target Audience: {{summaryoftargetaudience}}, Brand Position: {{brandposition}},  Business Goals: {{businessgoals}} 
+
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

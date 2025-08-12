@@ -1,0 +1,350 @@
+{
+  "tier1": {
+    "status": false,
+    "items": [
+      {
+        "key": "customerprofile/targetaudience"
+      },
+      {
+        "key": "brandidentity/brandname"
+      }
+    ]
+  },
+  "tier2": {
+    "status": false,
+    "items": [
+      {
+        "key": "customerprofile/psychographicsegmentation"
+      },
+      {
+        "key": "customerprofile/latentpainpoints"
+      }
+    ]
+  },
+  "tier3": {
+    "status": false,
+    "items": [
+      {
+        "key": "customerprofile/dreamstate"
+      }
+    ]
+  },
+  "tier4": {
+    "status": false,
+    "items": [
+      {
+        "key": "customerprofile/stevenreisss16humandesires"
+      },
+      {
+        "key": "customerprofile/freudspsychoanalytictheory"
+      },
+      {
+        "key": "customerprofile/carlrogershumanistictheory"
+      }
+    ]
+  },
+  "tier5": {
+    "status": false,
+    "items": [
+      {
+        "key": "customerprofile/summaryoftargetaudience"
+      },
+      {
+        "key": "customerprofile/summaryofpsychologicalinsights"
+      }
+    ]
+  },
+  "tier6": {
+    "status": false,
+    "items": [
+      {
+        "key": "customerprofile/buyerpersonas"
+      },
+      {
+        "key": "businessplan/missionstatement"
+      }
+    ]
+  },
+  "tier7": {
+    "status": false,
+    "items": [
+      {
+        "key": "customerprofile/persona1"
+      },
+      {
+        "key": "customerprofile/persona2"
+      },
+      {
+        "key": "customerprofile/persona3"
+      },
+      {
+        "key": "customerprofile/persona4"
+      },
+      {
+        "key": "businessplan/visionstatement"
+      }
+    ]
+  },
+  "tier8": {
+    "status": false,
+    "items": [
+      {
+        "key": "businessplan/valueproposition"
+      },
+      {
+        "key": "brandidentity/logo"
+      }
+    ]
+  },
+  "tier9": {
+    "status": false,
+    "items": [
+      {
+        "key": "businessplan/valuepropositionshort"
+      },
+      {
+        "key": "brandidentity/tagline"
+      },
+      {
+        "key": "brandidentity/colors"
+      },
+      {
+        "key": "brandidentity/imagery"
+      }
+    ]
+  },
+  "tier10": {
+    "status": false,
+    "items": [
+      {
+        "key": "businessplan/businessdescription"
+      },
+      {
+        "key": "businessplan/whatissuccessforthisbusiness"
+      },
+      {
+        "key": "businessplan/explainationofbusinessmodel"
+      },
+      {
+        "key": "marketresearch/needsanalysis"
+      }
+    ]
+  },
+  "tier11": {
+    "status": false,
+    "items": [
+      {
+        "key": "businessplan/metricsthatmatterkpis"
+      },
+      {
+        "key": "businessplan/coreproblemsthisbusinesssolves"
+      },
+      {
+        "key": "marketresearch/marketsizeanalysis"
+      },
+      {
+        "key": "justforfun/advicefromstevejobs"
+      },
+      {
+        "key": "justforfun/advicefromelonmusk"
+      },
+      {
+        "key": "justforfun/advicefromjeffbezos"
+      },
+      {
+        "key": "justforfun/advicefrompeterthiel"
+      },
+      {
+        "key": "justforfun/advicefrommarkzuckerberg"
+      },
+      {
+        "key": "justforfun/advicefrompaulgraham"
+      },
+      {
+        "key": "justforfun/advicefromriedhoffman"
+      },
+      {
+        "key": "justforfun/advicefromnielpatel"
+      }
+    ]
+  },
+  "tier12": {
+    "status": false,
+    "items": [
+      {
+        "key": "marketresearch/markettrendanalysis"
+      },
+      {
+        "key": "salesstrategy/saleschannels"
+      },
+      {
+        "key": "salesstrategy/gotomarketstrategy"
+      }
+    ]
+  },
+  "tier13": {
+    "status": false,
+    "items": [
+      {
+        "key": "marketresearch/competitiveanalysis"
+      }
+    ]
+  },
+  "tier14": {
+    "status": false,
+    "items": [
+      {
+        "key": "marketresearch/marketresearchsummary"
+      },
+      {
+        "key": "marketresearch/customerjourney"
+      },
+      {
+        "key": "brandidentity/uniquesellingproposition"
+      },
+      {
+        "key": "marketingmessage/uniquesellingproposition"
+      }
+    ]
+  },
+  "tier15": {
+    "status": false,
+    "items": [
+      {
+        "key": "marketresearch/brandposition"
+      },
+      {
+        "key": "businessplan/businessgoals"
+      },
+      {
+        "key": "brandidentity/voiceandtone"
+      },
+      {
+        "key": "marketingmessage/features"
+      },
+      {
+        "key": "marketingplan/situationalanalysis"
+      },
+      {
+        "key": "marketingplan/marketingobjectives"
+      },
+      {
+        "key": "marketingcontent/facebookadconcepts"
+      },
+      {
+        "key": "growthplan/fastestwaytofirst100customers"
+      },
+      {
+        "key": "growthplan/aarrrpiratemetricsframework"
+      },
+      {
+        "key": "raisingcapital/whyavcwoulddeclinetoinvest"
+      },
+      {
+        "key": "raisingcapital/businessmodelrisks"
+      },
+      {
+        "key": "raisingcapital/whyavcwouldwanttoinvest"
+      }
+    ]
+  },
+  "tier16": {
+    "status": false,
+    "items": [
+      {
+        "key": "brandidentity/brandguidelines"
+      },
+      {
+        "key": "marketingmessage/benefits"
+      },
+      {
+        "key": "marketingplan/marketingstrategies"
+      },
+      {
+        "key": "marketingplan/tacticsandactionplans"
+      },
+      {
+        "key": "prplan/prstrategy"
+      },
+      {
+        "key": "prplan/strategicpartnerstrategy"
+      },
+      {
+        "key": "prplan/prboilerplate"
+      },
+      {
+        "key": "growthplan/bullseyeframework"
+      },
+      {
+        "key": "growthplan/leananalyticsstages"
+      },
+      {
+        "key": "raisingcapital/investorpresentationslidestoraisie5musd"
+      }
+    ]
+  },
+  "tier17": {
+    "status": false,
+    "items": [
+      {
+        "key": "marketingmessage/storytelling"
+      },
+      {
+        "key": "marketingmessage/clearcalltoaction"
+      },
+      {
+        "key": "marketingmessage/irresistibleoffer"
+      },
+      {
+        "key": "marketingplan/performancemetricsandkpis"
+      },
+      {
+        "key": "marketingplan/influencerstrategy"
+      },
+      {
+        "key": "marketingcontent/adventorial"
+      },
+      {
+        "key": "marketingcontent/websitecopy"
+      },
+      {
+        "key": "marketingcontent/landingpagecopy"
+      },
+      {
+        "key": "marketingcontent/introductionvideoscript"
+      },
+      {
+        "key": "marketingcontent/socialmediabioinstagram"
+      },
+      {
+        "key": "marketingcontent/socialmediabiolinkedin"
+      },
+      {
+        "key": "marketingcontent/facebookbiotiktok"
+      },
+      {
+        "key": "socialmediacontent/contentpillars"
+      }
+    ]
+  },
+  "tier18": {
+    "status": false,
+    "items": [
+      {
+        "key": "socialmediacontent/contentpillar110ideas"
+      },
+      {
+        "key": "socialmediacontent/contentpillar210ideas"
+      },
+      {
+        "key": "socialmediacontent/contentpillar310ideas"
+      },
+      {
+        "key": "socialmediacontent/contentpillar410ideas"
+      },
+      {
+        "key": "socialmediacontent/contentpillar510ideas"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+"As an experienced Consumer Psychologist, Consumer Psychologist, your task is to unearth the latent pain points of our target audience. These are the needs or problems that are not readily apparent or expressed by the audience, yet once revealed and addressed, can provide immense value.
+
+Leverage the information provided about our product and audience, as well as your professional expertise, to discern these underlying challenges. Your goal is to identify potential obstacles or needs our audience might not even be aware of but which may be influencing their behaviors or decisions.
+
+Please structure your response in the following way:
+
+Latent Pain Points for the Target Audience
+
+Potential Latent Pain Points: What hidden challenges or needs might our audience be experiencing based on the data provided?
+
+Implications of these Pain Points: How might these latent pain points influence our audience's behavior, decision-making, or interactions?
+
+Your thorough understanding will reveal not just the explicit needs of our audience, but also their implicit or latent needs, providing us a comprehensive view of our audience. Please ensure your insights are clear, insightful, and actionable.
+Product / Service: {{businessidea}}:",{{targetaudience}}

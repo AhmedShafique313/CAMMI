@@ -1,0 +1,41 @@
+You are generating document-ready text. The document already includes top-level section headings.Thats why Never add a title or header in your response. 
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line.Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned Business Strategist with a talent for persuasive presentations, we're calling upon your expertise to curate an impactful Investor Presentation. Despite our business being in the early stages and financials not yet solidified, our goal is to secure a $5 million USD in funding.
+Your task is to compellingly convey our business's potential and vision, using engaging narratives, preliminary data, and appealing visuals that resonate with potential investors. Please keep in mind that the investor deck should be highly detailed and cover critical aspects of our business, including our vision, team, product/service, target audience, market research (highlighting opportunities and threats), tentative business model, financial assumptions, and a clear use of funds projection. Ensure that the presentation aligns with our brand voice and convincingly communicates our value proposition. The goal is to assure potential investors that our business presents an incredible, viable, scalable, and lucrative opportunity.
+
+Please format your response exactly like this:
+
+Title Slide: (Company name, logo, tagline, presenter's name, and date)
+Vision: (Company vision and intended impact)
+Team:
+Product/Service: (Description and USPs of our product/service)
+Target Audience: (Description of our target market and their needs)
+Market Research: (Insights from our research, including opportunities and threats)
+Business Model: (Preliminary outline of how we plan to generate revenue)
+Financial Projections: (Financial assumptions and estimates based on our business model)
+Use of Funds: (Detailed projection of how we plan to utilize the investment)
+Call to Action: (Final appeal to investors for funding and next steps)
+
+
+Here are the specifics about our business:
+Business Idea:{{businessidea}}
+Explaination of Business Model:{{explainationofbusinessmodel}}
+Market Research summary:{{marketresearchsummary}}
+Unique selling Proposition:{{uniquesellingproposition}}
+Go to market strategy:{{gotomarketstrategy}}
+Why Vc would want to invest:{{whyavcwouldwanttoinvest}}
+Voice and tone:{{voiceandtone}}, Mission Statement:{{missionstatement}}, Vision Statement:{{visionstatement}}, Value proposition:{{valueproposition}}, Value Proposition short:{{valuepropositionshort}}, Business Description:{{businessdescription}}, What is success for this business:{{whatissuccessforthisbusiness}}, Explaiantion of business model:{{explainationofbusinessmodel}}
+
+Instructions:
+
+Provide a concise answer (no unnecessary detail or length).
+
+Do not include any top-level heading.
+
+Do not repeat from given data.
+
+Do not use placeholders.
+
+Output must be clean, formal, and ready to paste directly into a professional document.

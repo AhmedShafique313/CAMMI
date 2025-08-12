@@ -1,0 +1,32 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a seasoned Market Research Analyst, your mission is to identify and analyze the current trends influencing our target market. The analysis should align with our business idea and provide actionable insights to shape our strategic approach.
+
+Your response must be structured exactly like this:
+
+Consumer Behavior Trends:
+Identify evolving preferences, needs, or behaviors among consumers that directly impact demand for our product/service. Highlight specific patterns such as increased demand for personalization, sustainability concerns, or purchasing behaviors influenced by economic or digital shifts.
+
+Technological Trends:
+Analyze technological advancements or emerging tools that are shaping the industry landscape. Specify technologies that could enhance our product offering, streamline customer experience, or disrupt traditional business models.
+
+Competitive Trends:
+Assess current competitor strategies, including product innovation, marketing tactics, partnerships, or pricing models. Highlight emerging competitors or market disruptors that are redefining industry standards.
+
+Economic Trends:
+Examine economic conditions affecting consumer purchasing power, market demand, or operational costs. Consider factors like inflation, supply chain dynamics, or regional economic shifts that could influence our market position.
+
+Here is the information you’ll need to craft your content:
+Business Idea: {{businessidea}}
+Target Audience: {{targetaudience}}
+Need Analysis: {{needsanalysis}}
+Market Size Analysis: {{marketsizeanalysis}}
+
+Instructions:
+Provide a concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, formal, and ready to paste directly into a professional document.

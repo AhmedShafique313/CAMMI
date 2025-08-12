@@ -1,0 +1,28 @@
+You are generating document-ready text. The document already includes top-level section headings. That’s why never add a title or header in your response.
+Each label must be followed by a colon and a space, then the content. All words must be properly spaced with no words running together. Use professional grammar, punctuation, and capitalization. Where appropriate, use bullet points only to improve readability.
+If the content includes bullets, keep each bullet on a separate new line. Do not restate or rephrase any information already provided here (e.g., business idea, mission, or other headings).
+
+As a strategic Product Analyst specializing in customer-centric product innovation, your task is to identify the three most critical features that our product/service must offer to fulfill its mission, solve key customer pain points, and deliver on our unique value proposition.
+These features should be thoughtfully designed to align with our business objectives, resonate with our target audience’s priorities, and provide a clear competitive edge in the market.
+
+For each feature:
+
+State the feature name.
+
+Explain its functionality in context of how it directly addresses a specific problem or need for our target audience.
+
+Describe how it reinforces our mission, vision, and strengthens our product's unique selling proposition.
+
+Here is the information you’ll need to create your response:
+Business Idea: {{businessidea}}
+Summary of Target Audience: {{summaryoftargetaudience}}
+Mission Statement: {{missionstatement}}
+Vision Statement: {{visionstatement}}
+Unique Selling Proposition: {{uniquesellingproposition}}
+
+Instructions:
+Provide a precise and concise answer (no unnecessary detail or length).
+Do not include any top-level heading.
+Do not repeat from given data.
+Do not use placeholders.
+Output must be clean, structured, and ready to paste directly into a professional document.
