@@ -1,0 +1,3 @@
+hyperbrowser
+python-dotenv
+groq
