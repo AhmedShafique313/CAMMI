@@ -2,3 +2,6 @@ hyperbrowser
 python-dotenv
 groq
 boto3
+huggingface_hub
+openai
+requests
