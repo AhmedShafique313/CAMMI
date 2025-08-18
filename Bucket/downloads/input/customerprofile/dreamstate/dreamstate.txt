@@ -1,1 +1,1 @@
-s3://cammi/prompt/businessidea/businessidea/businessidea.txt, output/customerprofile/targetaudience/targetaudience.txt, output/customerprofile/psychographicsegmentation/psychographicsegmentation.txt, output/customerprofile/latentpainpoints/latentpainpoints.txt
+prompt/businessidea/businessidea/businessidea.txt, output/customerprofile/targetaudience/targetaudience.txt, output/customerprofile/psychographicsegmentation/psychographicsegmentation.txt, output/customerprofile/latentpainpoints/latentpainpoints.txt

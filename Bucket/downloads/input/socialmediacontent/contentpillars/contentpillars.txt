@@ -1,1 +1,1 @@
-s3://cammi/prompt/businessidea/businessidea/businessidea.txt, output/brandidentity/brandguidelines/brandguidelines.txt, output/customerprofile/summaryoftargetaudience/summaryoftargetaudience.txt, output/customerprofile/buyerpersonas/buyerpersonas.txt
+prompt/businessidea/businessidea/businessidea.txt, output/brandidentity/brandguidelines/brandguidelines.txt, output/customerprofile/summaryoftargetaudience/summaryoftargetaudience.txt, output/customerprofile/buyerpersonas/buyerpersonas.txt

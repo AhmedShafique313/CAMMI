@@ -21,6 +21,6 @@ def replace_in_txt_files(input_folder, old_str, new_str):
 
 if __name__ == "__main__":
     input_folder = r"C:\Users\Kavtech AI Engineer\Documents\CAMMI\Bucket\downloads\input"
-    old_str = "s3://cammi/output/"
-    new_str = "output/"
+    old_str = "s3://cammi/prompt/"
+    new_str = "prompt/"
     replace_in_txt_files(input_folder, old_str, new_str)

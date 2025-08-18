@@ -1,1 +1,1 @@
-s3://cammi/prompt/customerprofile/stevenreisss16humandesires/stevenreisss16humandesires.txt, output/customerprofile/freudspsychoanalytictheory/freudspsychoanalytictheory.txt, output/customerprofile/carlrogershumanistictheory/carlrogershumanistictheory.txt 
+prompt/customerprofile/stevenreisss16humandesires/stevenreisss16humandesires.txt, output/customerprofile/freudspsychoanalytictheory/freudspsychoanalytictheory.txt, output/customerprofile/carlrogershumanistictheory/carlrogershumanistictheory.txt 

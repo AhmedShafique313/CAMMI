@@ -1,1 +1,1 @@
-s3://cammi/prompt/marketresearch/needsanalysis/needsanalysis.txt, output/marketresearch/marketsizeanalysis/marketsizeanalysis.txt, output/marketresearch/markettrendanalysis/markettrendanalysis.txt, output/marketresearch/competitiveanalysis/competitiveanalysis.txt
+prompt/marketresearch/needsanalysis/needsanalysis.txt, output/marketresearch/marketsizeanalysis/marketsizeanalysis.txt, output/marketresearch/markettrendanalysis/markettrendanalysis.txt, output/marketresearch/competitiveanalysis/competitiveanalysis.txt
