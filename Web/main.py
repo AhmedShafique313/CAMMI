@@ -2,11 +2,9 @@ import os
 from dotenv import load_dotenv
 from hyperbrowser import Hyperbrowser
 from hyperbrowser.models import StartScrapeJobParams, ScrapeOptions
-# from groq import Groq
 from huggingface_hub import InferenceClient
 
 load_dotenv(r"C:\Users\Kavtech AI Engineer\Documents\CAMMI\.env")
-# client_llm = Groq(api_key=os.getenv("GROQ_API_KEY"))
 client_scraper = Hyperbrowser(api_key=os.getenv("HYPERBROWSER_API_KEY"))
 
 client = InferenceClient(
@@ -40,21 +38,10 @@ def scrape_page_content(url):
 
 all_content = ""
 for idx, link in enumerate(links, start=1):
-    # print(f"[{idx}/{len(links)}] Scraping: {link}")
     page_content = scrape_page_content(link)
     all_content += f"\n\n--- Page: {link} ---\n{page_content}"
 
 str(all_content)
-
-# def call_llm(model_name, prompt, tokens):
-#     response = client_llm.chat.completions.create(
-#         model=model_name,
-#         messages=[{"role": "user", "content" : str(prompt)}],
-#         temperature=1,
-#         max_completion_tokens=tokens
-#     )
-#     return response.choices[0].message.content.strip()
-
 def llm_calling(prompt):
     response = client.chat.completions.create(
         model="openai/gpt-oss-120b",
@@ -68,8 +55,6 @@ prompt_structuring = (
     f"""You are an expert information architect. 
     Convert the unstructure data {str(all_content)} into structured information dont remove any information just present it in a structured format.
     """)
-token1 = 32768
-# structured_info = call_llm("llama-3.3-70b-versatile", prompt_structuring, token1)
 structured_info = llm_calling(prompt_structuring)
 
 prompt_relevancy = (
@@ -95,8 +80,6 @@ prompt_relevancy = (
     - Do not add new headings or commentary.
     - Do not include extra text outside this format.
     """)
-token2 = 131072
-# relevant_info = call_llm("deepseek-r1-distill-llama-70b", prompt_relevancy, token2)
 relevant_info = llm_calling(prompt_relevancy)
 token3 = 8000
 
@@ -127,7 +110,5 @@ prompt_finalized = (
     Do not add any extra commentary or text outside the headings and their content.
     Maintain proper spacing and readability.
     """)
-
-# finalized_output = call_llm("llama-3.1-8b-instant", prompt_finalized, token3)
 finalized_output = llm_calling(prompt_finalized)
 print(finalized_output)
