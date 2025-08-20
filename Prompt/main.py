@@ -6,7 +6,7 @@ from openai import OpenAI
 bedrock_runtime = boto3.client("bedrock-runtime", region_name="us-east-1")
 client = OpenAI(
     base_url="https://router.huggingface.co/v1",
-    api_key="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",
+    api_key="xxxxxx",
 )
  
 # ---------- Bedrock Call ----------
