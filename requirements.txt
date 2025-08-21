@@ -5,3 +5,4 @@ boto3
 huggingface_hub
 openai
 requests
+python-docx
