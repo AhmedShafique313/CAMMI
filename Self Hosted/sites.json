@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "name": "My Test Blog",
+    "base_url": "https://example.com",
+    "username": "demo_user",
+    "app_password": "abcd efgh ijkl mnop qrst uvwx"
+  }
+]
