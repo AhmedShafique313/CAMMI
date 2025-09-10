@@ -5,5 +5,33 @@
     "base_url": "https://example.com",
     "username": "demo_user",
     "app_password": "abcd efgh ijkl mnop qrst uvwx"
+  },
+  {
+    "id": 2,
+    "name": "My Test Blog",
+    "base_url": "https://example.com",
+    "username": "demo_user",
+    "app_password": "abcd efgh ijkl mnop qrst uvwx"
+  },
+  {
+    "id": 3,
+    "name": "My Test Blog",
+    "base_url": "https://example.com",
+    "username": "demo_user",
+    "app_password": "abcd efgh ijkl mnop qrst uvwx"
+  },
+  {
+    "id": 4,
+    "name": "Cammi_Kavtech",
+    "base_url": "https://blogpepper.com/wordpress",
+    "username": "admin",
+    "app_password": "8x8t Vxvm yT5S 2gw0 EUWq iWPv"
+  },
+  {
+    "id": 5,
+    "name": "Cammi_Kavtech",
+    "base_url": "https://blogpepper.com/wordpress",
+    "username": "admin",
+    "app_password": "8x8t Vxvm yT5S 2gw0 EUWq iWPv"
   }
 ]

@@ -1,5 +1,5 @@
 from __future__ import annotations
-import json, os, mimetypes, requests, tempfile
+import json, os, mimetypes, requests
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 from urllib.parse import urlparse
@@ -46,17 +46,22 @@ def guess_mime(filename: str) -> str:
     return mime or "application/octet-stream"
 
 def upload_media(site: dict, image_bytes: bytes, filename: str) -> dict:
-    """Upload bytes to /wp/v2/media. Returns WP media JSON."""
+    """Upload an image file to /wp/v2/media using multipart/form-data."""
     base = rest_base(site["base_url"])
     url = base + "wp/v2/media"
+
+    files = {
+        "file": (secure_filename(filename), image_bytes, guess_mime(filename)),
+    }
+
     headers = {
         "Content-Disposition": f'attachment; filename="{secure_filename(filename)}"',
-        "Content-Type": guess_mime(filename),
     }
+
     resp = requests.post(
         url,
         headers=headers,
-        data=image_bytes,
+        files=files,  # ✅ multipart/form-data
         auth=(site["username"], site["app_password"]),
         timeout=60,
     )
@@ -172,22 +177,16 @@ def test_site(site_id: int):
         return {"ok": True, "user": resp.json()}
     return {"ok": False, "status_code": resp.status_code, "text": resp.text}, 400
 
-# API endpoint (JSON) scheduling
-@app.post("/posts/schedule")
-def schedule_post_api():
-    data = request.get_json(force=True)
-    return handle_schedule(data)
-
-# HTML form for scheduling posts
+# HTML form for posting
 @app.get("/schedule-post")
 def schedule_post_form():
     sites = load_sites()
     return render_template_string("""
     <!DOCTYPE html>
     <html>
-    <head><title>Schedule Post</title></head>
+    <head><title>Create Post</title></head>
     <body>
-        <h2>Schedule a New Blog Post</h2>
+        <h2>Create a New Blog Post</h2>
         <form method="post" action="/schedule-post" enctype="multipart/form-data">
             <label>Site:
                 <select name="site_id" required>
@@ -204,11 +203,11 @@ def schedule_post_form():
             <label>Embed Image in Content?
                 <input type="checkbox" name="embed_image_in_content" value="true">
             </label><br><br>
-            <label>Publish At (YYYY-MM-DDTHH:MM:SS): 
+            <label>Publish At (optional, YYYY-MM-DDTHH:MM:SS): 
                 <input type="text" name="publish_at" placeholder="2025-09-10T15:00:00">
             </label><br><br>
             <label>Timezone: <input type="text" name="timezone" value="UTC"></label><br><br>
-            <button type="submit">Schedule Post</button>
+            <button type="submit">Publish Post</button>
         </form>
     </body>
     </html>
@@ -225,7 +224,7 @@ def schedule_post_form_handler():
     return handle_schedule(data, from_form=True)
 
 # -----------------------
-# Shared scheduling logic
+# Shared logic
 # -----------------------
 def handle_schedule(data, from_form=False):
     if not data.get("site_id") or not data.get("title"):
@@ -257,8 +256,6 @@ def handle_schedule(data, from_form=False):
 
     featured_media_id = None
     media_src_url = None
-
-    # handle image (from URL or uploaded file)
     try:
         if from_form and "image_file" in data:
             filename, image_bytes = data["image_file"]
@@ -283,7 +280,7 @@ def handle_schedule(data, from_form=False):
         wp_post = create_post(site, title, final_content, featured_media_id, publish_at_utc)
         if from_form:
             return f"""
-                <h3>✅ Post Scheduled Successfully!</h3>
+                <h3>✅ Post Published Successfully!</h3>
                 <p>WP ID: {wp_post.get("id")}</p>
                 <p>Status: {wp_post.get("status")}</p>
                 <p>Link: <a href="{wp_post.get("link")}" target="_blank">{wp_post.get("link")}</a></p>

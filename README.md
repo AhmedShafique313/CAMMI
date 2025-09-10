@@ -12,3 +12,10 @@ How to create the Linux packages of Python in windows using the docker
 Then Zip the python folder and rename it according to the your layer name which should be added to the lambda function.
 
 How to open any WordPress Website: http://localhost:5000/register-site
+
+application password: 8x8t Vxvm yT5S 2gw0 EUWq iWPv
+application password name: cammi-testing-app
+
+Register site: http://localhost:5000/register-site
+
+Create post: http://localhost:5000/schedule-post
