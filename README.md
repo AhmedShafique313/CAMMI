@@ -19,3 +19,9 @@ application password name: cammi-testing-app
 Register site: http://localhost:5000/register-site
 
 Create post: http://localhost:5000/schedule-post
+
+{
+  "body": "{\n  \"sitename\": \"Cammi Kavtech\",\n  \"title\": \"My First Text Only Post\",\n  \"content_html\": \"<p>This is a text-only post created via AWS Lambda without an image.</p>\",\n  \"embed\": false\n}"
+}
+
+
