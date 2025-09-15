@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CAMMI Dashboard</title>
+</head>
+<body>
+  <h1>📧 CAMMI Email Dashboard</h1>
+
+  <h2>Send Single Email</h2>
+  <form action="/send_now" method="POST">
+    <label>To:</label> <input type="email" name="to_email" required><br>
+    <label>Subject:</label> <input type="text" name="subject" required><br>
+    <label>Body:</label> <br>
+    <textarea name="body" rows="5" cols="40" required></textarea><br>
+    <button type="submit">Send Now</button>
+  </form>
+
+  <hr>
+
+  <h2>Schedule Email</h2>
+  <form action="/schedule" method="POST">
+    <label>To:</label> <input type="email" name="to_email" required><br>
+    <label>Subject:</label> <input type="text" name="subject" required><br>
+    <label>Body:</label> <br>
+    <textarea name="body" rows="5" cols="40" required></textarea><br>
+    <label>Send Time:</label> 
+    <input type="datetime-local" name="send_time" required><br>
+    <button type="submit">Schedule Email</button>
+  </form>
+</body>
+</html>
