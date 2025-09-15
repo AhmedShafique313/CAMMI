@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lead Funnel Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body { padding: 20px; background: #f9f9f9; }
+        .card { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="mb-4">📈 Lead Funnel Calculator</h1>
+
+    <!-- Global Inputs -->
+    <form method="POST" class="mb-4">
+        <div class="row">
+            <div class="col-md-4">
+                <label>Average Deal Size</label>
+                <input type="number" step="any" name="average_deal_size" value="{{ average_deal_size }}" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label>Target Revenue</label>
+                <input type="number" step="any" name="target_revenue" value="{{ target_revenue }}" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label>Stage 1 Starting Volume</label>
+                <input type="number" name="starting_volume" value="{{ starting_volume }}" class="form-control">
+            </div>
+        </div>
+
+        <h3 class="mt-4">Funnel Stages</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr><th>Stage Name</th><th>Conversion to Next (0-1)</th></tr>
+                </thead>
+                <tbody>
+                {% for stage in stages %}
+                    <tr>
+                        <td><input type="text" name="stage_name" value="{{ stage.name }}" class="form-control"></td>
+                        <td><input type="number" step="any" name="stage_conversion" value="{{ stage.conversion }}" class="form-control"></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <button type="submit" class="btn btn-primary">Run Calculation</button>
+    </form>
+
+    <!-- Results -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h4>Forward Calculation</h4>
+                {{ forward_table|safe }}
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3">
+                <h4>Reverse Calculation</h4>
+                {{ reverse_table|safe }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Excel-style Summary -->
+    <div class="card p-3">
+        <h4>Summary</h4>
+        <table class="table table-bordered w-50">
+            <tr>
+                <th>Average Deal Size</th>
+                <td>${{ "{:,.2f}".format(average_deal_size) }}</td>
+            </tr>
+            <tr>
+                <th>Customers per Period</th>
+                <td>{{ customers }}</td>
+            </tr>
+            <tr>
+                <th>Revenue Estimate</th>
+                <td>${{ "{:,.2f}".format(revenue) }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Charts Grid -->
+    <div class="row">
+        {% for key, chart in charts.items() %}
+        <div class="col-md-6">
+            <div class="card p-2">
+                <h5>{{ key }}</h5>
+                {{ chart|safe }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+</body>
+</html>
