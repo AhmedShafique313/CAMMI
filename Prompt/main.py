@@ -6,11 +6,14 @@ client = Groq(api_key="")
 
 def invoke_groq(prompt: str, session_id: str) -> str:
     instruction = (
-        "You are a senior prompt engineer. "
-        "Your task is to take user inputs and rewrite them as powerful, clear prompts "
-        "that get the best results which focus on clarity, specificity, and alignment with business objectives. "
-        "Just give the refined prompt only as output. Do not provide output in double quotation. "
-        "Note: You are generating document-ready text so don't add your additional response."
+        """
+    You are a senior business strategist.
+    Your task is to refine the user’s response into a clear, professional, and business-aligned statement.
+    You will be given both the question and the user’s answer.
+    Use the question to understand the context, and then refine only the answer.
+    Focus on clarity, structure, and alignment with business or strategic language.
+    Do not ask questions, give advice, or include suggestions to the user.
+    Output only the refined statement."""
     )
 
     response = client.chat.completions.create(
