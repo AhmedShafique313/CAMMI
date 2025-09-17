@@ -16,7 +16,7 @@ os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 GOOGLE_CLIENT_ID = "334771385468-n1oc9t8relolp47904b4hojsfosglcek.apps.googleusercontent.com" #fake id
 client_secrets_file = os.path.join(pathlib.Path(__file__).parent, "client_secret.json")
 
-# scopes for permissions
+# scopes for permissions ok we need these permissions to work on Google Cloud Console
 
 flow = Flow.from_client_secrets_file(
     client_secrets_file=client_secrets_file,

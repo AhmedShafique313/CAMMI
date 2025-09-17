@@ -48,18 +48,18 @@ def get_user_info():
     user_info = service.userinfo().get().execute()
     return user_info   # contains email, name, id, etc.
 
-def send_from_fixed_account(to_email, user_name):
-    """Sends email always from ahmed.kavtech@gmail.com."""
-    creds = get_credentials("sender_token.json")   # sender’s token
-    service = build("gmail", "v1", credentials=creds)
+# def send_from_fixed_account(to_email, user_name):
+#     """Sends email always from ahmed.kavtech@gmail.com."""
+#     creds = get_credentials("sender_token.json")   # sender’s token
+#     service = build("gmail", "v1", credentials=creds)
 
-    sender = "ahmed.kavtech@gmail.com"   # fixed sender account
-    subject = "Welcome to CAMMI!"
-    body = f"Hello {user_name},\n\nYou are successfully authenticated with Google! 🎉\n\n– The CAMMI Team"
+#     sender = "ahmed.kavtech@gmail.com"   # fixed sender account
+#     subject = "Welcome to CAMMI!"
+#     body = f"Hello {user_name},\n\nYou are successfully authenticated with Google! 🎉\n\n– The CAMMI Team"
 
-    message = create_message(sender, to_email, subject, body)
-    send_message = service.users().messages().send(userId="me", body=message).execute()
-    print("📩 Email sent successfully:", send_message["id"])
+#     message = create_message(sender, to_email, subject, body)
+#     send_message = service.users().messages().send(userId="me", body=message).execute()
+#     print("📩 Email sent successfully:", send_message["id"])
 
 def main():
     # Step 1: User logs in with Google (e.g. ahmed.shafique.professional@gmail.com)
@@ -67,7 +67,7 @@ def main():
     print(f"✅ Logged in user: {user_info['email']} ({user_info['name']})")
 
     # Step 2: Send them a welcome email from fixed account
-    send_from_fixed_account(user_info["email"], user_info["name"])
+    # send_from_fixed_account(user_info["email"], user_info["name"])
 
 if __name__ == "__main__":
     main()
