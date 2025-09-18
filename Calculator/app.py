@@ -1,3 +1,4 @@
+# all required imports
 from flask import Flask, render_template, request
 import pandas as pd
 import plotly.express as px
@@ -6,7 +7,7 @@ import plotly.io as pio
 
 app = Flask(__name__)
 
-# --- DEFAULT STAGES ---
+# default stages for this funnel
 DEFAULT_STAGES = [
     {"name": "Website Visitors + Database", "conversion": None},
     {"name": "Leads", "conversion": 0.02},
@@ -30,7 +31,7 @@ def parse_conversion(raw):
     except:
         return None
 
-
+# forward calculation
 def forward_calc(stages, starting_volume, average_deal_size):
     n = len(stages)
     vols_float = [float(starting_volume)]
@@ -63,6 +64,7 @@ def forward_calc(stages, starting_volume, average_deal_size):
 
     return df_forward, customers_display, revenue_estimate, customers_float
 
+# reverse calculation
 
 def reverse_calc(stages, target_revenue, average_deal_size):
     n = len(stages)
@@ -89,6 +91,7 @@ def reverse_calc(stages, target_revenue, average_deal_size):
     df_reverse = pd.DataFrame(rows)
     return df_reverse, customers_needed
 
+# default values but further editable
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -96,24 +99,25 @@ def index():
     target_revenue = 500000.0
     starting_volume = 20000
     stages = [dict(s) for s in DEFAULT_STAGES]
-    stage_count = len(stages)
 
     if request.method == "POST":
         average_deal_size = float(request.form.get("average_deal_size", average_deal_size))
         target_revenue = float(request.form.get("target_revenue", target_revenue))
-        stage_count = int(request.form.get("stage_count", stage_count))
+
+        # 🔹 Modified: fetch all stage names & conversions (no indexed names required)
+        names = request.form.getlist("stage_name")
+        conversions = request.form.getlist("stage_conversion")
 
         stages = []
-        for i in range(stage_count):
-            name = request.form.get(f"stage_name_{i}", "").strip()
-            if not name:
+        for i, name in enumerate(names):
+            if not name.strip():
                 continue
             if i == 0:
                 starting_volume = int(request.form.get("starting_volume", starting_volume))
                 conv = None
             else:
-                conv = parse_conversion(request.form.get(f"stage_conversion_{i}", ""))
-            stages.append({"name": name, "conversion": conv})
+                conv = parse_conversion(conversions[i]) if i < len(conversions) else None
+            stages.append({"name": name.strip(), "conversion": conv})
 
         if not stages:
             stages = [dict(s) for s in DEFAULT_STAGES]
@@ -123,7 +127,7 @@ def index():
     )
     reverse_df, customers_needed = reverse_calc(stages, target_revenue, average_deal_size)
 
-    # ---------------- CHARTS ----------------
+# charts and graphs
     try:
         fig_forward = px.bar(forward_df, x="Stage Name", y="Stage Volume", title="Forward Funnel (Bar)")
         fig_reverse = px.bar(reverse_df, x="Stage Name", y="Required Volume", title="Reverse Funnel (Bar)")
@@ -207,6 +211,7 @@ def index():
         stage_count=len(stages),
     )
 
+# main code run area
 
 if __name__ == "__main__":
     app.run(debug=True)
