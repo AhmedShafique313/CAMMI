@@ -32,20 +32,23 @@
 
         <h3 class="mt-4">Funnel Stages</h3>
         <div class="table-responsive">
-            <table class="table table-bordered">
+            <table class="table table-bordered" id="stages-table">
                 <thead>
-                    <tr><th>Stage Name</th><th>Conversion to Next (0-1)</th></tr>
+                    <tr><th>Stage Name</th><th>Conversion to Next (0-1)</th><th>Action</th></tr>
                 </thead>
                 <tbody>
                 {% for stage in stages %}
                     <tr>
                         <td><input type="text" name="stage_name" value="{{ stage.name }}" class="form-control"></td>
                         <td><input type="number" step="any" name="stage_conversion" value="{{ stage.conversion }}" class="form-control"></td>
+                        <td><button type="button" class="btn btn-danger btn-sm remove-stage">❌</button></td>
                     </tr>
                 {% endfor %}
                 </tbody>
             </table>
         </div>
+        <button type="button" class="btn btn-success mb-3" id="add-stage">➕ Add Stage</button>
+        <br>
         <button type="submit" class="btn btn-primary">Run Calculation</button>
     </form>
 
@@ -97,5 +100,27 @@
     </div>
 
 </div>
+
+<!-- JavaScript functionality to add and remove the stages -->
+<script>
+document.getElementById("add-stage").addEventListener("click", function() {
+    const tableBody = document.querySelector("#stages-table tbody");
+    const newRow = document.createElement("tr");
+    newRow.innerHTML = `
+        <td><input type="text" name="stage_name" class="form-control" placeholder="New Stage"></td>
+        <td><input type="number" step="any" name="stage_conversion" class="form-control" placeholder="0.0 - 1.0"></td>
+        <td><button type="button" class="btn btn-danger btn-sm remove-stage">❌</button></td>
+    `;
+    tableBody.appendChild(newRow);
+});
+
+// Remove stage
+document.addEventListener("click", function(e) {
+    if (e.target && e.target.classList.contains("remove-stage")) {
+        e.target.closest("tr").remove();
+    }
+});
+</script>
+
 </body>
 </html>
