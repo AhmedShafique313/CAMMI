@@ -26,3 +26,9 @@ Create post: http://localhost:5000/schedule-post
 
 
 cammi-service@product-471907.iam.gserviceaccount.com
+
+## Docker
+CMD
+`docker run --rm -v "${PWD}:/var/task" --entrypoint /bin/bash public.ecr.aws/lambda/python:3.13 -c "pip3 install requests cachecontrol google-auth google-auth-oauthlib -t python/"`
+Powershell
+`docker run --rm -v "C:\Users\Kavtech AI Engineer\OneDrive\Desktop\New folder\lambda_layer":/var/task --entrypoint /bin/bash public.ecr.aws/lambda/python:3.13 -c "pip3 install requests cachecontrol google-auth google-auth-oauthlib -t python/"`
