@@ -32,3 +32,8 @@ CMD
 `docker run --rm -v "${PWD}:/var/task" --entrypoint /bin/bash public.ecr.aws/lambda/python:3.13 -c "pip3 install requests cachecontrol google-auth google-auth-oauthlib -t python/"`
 Powershell
 `docker run --rm -v "C:\Users\Kavtech AI Engineer\OneDrive\Desktop\New folder\lambda_layer":/var/task --entrypoint /bin/bash public.ecr.aws/lambda/python:3.13 -c "pip3 install requests cachecontrol google-auth google-auth-oauthlib -t python/"`
+
+
+Updated Pricing file:
+- `https://onedrive.live.com/:x:/g/personal/FFC3AB340811657C/EeMkZoeTbDdNoOwCybdVgDgBwzxspoTaLQqYSzG4R1n7OA?resid=FFC3AB340811657C!s876624e36c934d37a0ec02c9b7558038&ithint=file%2Cxlsx&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-CONTROL&wdhostclicktime=1758708250298&web=1&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9mZmMzYWIzNDA4MTE2NTdjL0VlTWtab2VUYkRkTm9Pd0N5YmRWZ0RnQnd6eHNwb1RhTFFxWVN6RzRSMW43T0E_d2RPcmlnaW49VEVBTVMtTUFHTEVWLnAycF9ucy5yd2Mmd2RFeHA9VEVBTVMtQ09OVFJPTCZ3ZGhvc3RjbGlja3RpbWU9MTc1ODcwODI1MDI5OCZ3ZWI9MQ`
+
