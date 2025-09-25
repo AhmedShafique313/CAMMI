@@ -34,13 +34,13 @@
         <div class="table-responsive">
             <table class="table table-bordered" id="stages-table">
                 <thead>
-                    <tr><th>Stage Name</th><th>Conversion to Next (0-1)</th><th>Action</th></tr>
+                    <tr><th>Stage Name</th><th>Conversion to Next (%)</th><th>Action</th></tr>
                 </thead>
                 <tbody>
                 {% for stage in stages %}
                     <tr>
                         <td><input type="text" name="stage_name" value="{{ stage.name }}" class="form-control"></td>
-                        <td><input type="number" step="any" name="stage_conversion" value="{{ stage.conversion }}" class="form-control"></td>
+                        <td><input type="number" step="any" name="stage_conversion" value="{{ stage.conversion }}" class="form-control" placeholder="0 - 100"></td>
                         <td><button type="button" class="btn btn-danger btn-sm remove-stage">❌</button></td>
                     </tr>
                 {% endfor %}
@@ -108,7 +108,7 @@ document.getElementById("add-stage").addEventListener("click", function() {
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
         <td><input type="text" name="stage_name" class="form-control" placeholder="New Stage"></td>
-        <td><input type="number" step="any" name="stage_conversion" class="form-control" placeholder="0.0 - 1.0"></td>
+        <td><input type="number" step="any" name="stage_conversion" class="form-control" placeholder="0 - 100"></td>
         <td><button type="button" class="btn btn-danger btn-sm remove-stage">❌</button></td>
     `;
     tableBody.appendChild(newRow);
