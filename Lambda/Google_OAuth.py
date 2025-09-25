@@ -1,4 +1,4 @@
-import json
+import json, uuid
 import boto3
 import requests
 import cachecontrol
@@ -142,6 +142,7 @@ def callback_lambda(event, context):
             request=token_request,
             audience=CLIENT_ID,
         )
+        session_id = str(uuid.uuid4())
 
         # Build user info
         user_info = {
@@ -152,6 +153,8 @@ def callback_lambda(event, context):
             "locale": id_info.get("locale"),
             "access_token": credentials.token,
             "expiry": str(credentials.expiry),
+            "session_id": str(session_id),
+            "onboarding_status": "true"
         }
 
         # Save to DynamoDB
