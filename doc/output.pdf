@@ -4,7 +4,7 @@
 <</Type /Catalog/Pages 2 0 R/Lang (en)/Outlines 3 0 R/Metadata 4 0 R/ViewerPreferences 5 0 R>>
 endobj
 6 0 obj
-<</Author (python-docx)/Creator (Writer)/CreationDate (D:20250924134712+00'00')/ModDate (D:20250924134713+00'00')/Producer (ConvertAPI)>>
+<</Author (python-docx)/Creator (Writer)/CreationDate (D:20250925082047+00'00')/ModDate (D:20250925082047+00'00')/Producer (ConvertAPI)>>
 endobj
 2 0 obj
 <</Type /Pages/Count 72/Kids [ 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 24 0 R 25 0 R 26 0 R 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 33 0 R 34 0 R 35 0 R 36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 43 0 R 44 0 R 45 0 R 46 0 R 47 0 R 48 0 R 49 0 R 50 0 R 51 0 R 52 0 R 53 0 R 54 0 R 55 0 R 56 0 R 57 0 R 58 0 R 59 0 R 60 0 R 61 0 R 62 0 R 63 0 R 64 0 R 65 0 R 66 0 R 67 0 R 68 0 R 69 0 R 70 0 R 71 0 R 72 0 R 73 0 R 74 0 R 75 0 R 76 0 R 77 0 R 78 0 R ]>>
@@ -21,7 +21,7 @@ stream
     <rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
       <pdf:Producer>ConvertAPI</pdf:Producer>
       <pdf:Creator>Writer</pdf:Creator>
-      <pdf:ModDate>2025-09-24T13:47:13+00:00</pdf:ModDate>
+      <pdf:ModDate>2025-09-25T08:20:47+00:00</pdf:ModDate>
     </rdf:Description>
     <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/">
       <dc:creator>
@@ -32,13 +32,13 @@ stream
     </rdf:Description>
     <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">
       <xmp:CreatorTool>Writer</xmp:CreatorTool>
-      <xmp:CreateDate>2025-09-24T13:47:12+00:00</xmp:CreateDate>
-      <xmp:ModifyDate>2025-09-24T13:47:13+00:00</xmp:ModifyDate>
-      <xmp:MetadataDate>2025-09-24T13:47:13+00:00</xmp:MetadataDate>
+      <xmp:CreateDate>2025-09-25T08:20:47+00:00</xmp:CreateDate>
+      <xmp:ModifyDate>2025-09-25T08:20:47+00:00</xmp:ModifyDate>
+      <xmp:MetadataDate>2025-09-25T08:20:47+00:00</xmp:MetadataDate>
     </rdf:Description>
     <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
-      <xmpMM:DocumentID>uuid:951F948E-F4A2-4105-A202-7D7D1672C79D</xmpMM:DocumentID>
-      <xmpMM:InstanceID>uuid:951F948E-F4A2-4105-A202-7D7D1672C79D</xmpMM:InstanceID>
+      <xmpMM:DocumentID>uuid:C56B7587-DF6F-4DA3-AD3F-C06498D508BA</xmpMM:DocumentID>
+      <xmpMM:InstanceID>uuid:C56B7587-DF6F-4DA3-AD3F-C06498D508BA</xmpMM:InstanceID>
     </rdf:Description>
   </rdf:RDF>
 </x:xmpmeta>
@@ -2303,7 +2303,7 @@ xref
 0000312509 00000 n
 0000312617 00000 n
 trailer
-<</Size 239/Root 1 0 R/Info 6 0 R/ID [ <8E941F95A2F40541A2027D7D1672C79D> <8E941F95A2F40541A2027D7D1672C79D> ]>>
+<</Size 239/Root 1 0 R/Info 6 0 R/ID [ <87756BC56FDFA34DAD3FC06498D508BA> <87756BC56FDFA34DAD3FC06498D508BA> ]>>
 startxref
 312730
 %%EOF
