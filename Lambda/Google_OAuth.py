@@ -14,11 +14,12 @@ import google.auth.transport.requests
 # ------------------------
 CLIENT_ID = ""
 CLIENT_SECRET = ""
-REDIRECT_URI = "callback api"
+REDIRECT_URI = "https://o3uzr46ro5.execute-api.us-east-1.amazonaws.com/cammi-dev/google-callback"
+# REDIRECT_URI = "http://localhost:3000"
 
 ZOHO_EMAIL = "info@cammi.ai"
-ZOHO_APP_PASSWORD = ""
-USERS_TABLE = "google_oauth_table"
+ZOHO_APP_PASSWORD = "nwjDuyhZTG0Q"
+USERS_TABLE = "Users"
 
 CORS_HEADERS = {
     "Access-Control-Allow-Origin": "*",
@@ -153,34 +154,62 @@ def callback_lambda(event, context):
             "locale": id_info.get("locale"),
             "access_token": credentials.token,
             "expiry": str(credentials.expiry),
-            "session_id": str(session_id),
+            "session_id": session_id,
             "onboarding_status": "true"
         }
 
-        # Save to DynamoDB
-        users_table.put_item(Item=user_info)
-        send_welcome_email(user_info)
+        # ------------------------
+        # Onboarding status logic
+        # ------------------------
+        existing_user = users_table.get_item(Key={"email": user_info["email"]}).get("Item")
+
+        if existing_user:
+            # User exists, check onboarding_status
+            if existing_user.get("onboarding_status", "true") == "true":
+                users_table.update_item(
+                    Key={"email": user_info["email"]},
+                    UpdateExpression="SET onboarding_status = :status",
+                    ExpressionAttributeValues={":status": "false"}
+                )
+        else:
+            # New user, insert with onboarding_status = "true"
+            users_table.put_item(Item=user_info)
+            send_welcome_email(user_info)
 
         # redirect to the dashboard
-        # dashboard_url = "https://yourdomain.com/dashboard"
-
-        # return {
-        #     "statusCode": 302,
-        #     "headers": {
-        #         "Location": dashboard_url,
-        #         **CORS_HEADERS
-        #     },
-        #     "body": ""
-        # }
-        # Return success message
-        return {
-            "statusCode": 200,
-            "headers": CORS_HEADERS,
-            "body": json.dumps({
-                "message": "Login successful",
-                "user": user_info
-            })
+        dashboard_url = "http://localhost:3000/callback"
+        query_params = {
+            "token": credentials.token,  # ✅ Added access token to query params
+            "name": id_info.get("name"),
+            "email": id_info.get("email"),
+            "picture": id_info.get("picture"),
+            "sub": id_info.get("sub"),
+            "session_id": session_id,
+            "onboarding_status": "true",
+            "locale": id_info.get("locale"),
+            "access_token": credentials.token,
+            "expiry": str(credentials.expiry),
         }
+
+        redirect_url = dashboard_url + "?" + urlencode(query_params)
+        return {
+            "statusCode": 302,  # ✅ keep only one return (removed duplicate 200)
+            "headers": {
+                "Location": redirect_url,
+                **CORS_HEADERS
+            },
+            "body": ""
+        }
+
+        # Return success message
+        # return {
+        #     "statusCode": 200,
+        #     "headers": CORS_HEADERS,
+        #     "body": json.dumps({
+        #         "message": "Login successful",
+        #         "user": user_info
+        #     })
+        # }
 
     except Exception as e:
         return {
@@ -201,9 +230,9 @@ def lambda_handler(event, context):
     print("EVENT PATH:", path)
 
     # Use endswith to handle stage prefix
-    if path.endswith("/login"):
+    if path.endswith("/google-login"):
         return login_lambda(event, context)
-    elif path.endswith("/callback"):
+    elif path.endswith("/google-callback"):
         return callback_lambda(event, context)
     else:
         return {
