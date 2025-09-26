@@ -15,7 +15,6 @@ import google.auth.transport.requests
 CLIENT_ID = ""
 CLIENT_SECRET = ""
 REDIRECT_URI = "https://o3uzr46ro5.execute-api.us-east-1.amazonaws.com/cammi-dev/google-callback"
-# REDIRECT_URI = "http://localhost:3000"
 
 ZOHO_EMAIL = "info@cammi.ai"
 ZOHO_APP_PASSWORD = "nwjDuyhZTG0Q"
@@ -144,6 +143,7 @@ def callback_lambda(event, context):
             audience=CLIENT_ID,
         )
         session_id = str(uuid.uuid4())
+        id = str(uuid.uuid4())
 
         # Build user info
         user_info = {
@@ -155,7 +155,8 @@ def callback_lambda(event, context):
             "access_token": credentials.token,
             "expiry": str(credentials.expiry),
             "session_id": session_id,
-            "onboarding_status": "true"
+            "onboarding_status": "true",
+            "id": id
         }
 
         # ------------------------
@@ -164,6 +165,13 @@ def callback_lambda(event, context):
         existing_user = users_table.get_item(Key={"email": user_info["email"]}).get("Item")
 
         if existing_user:
+            id = existing_user.get("id")
+
+            users_table.update_item(
+                Key={"email": user_info["email"]},
+                UpdateExpression="SET session_id = :session_id, id = :id",
+                ExpressionAttributeValues={":session_id": session_id, ":id": id}
+            )
             # User exists, check onboarding_status
             if existing_user.get("onboarding_status", "true") == "true":
                 users_table.update_item(
@@ -172,6 +180,8 @@ def callback_lambda(event, context):
                     ExpressionAttributeValues={":status": "false"}
                 )
         else:
+            id = str(uuid.uuid4())
+            user_info["id"] = id
             # New user, insert with onboarding_status = "true"
             users_table.put_item(Item=user_info)
             send_welcome_email(user_info)
@@ -189,6 +199,7 @@ def callback_lambda(event, context):
             "locale": id_info.get("locale"),
             "access_token": credentials.token,
             "expiry": str(credentials.expiry),
+            "id": id
         }
 
         redirect_url = dashboard_url + "?" + urlencode(query_params)
