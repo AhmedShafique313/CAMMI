@@ -195,7 +195,7 @@ def callback_lambda(event, context):
             "picture": id_info.get("picture"),
             "sub": id_info.get("sub"),
             "session_id": session_id,
-            "onboarding_status": "true",
+            "onboarding_status": existing_user.get("onboarding_status", "true") if existing_user else "true",
             "locale": id_info.get("locale"),
             "access_token": credentials.token,
             "expiry": str(credentials.expiry),

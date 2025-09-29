@@ -41,3 +41,5 @@ Updated Pricing file:
 ## Payment Gateway
 In product catalog the product is created by code using the create_payment.py file present in the practices folder fo the Payment Gateway folder.
 
+### One time Payment:
+It is tested using test card and working well locally using flask python app.
