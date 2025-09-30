@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stripe Test Cards (U.S. & Global)</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <section>
+    <h2>Stripe Test Cards (U.S. & Global)</h2>
+    <p>
+      This page shows test card numbers you can use while in <strong>test mode</strong>. 
+      These cards simulate various outcomes. Use them when paying via Stripe Checkout in your development environment.
+    </p>
+    <p><strong>Note:</strong> CVC can be any 3 digits (4 for American Express), and expiration date should be any valid future date.</p>
+
+    <div class="card-group">
+      <h3>U.S. / General Cards (Major Brands)</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Brand / Type</th>
+            <th>Card Number</th>
+            <th>Notes / Behavior</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Visa (credit)</td><td>4242 4242 4242 4242</td><td>Default successful card</td></tr>
+          <tr><td>Visa (debit)</td><td>4000 0566 5566 5556</td><td>Debit card test</td></tr>
+          <tr><td>Mastercard (credit)</td><td>5555 5555 5555 4444</td><td>Generic Mastercard success</td></tr>
+          <tr><td>Mastercard (2-series)</td><td>2223 0031 2200 3222</td><td>Alternate Mastercard series</td></tr>
+          <tr><td>Mastercard (debit)</td><td>5200 8282 8282 8210</td><td>Debit version</td></tr>
+          <tr><td>Mastercard (prepaid)</td><td>5105 1051 0510 5100</td><td>Prepaid card simulation</td></tr>
+          <tr><td>American Express</td><td>3782 822463 10005<br>3714 496353 98431</td><td>Two common AMEX test cards</td></tr>
+          <tr><td>Discover</td><td>6011 1111 1111 1117<br>6011 0009 9013 9424</td><td>Default & alternate Discovers</td></tr>
+          <tr><td>Discover (debit)</td><td>6011 9811 1111 1113</td><td>Debit variation</td></tr>
+          <tr><td>Diners Club</td><td>3056 9300 0902 0004<br>3622 720627 1667</td><td>16-digit & 14-digit versions</td></tr>
+          <tr><td>BCcard / DinaCard</td><td>6555 9000 0060 4105</td><td>Co-branded test card</td></tr>
+          <tr><td>JCB</td><td>3566 0020 2036 0505</td><td>JCB card test</td></tr>
+          <tr><td>UnionPay</td><td>6200 0000 0000 0005<br>6205 5000 0000 0000 004</td><td>UnionPay / long-digit variant</td></tr>
+          <tr><td>UnionPay (debit)</td><td>6200 0000 0000 0047</td><td>Debit version</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card-group">
+      <h3>Declined / Error & 3D Secure / Other Behaviors</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>Card Number</th>
+            <th>What It Simulates</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Card declined (generic)</td><td>4000 0000 0000 0002</td><td>Always declines</td></tr>
+          <tr><td>Insufficient funds</td><td>4000 0000 0000 9995</td><td>Decline due to insufficient funds</td></tr>
+          <tr><td>Expired card</td><td>4000 0000 0000 0069</td><td>Card expired error</td></tr>
+          <tr><td>Incorrect CVC</td><td>4242 4242 4242 4241</td><td>Wrong CVC triggers error</td></tr>
+          <tr><td>Processing error</td><td>4242 4242 4242 4249</td><td>Processing error simulation</td></tr>
+          <tr><td>3D Secure required</td><td>4000 0027 6000 3184</td><td>Simulates authentication (3D Secure)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      Full list & more scenarios: 
+      <a href="https://docs.stripe.com/testing#cards" target="_blank">Stripe Test Cards Documentation</a>
+    </p>
+  </section>
+</body>
+</html>

@@ -52,6 +52,10 @@ def success():
 def cancel():
     return render_template('cancel.html')
 
+@app.route('/test-cards', methods=['GET'])
+def test_cards():
+    return render_template('test_cards.html')
+
 
 @app.route('/create-portal-session', methods=['POST'])
 def customer_portal():
