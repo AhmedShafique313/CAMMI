@@ -8,7 +8,7 @@ def lambda_handler(event, context):
     updated_users = []
 
     for record in event.get("Records", []):
-        if record["eventName"] != "INSERT":
+        if record["eventName"] not in ("INSERT", "MODIFY"):
             continue  # only process new items
 
         new_item = record["dynamodb"].get("NewImage", {})
@@ -21,6 +21,9 @@ def lambda_handler(event, context):
         plan_name = new_item.get("plan_name", {}).get("S")
         payment_status = new_item.get("payment_status", {}).get("S")
         credits = new_item.get("credits", {}).get("N")
+        country = new_item.get("country", {}).get("S")
+        currency = new_item.get("currency", {}).get("S")
+        payment_at = new_item.get("payment_at", {}).get("N")
 
         if not email:
             continue
@@ -44,6 +47,18 @@ def lambda_handler(event, context):
         if credits is not None:
             update_expr.append("credits = :credits")
             expr_values[":credits"] = int(credits)
+        
+        if country is not None:
+            update_expr.append("country = :country")
+            expr_values[":country"] = country
+        
+        if currency is not None:
+            update_expr.append("currency = :currency")
+            expr_values[":currency"] = currency
+
+        if payment_at is not None:
+            update_expr.append("payment_at = :payment_at")
+            expr_values[":payment_at"] = int(payment_at)
 
         if update_expr:  # only run if we actually have something to update
             users_table.update_item(
@@ -57,7 +72,10 @@ def lambda_handler(event, context):
                 "amount_total": amount_total,
                 "plan_name": plan_name,
                 "payment_status": payment_status,
-                "credits": credits
+                "credits": credits,
+                "country": country,
+                "currency": currency,
+                "payment_at": payment_at
             })
 
     return {
