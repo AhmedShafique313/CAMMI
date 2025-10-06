@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Select Your Plan</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Your Plan | Cammi AI</title>
     <script src="https://js.stripe.com/v3/"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
   </head>
+
   <body>
     <h1 class="title">Choose Your Subscription Plan</h1>
+
     <section class="pricing">
+      <!-- Explorer Plan -->
+      <div class="plan-card">
+        <h3>Explorer</h3>
+        <p class="desc">Explore essential tools and features to get started</p>
+        <h2 class="price">$25<span>/month</span></h2>
+        <button class="subscribe-btn" data-lookup="explorer_monthly">Subscribe</button>
+      </div>
 
       <!-- Starter Plan -->
       <div class="plan-card">
-        <h3>Starter / Lite</h3>
+        <h3>Starter</h3>
         <p class="desc">Core docs (GTM, ICP), basic edits, small-scale scheduling</p>
         <h2 class="price">$75<span>/month</span></h2>
-        <button class="subscribe-btn" data-lookup="starter_lite">Subscribe</button>
+        <button class="subscribe-btn" data-lookup="starter_monthly">Subscribe</button>
       </div>
 
       <!-- Growth Plan -->
@@ -33,43 +44,64 @@
         <button class="subscribe-btn" data-lookup="pro_monthly">Subscribe</button>
       </div>
 
-      <!-- Enterprise Plan -->
+      <!-- Scale / Enterprise Plan -->
       <div class="plan-card">
         <h3>Scale / Enterprise</h3>
-        <p class="desc">Heavy use, custom modules, API access, white glove support</p>
+        <p class="desc">Heavy use, API access, white glove onboarding</p>
         <h2 class="price">$2400<span>/month</span></h2>
-        <button class="subscribe-btn" data-lookup="scale_enterprise">Subscribe</button>
+        <button class="subscribe-btn" data-lookup="scale_enterprise_monthly">Subscribe</button>
       </div>
 
+      <!-- Agency / Custom Plan -->
+      <div class="plan-card">
+        <h3>Agency / Custom</h3>
+        <p class="desc">For agencies or teams with custom usage needs</p>
+        <h2 class="price">Custom<span> Pricing</span></h2>
+        <button class="subscribe-btn" data-lookup="agency_custom">Contact Sales</button>
+      </div>
     </section>
+
+    <p class="footer-note">
+      All plans renew automatically every month. Cancel or change anytime from your customer portal.
+    </p>
 
     <script>
       const API_GATEWAY = "https://o3uzr46ro5.execute-api.us-east-1.amazonaws.com/cammi-dev/checkout-plans";
 
-      document.querySelectorAll(".subscribe-btn").forEach(btn => {
+      document.querySelectorAll(".subscribe-btn").forEach((btn) => {
         btn.addEventListener("click", async () => {
           const lookup_key = btn.getAttribute("data-lookup");
+
+          // For custom plan — redirect to payment link or contact page
+          if (lookup_key === "agency_custom") {
+            window.location.href = "https://buy.stripe.com/test_28E4gr7r83n6b5e7w85sA00"; // Correct working link
+            return;
+          }
+
+          btn.disabled = true;
+          btn.textContent = "Redirecting...";
 
           try {
             const response = await fetch(API_GATEWAY, {
               method: "POST",
-              headers: {
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify({ lookup_key })
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ lookup_key }),
             });
 
             const data = await response.json();
 
             if (data.checkout_url) {
-              // Redirect to Stripe checkout
               window.location.href = data.checkout_url;
             } else {
-              alert("Error: " + JSON.stringify(data));
+              alert("Error creating checkout: " + JSON.stringify(data));
+              btn.disabled = false;
+              btn.textContent = "Subscribe";
             }
           } catch (err) {
             console.error(err);
             alert("Failed to create checkout session. Check console for details.");
+            btn.disabled = false;
+            btn.textContent = "Subscribe";
           }
         });
       });
