@@ -1,36 +1,78 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Subscribe to a cool new product</title>
+    <title>Select Your Plan</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <script src="https://js.stripe.com/v3/"></script>
   </head>
   <body>
-    <section>
-      <div class="product">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="16px" viewBox="0 0 14 16" version="1.1">
-          <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="0-Default" transform="translate(-121.000000, -40.000000)" fill="#E184DF">
-              <path d="M127,50 L126,50 C123.238576,50 121,47.7614237 121,45 
-                       C121,42.2385763 123.238576,40 126,40 L135,40 
-                       L135,56 L133,56 L133,42 L129,42 L129,56 L127,56 
-                       L127,50 Z M127,48 L127,42 L126,42 C124.343146,42 
-                       123,43.3431458 123,45 C123,46.6568542 124.343146,48 
-                       126,48 L127,48 Z" id="Pilcrow"/>
-            </g>
-          </g>
-        </svg>
-        <div class="description">
-          <h3>Basic Test Plan</h3>
-          <h5>$12.00 / month</h5>
-        </div>
+    <h1 class="title">Choose Your Subscription Plan</h1>
+    <section class="pricing">
+
+      <!-- Starter Plan -->
+      <div class="plan-card">
+        <h3>Starter / Lite</h3>
+        <p class="desc">Core docs (GTM, ICP), basic edits, small-scale scheduling</p>
+        <h2 class="price">$75<span>/month</span></h2>
+        <button class="subscribe-btn" data-lookup="starter_lite">Subscribe</button>
       </div>
 
-      <!-- Checkout form posts to Flask route -->
-      <form action="{{ url_for('create_checkout_session') }}" method="POST">
-        <input type="hidden" name="lookup_key" value="basic_test" />
-        <button type="submit">Checkout</button>
-      </form>
+      <!-- Growth Plan -->
+      <div class="plan-card">
+        <h3>Growth</h3>
+        <p class="desc">Strategy + brand + content + campaign modules</p>
+        <h2 class="price">$300<span>/month</span></h2>
+        <button class="subscribe-btn" data-lookup="growth_monthly">Subscribe</button>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="plan-card popular">
+        <h3>Pro <span class="badge">Most Popular</span></h3>
+        <p class="desc">All modules, higher volume, priority support</p>
+        <h2 class="price">$900<span>/month</span></h2>
+        <button class="subscribe-btn" data-lookup="pro_monthly">Subscribe</button>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="plan-card">
+        <h3>Scale / Enterprise</h3>
+        <p class="desc">Heavy use, custom modules, API access, white glove support</p>
+        <h2 class="price">$2400<span>/month</span></h2>
+        <button class="subscribe-btn" data-lookup="scale_enterprise">Subscribe</button>
+      </div>
+
     </section>
+
+    <script>
+      const API_GATEWAY = "https://o3uzr46ro5.execute-api.us-east-1.amazonaws.com/cammi-dev/checkout-plans";
+
+      document.querySelectorAll(".subscribe-btn").forEach(btn => {
+        btn.addEventListener("click", async () => {
+          const lookup_key = btn.getAttribute("data-lookup");
+
+          try {
+            const response = await fetch(API_GATEWAY, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify({ lookup_key })
+            });
+
+            const data = await response.json();
+
+            if (data.checkout_url) {
+              // Redirect to Stripe checkout
+              window.location.href = data.checkout_url;
+            } else {
+              alert("Error: " + JSON.stringify(data));
+            }
+          } catch (err) {
+            console.error(err);
+            alert("Failed to create checkout session. Check console for details.");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

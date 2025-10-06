@@ -3,7 +3,6 @@
 <head>
   <title>Thanks for your order!</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <script src="{{ url_for('static', filename='client.js') }}" defer></script>
 </head>
 <body>
   <section>
@@ -25,11 +24,46 @@
       </div>
     </div>
 
-    <!-- Manage billing form -->
-    <form id="portal-form" action="{{ url_for('customer_portal') }}" method="POST">
-      <input type="hidden" id="session-id" name="session_id" value="" />
-      <button id="manage-billing" type="button">Manage your billing information</button>
-    </form>
+    <!-- Hidden session ID -->
+    <input type="hidden" id="session-id" value="{{ session_id }}" />
+
+    <!-- Manage billing button -->
+    <button id="manage-billing" type="button">Manage your billing information</button>
   </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const manageBtn = document.getElementById('manage-billing');
+      manageBtn.addEventListener('click', async () => {
+        const session_id = document.getElementById('session-id').value;
+        if (!session_id) {
+          alert("No session ID found!");
+          return;
+        }
+
+        try {
+          const response = await fetch("https://o3uzr46ro5.execute-api.us-east-1.amazonaws.com/cammi-dev/create-portal-session", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ session_id })
+          });
+
+          const data = await response.json();
+
+          if (data.portal_url) {
+            // Redirect to Stripe Billing Portal
+            window.location.href = data.portal_url;
+          } else {
+            alert("Error: " + JSON.stringify(data));
+          }
+        } catch (err) {
+          console.error(err);
+          alert("An error occurred. Check console for details.");
+        }
+      });
+    });
+  </script>
 </body>
 </html>

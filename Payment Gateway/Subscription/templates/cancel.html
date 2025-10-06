@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Checkout canceled</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Checkout Canceled</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <section>
-    <p>Picked the wrong subscription? Shop around then come back to pay!</p>
+    <h2>Payment Cancelled</h2>
+    <p>Looks like you changed your mind! You can go back and choose a subscription plan.</p>
+    <a href="/">Return to Plans</a>
   </section>
 </body>
 </html>
