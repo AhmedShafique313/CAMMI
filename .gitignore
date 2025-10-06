@@ -7,3 +7,14 @@ user_token.json
 hardcode_main.py
 zoho_setup.py
 main_app.py
+__pycache__/
+*.pyc
+*.log
+.vscode/
+.idea/
+*.DS_Store
+.streamlit/
+.pytest_cache/
+build/
+dist/
+*.egg-info/
