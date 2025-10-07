@@ -1,6 +1,7 @@
 import json
 import stripe
 import boto3
+import os
 
 # -------------------------
 # Environment Configuration
@@ -89,18 +90,17 @@ def lambda_handler(event, context):
         payload = event.get("body", "")
         sig_header = event["headers"].get("Stripe-Signature")
 
-        # Verify Stripe webhook
-        try:
-            stripe_event = stripe.Webhook.construct_event(
-                payload=payload, sig_header=sig_header, secret=webhook_secret
-            )
-        except Exception as e:
-            return response_json({"error": f"Invalid webhook signature: {str(e)}"}, 400)
+        # ⚠️ No try/except — directly parse webhook
+        stripe_event = stripe.Webhook.construct_event(
+            payload=payload,
+            sig_header=sig_header,
+            secret=webhook_secret
+        )
 
         event_type = stripe_event["type"]
         data = stripe_event["data"]["object"]
 
-        # ✅ Handle successful payments or subscriptions
+        # ✅ Process only successful events
         if event_type in ("checkout.session.completed", "payment_intent.succeeded"):
             customer_email = (
                 data.get("customer_details", {}).get("email")
@@ -109,26 +109,24 @@ def lambda_handler(event, context):
             )
 
             if not customer_email:
-                return response_json({"error": "No email in webhook payload"}, 400)
+                print("⚠️ No email found in webhook payload")
+                return response_json({"status": "ignored", "reason": "no email"}, 200)
 
-            # Detect lookup_key (from metadata or price)
+            # Detect lookup_key
             lookup_key = None
             if data.get("metadata") and "lookup_key" in data["metadata"]:
                 lookup_key = data["metadata"]["lookup_key"]
             elif data.get("subscription"):
-                try:
-                    subscription = stripe.Subscription.retrieve(data["subscription"])
-                    if subscription["items"]["data"]:
-                        lookup_key = subscription["items"]["data"][0]["price"].get("lookup_key")
-                except Exception:
-                    lookup_key = None
+                subscription = stripe.Subscription.retrieve(data["subscription"])
+                if subscription["items"]["data"]:
+                    lookup_key = subscription["items"]["data"][0]["price"].get("lookup_key")
 
             # Fallback if lookup_key not found
             plan_info = PLAN_CREDITS.get(lookup_key, {"plan_name": "Agency/Custom", "credits": 1000})
 
-            # Build DynamoDB item
+            # Build DynamoDB record
             db_item = {
-                "email": customer_email,   # partition key
+                "email": customer_email,
                 "delivery_status": "success",
                 "stripe_event_type": event_type,
                 "payment_id": stripe_event.get("id"),
@@ -153,11 +151,13 @@ def lambda_handler(event, context):
 
             # ✅ Write to DynamoDB
             stripe_table.put_item(Item=db_item)
+            print(f"✅ Payment recorded for {customer_email} ({plan_info['plan_name']})")
 
-        # ------------------------
-        # Return Success
-        # ------------------------
-        return response_json({"status": "success", "event_type": event_type})
+            return response_json({"status": "success", "event_type": event_type}, 200)
+
+        # 💤 Ignore other events but respond 200
+        print(f"ℹ️ Ignored event type: {event_type}")
+        return response_json({"status": "ignored", "event_type": event_type}, 200)
 
     # ------------------------
     # 4️⃣ Fallback for unknown routes
