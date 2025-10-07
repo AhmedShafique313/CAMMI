@@ -1,4 +1,5 @@
 import boto3
+from datetime import datetime, timezone, timedelta
 
 # DynamoDB setup
 dynamodb = boto3.resource("dynamodb")
@@ -28,7 +29,13 @@ def lambda_handler(event, context):
         if not email:
             continue
 
-        # Update only these four fields, keep all others intact
+        # ✅ Convert Unix timestamp to PKT formatted date-time (stored in payment_at)
+        if payment_at:
+            pkt = timezone(timedelta(hours=5))
+            dt_pkt = datetime.fromtimestamp(int(payment_at), pkt)
+            payment_at = dt_pkt.strftime("%Y-%m-%d %I:%M:%S %p PKT")
+
+        # Build update expression
         update_expr = []
         expr_values = {}
 
@@ -58,9 +65,9 @@ def lambda_handler(event, context):
 
         if payment_at is not None:
             update_expr.append("payment_at = :payment_at")
-            expr_values[":payment_at"] = int(payment_at)
+            expr_values[":payment_at"] = payment_at
 
-        if update_expr:  # only run if we actually have something to update
+        if update_expr:  # only run if something to update
             users_table.update_item(
                 Key={"email": email},
                 UpdateExpression="SET " + ", ".join(update_expr),
