@@ -23,6 +23,12 @@ PLAN_CREDITS = {
     "growth_monthly": {"plan_name": "Growth", "credits": 20000},
     "pro_monthly": {"plan_name": "Pro", "credits": 50000},
     "scale_enterprise_monthly": {"plan_name": "Scale/Enterprise", "credits": 150000},
+    # Annually subscription plans
+    "explorer_annually": {"plan_name": "Explorer", "credits": 6000},
+    "starter_annually": {"plan_name": "Starter", "credits": 60000},
+    "growth_annually": {"plan_name": "Growth", "credits": 240000},
+    "pro_annually": {"plan_name": "Pro", "credits": 600000},
+    "scale_enterprise_annually": {"plan_name": "Scale/Enterprise", "credits": 1800000},
 
     # Custom / one-time plan
     "agency_custom": {"plan_name": "Agency/Custom", "credits": 1000},
@@ -143,6 +149,7 @@ def lambda_handler(event, context):
                 "package_mode": data.get("mode"),
                 "payment_status": data.get("payment_status", "succeeded"),
                 "subscription_id": data.get("subscription"),
+                "lookup_key": lookup_key,
                 "success_url": f"{FRONTEND_DOMAIN}/success?session_id={data.get('id')}",
                 "plan_name": plan_info["plan_name"],
                 "credits": plan_info["credits"],

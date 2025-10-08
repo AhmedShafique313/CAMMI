@@ -25,6 +25,7 @@ def lambda_handler(event, context):
         country = new_item.get("country", {}).get("S")
         currency = new_item.get("currency", {}).get("S")
         payment_at = new_item.get("payment_at", {}).get("N")
+        lookup_key = new_item.get("lookup_key", {}).get("S")
 
         if not email:
             continue
@@ -67,6 +68,10 @@ def lambda_handler(event, context):
             update_expr.append("payment_at = :payment_at")
             expr_values[":payment_at"] = payment_at
 
+        if lookup_key is not None:
+            update_expr.append("lookup_key = :lookup_key")
+            expr_values[":lookup_key"] = lookup_key
+
         if update_expr:  # only run if something to update
             users_table.update_item(
                 Key={"email": email},
@@ -82,7 +87,8 @@ def lambda_handler(event, context):
                 "credits": credits,
                 "country": country,
                 "currency": currency,
-                "payment_at": payment_at
+                "payment_at": payment_at,
+                "lookup_key": lookup_key
             })
 
     return {

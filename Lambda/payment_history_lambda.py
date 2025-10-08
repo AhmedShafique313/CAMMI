@@ -27,6 +27,7 @@ def lambda_handler(event, context):
         country = new_item.get("country", {}).get("S")
         currency = new_item.get("currency", {}).get("S")
         payment_at = new_item.get("payment_at", {}).get("N")
+        lookup_key = new_item.get("lookup_key", {}).get("S")
 
         # ✅ Convert Unix timestamp → UTC formatted date-time
         if payment_at:
@@ -48,7 +49,8 @@ def lambda_handler(event, context):
                 "credits": int(credits) if credits else None,
                 "country": country,
                 "currency": currency,
-                "payment_at": payment_at
+                "payment_at": payment_at,
+                "lookup_key": lookup_key
             }
         )
 
