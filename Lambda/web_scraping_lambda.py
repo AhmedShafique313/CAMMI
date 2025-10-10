@@ -4,19 +4,13 @@ from hyperbrowser import Hyperbrowser
 from hyperbrowser.models import StartScrapeJobParams, ScrapeOptions
 from huggingface_hub import InferenceClient
 
-# AWS clients
 dynamodb = boto3.resource("dynamodb")
 s3 = boto3.client("s3")
 BUCKET_NAME = "cammi"
-# DynamoDB table
 users_table = dynamodb.Table("Users")
-
-# Hyperbrowser + Hugging Face clients
 client_scraper = Hyperbrowser(api_key="")
 client = InferenceClient(provider="fireworks-ai", api_key="")
 
-
-# ---------- SCRAPING ----------
 def scrape_links(url):
     """Scrape all links from the website."""
     result = client_scraper.scrape.start_and_wait(
@@ -26,7 +20,6 @@ def scrape_links(url):
         )
     )
     return result.data.links
-
 
 def scrape_page_content(url):
     """Scrape markdown content from a given URL."""
@@ -38,8 +31,6 @@ def scrape_page_content(url):
     )
     return result.data.markdown or ""
 
-
-# ---------- LLM ----------
 def llm_calling(prompt):
     """Call the Fireworks/Groq model using HuggingFace client."""
     response = client.chat.completions.create(
@@ -48,14 +39,10 @@ def llm_calling(prompt):
     )
     return response.choices[0].message.content.strip()
 
-
-# ---------- MAIN LAMBDA HANDLER ----------
 def lambda_handler(event, context):
-    # Handle CORS preflight
     if event.get("httpMethod") == "OPTIONS":
         return build_response(200, {"message": "CORS preflight OK"})
 
-    # Parse input
     body = json.loads(event.get("body", "{}"))
     session_id = body.get("session_id")
     website = body.get("website")
@@ -63,7 +50,6 @@ def lambda_handler(event, context):
     if not session_id or not website:
         return build_response(400, {"error": "Missing required fields: session_id or website"})
 
-    # ---- 1. Fetch user info using session_id ----
     user_resp = users_table.scan(
         FilterExpression=Attr("session_id").eq(session_id)
     )
@@ -79,7 +65,6 @@ def lambda_handler(event, context):
     org_name = user.get("organization_name")
     project_name = user.get("project_name")
 
-    # ---- 2. Scrape website ----
     links = scrape_links(website)
     links = [link for link in links if link.startswith(website)]
 
@@ -88,7 +73,6 @@ def lambda_handler(event, context):
         page_content = scrape_page_content(link)
         all_content += f"\n\n--- Page: {link} ---\n{page_content}"
 
-    # ---- 3. Structure data ----
     prompt_structuring = f"""
     You are an expert information architect.
     Convert the following unstructured data into a structured format without losing any details.
@@ -96,7 +80,6 @@ def lambda_handler(event, context):
     """
     structured_info = llm_calling(prompt_structuring)
 
-    # ---- 4. Create business profile ----
     prompt_profile = f"""
     You are an expert business analyst.
     Using the structured information below, create a professional company profile.
@@ -115,7 +98,6 @@ def lambda_handler(event, context):
     """
     structured_profile = llm_calling(prompt_profile)
 
-    # ---- 5. Save profile to S3 ----
     s3_key = f"{org_id}/{project_id}/{user_id}/web_scraping.txt"
 
     s3.put_object(
@@ -127,7 +109,6 @@ def lambda_handler(event, context):
 
     s3_url = f"s3://{BUCKET_NAME}/{s3_key}"
 
-    # ---- 6. Return response ----
     response_body = {
         "website": website,
         "organization_name": org_name,
@@ -142,8 +123,6 @@ def lambda_handler(event, context):
 
     return build_response(200, response_body)
 
-
-# ---------- HELPER ----------
 def build_response(status, body):
     """Helper to build API Gateway compatible response."""
     return {
