@@ -16,11 +16,17 @@ def lambda_handler(event, context):
         items.extend(response.get('Items', []))
 
     # Group items by email and sum total spent
-    grouped_data = defaultdict(lambda: {"records": [], "total_spent": 0})
+    grouped_data = defaultdict(lambda: {"records": [], "total_spent": 0, "name": None})
     for item in items:
         email = item.get('email', 'unknown')
         grouped_data[email]["records"].append(item)
         grouped_data[email]["total_spent"] += float(item.get('amount_total', 0))
+
+        # Capture name if available (only once)
+        if not grouped_data[email]["name"]:
+            name = item.get('name')
+            if name:
+                grouped_data[email]["name"] = name
 
     # Convert defaultdict to normal dict for JSON serialization
     grouped_data = dict(grouped_data)
@@ -29,9 +35,9 @@ def lambda_handler(event, context):
     return {
         "statusCode": 200,
         "headers": {
-            "Access-Control-Allow-Origin": "*",             # Allow all origins
-            "Access-Control-Allow-Methods": "GET, OPTIONS", # Allow GET requests
-            "Access-Control-Allow-Headers": "Content-Type"  # Allow content type
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, OPTIONS",
+            "Access-Control-Allow-Headers": "Content-Type"
         },
         "body": json.dumps({
             "success": True,

@@ -1,15 +1,12 @@
-import os
-from dotenv import load_dotenv
 from hyperbrowser import Hyperbrowser
 from hyperbrowser.models import StartScrapeJobParams, ScrapeOptions
 from huggingface_hub import InferenceClient
 
-load_dotenv(r"C:\Users\Kavtech AI Engineer\Documents\CAMMI\.env")
-client_scraper = Hyperbrowser(api_key=os.getenv("HYPERBROWSER_API_KEY"))
+client_scraper = Hyperbrowser(api_key="")
 
 client = InferenceClient(
     provider="fireworks-ai",
-    api_key=os.getenv("HF_TOKEN")
+    api_key=""
 )
 
 website = input("Enter the website url: ").strip()
