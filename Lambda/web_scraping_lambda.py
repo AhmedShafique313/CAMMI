@@ -46,11 +46,15 @@ def lambda_handler(event, context):
     body = json.loads(event.get("body", "{}"))
     session_id = body.get("session_id")
     website = body.get("website")
+    org_id = body.get("org_id")
+    project_id = body.get("project_id")
 
-    if not session_id or not website:
-        return build_response(400, {"error": "Missing required fields: session_id or website"})
+    if not session_id or not website or not org_id or not project_id:
+        return build_response(400, {"error": "Missing required fields: session_id, org_id, project_id, or website"})
 
+    # Only get `id` (user_id) from Users table using session_id
     user_resp = users_table.scan(
+        ProjectionExpression="id, email",
         FilterExpression=Attr("session_id").eq(session_id)
     )
     user_items = user_resp.get("Items", [])
@@ -58,12 +62,8 @@ def lambda_handler(event, context):
         return build_response(404, {"error": "User not found"})
 
     user = user_items[0]
-    email = user.get("email")
     user_id = user.get("id")
-    org_id = user.get("org_id")
-    project_id = user.get("project_id")
-    org_name = user.get("organization_name")
-    project_name = user.get("project_name")
+    email = user.get("email")
 
     links = scrape_links(website)
     links = [link for link in links if link.startswith(website)]
@@ -74,17 +74,71 @@ def lambda_handler(event, context):
         all_content += f"\n\n--- Page: {link} ---\n{page_content}"
 
     prompt_structuring = f"""
-    You are an expert information architect.
-    Convert the following unstructured data into a structured format without losing any details.
-    {all_content}
+    "You are an expert information architect.
+    Convert the unstructured data {str(all_content)} into structured information.
+    Do not remove any information — just present it in a structured format.
     """
-    structured_info = llm_calling(prompt_structuring)
 
-    prompt_profile = f"""
+    prompt_relevancy = f"""
+    You are an expert business and marketing analyst specializing in B2B brand strategy.
+ 
+    You are given structured company information (scraped and pre-organized in JSON or markdown):
+    {str(all_content)}
+ 
+    Your task:
+    1. Extract all key information relevant to building a detailed and personalized business profile.
+    2. Use only factual data found in the input. Do not infer or invent data.
+    3. Return the response in the exact format below using the same headings and order.
+    4. If any field cannot be determined confidently, leave it blank (do not make assumptions).
+ 
+    Return your answer in this format exactly:
+ 
+    Business Name:
+    Industry / Sector:
+    Mission:
+    Vision:
+    Objective / Purpose Statement:
+    Business Concept:
+    Products or Services Offered:
+    Target Market:
+    Who They Currently Sell To:
+    Value Proposition:
+    Top Business Goals:
+    Challenges:
+    Company Overview / About Summary:
+    Core Values / Brand Personality:
+    Unique Selling Points (USPs):
+    Competitive Advantage / What Sets Them Apart:
+    Market Positioning Statement:
+    Customer Segments:
+    Proof Points / Case Studies / Testimonials Summary:
+    Key Differentiators:
+    Tone of Voice / Brand Personality Keywords:
+    Core Features / Capabilities:
+    Business Model:
+    Technology Stack / Tools / Platform:
+    Geographic Presence:
+    Leadership / Founder Info:
+    Company Values / Culture:
+    Strategic Initiatives / Future Plans:
+    Awards / Recognition / Partnerships:
+    Press Mentions or Achievements:
+    Client or Industry Verticals Served:
+ 
+    Notes:
+    - Keep responses concise and factual.
+    - Avoid any assumptions or generation of new data.
+    - Use sentence form, not bullet lists, except where lists are explicitly more natural.
+    """
+
+    structured_info = llm_calling(prompt_structuring)
+    relevant_info = llm_calling(prompt_relevancy)
+
+    prompt_finalize = f"""
     You are an expert business analyst.
     Using the structured information below, create a professional company profile.
 
-    {structured_info}
+    {str(relevant_info)}
 
     Return the output using these exact headings:
     Business Name:
@@ -95,15 +149,18 @@ def lambda_handler(event, context):
     Target Market:
     Value Proposition:
     Company Overview:
-    """
-    structured_profile = llm_calling(prompt_profile)
 
-    s3_key = f"{org_id}/{project_id}/{user_id}/web_scraping.txt"
+    Please return response into the plan text format. Dont provide me in the markdown format.
+    """
+
+    finalize_info = llm_calling(prompt_finalize)
+
+    s3_key = f"url_parsing/{org_id}/{project_id}/{user_id}/web_scraping.txt"
 
     s3.put_object(
         Bucket=BUCKET_NAME,
         Key=s3_key,
-        Body=structured_profile.encode("utf-8"),
+        Body=finalize_info.encode("utf-8"),
         ContentType="text/plain"
     )
 
@@ -111,17 +168,16 @@ def lambda_handler(event, context):
 
     response_body = {
         "website": website,
-        "organization_name": org_name,
-        "project_name": project_name,
         "org_id": org_id,
         "project_id": project_id,
         "user_id": user_id,
         "email": email,
         "s3_url": s3_url,
-        "structured_profile": structured_profile
+        "structured_profile": finalize_info
     }
 
     return build_response(200, response_body)
+
 
 def build_response(status, body):
     """Helper to build API Gateway compatible response."""
