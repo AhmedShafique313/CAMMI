@@ -11,6 +11,7 @@ users_table = dynamodb.Table("Users")
 client_scraper = Hyperbrowser(api_key="")
 client = InferenceClient(provider="fireworks-ai", api_key="")
 
+
 def scrape_links(url):
     """Scrape all links from the website."""
     result = client_scraper.scrape.start_and_wait(
@@ -20,6 +21,7 @@ def scrape_links(url):
         )
     )
     return result.data.links
+
 
 def scrape_page_content(url):
     """Scrape markdown content from a given URL."""
@@ -31,6 +33,7 @@ def scrape_page_content(url):
     )
     return result.data.markdown or ""
 
+
 def llm_calling(prompt):
     """Call the Fireworks/Groq model using HuggingFace client."""
     response = client.chat.completions.create(
@@ -39,6 +42,7 @@ def llm_calling(prompt):
     )
     return response.choices[0].message.content.strip()
 
+
 def lambda_handler(event, context):
     if event.get("httpMethod") == "OPTIONS":
         return build_response(200, {"message": "CORS preflight OK"})
@@ -46,11 +50,10 @@ def lambda_handler(event, context):
     body = json.loads(event.get("body", "{}"))
     session_id = body.get("session_id")
     website = body.get("website")
-    org_id = body.get("org_id")
     project_id = body.get("project_id")
 
-    if not session_id or not website or not org_id or not project_id:
-        return build_response(400, {"error": "Missing required fields: session_id, org_id, project_id, or website"})
+    if not session_id or not website or not project_id:
+        return build_response(400, {"error": "Missing required fields: session_id, project_id, or website"})
 
     # Only get `id` (user_id) from Users table using session_id
     user_resp = users_table.scan(
@@ -74,88 +77,91 @@ def lambda_handler(event, context):
         all_content += f"\n\n--- Page: {link} ---\n{page_content}"
 
     prompt_structuring = f"""
-    "You are an expert information architect.
-    Convert the unstructured data {str(all_content)} into structured information.
-    Do not remove any information — just present it in a structured format.
-    """
+You are an expert information architect.
+Convert the unstructured data below into structured information.
+Do not remove any information — just present it in a structured format.
+
+Data:
+{str(all_content)}
+"""
 
     prompt_relevancy = f"""
-    You are an expert business and marketing analyst specializing in B2B brand strategy.
- 
-    You are given structured company information (scraped and pre-organized in JSON or markdown):
-    {str(all_content)}
- 
-    Your task:
-    1. Extract all key information relevant to building a detailed and personalized business profile.
-    2. Use only factual data found in the input. Do not infer or invent data.
-    3. Return the response in the exact format below using the same headings and order.
-    4. If any field cannot be determined confidently, leave it blank (do not make assumptions).
- 
-    Return your answer in this format exactly:
- 
-    Business Name:
-    Industry / Sector:
-    Mission:
-    Vision:
-    Objective / Purpose Statement:
-    Business Concept:
-    Products or Services Offered:
-    Target Market:
-    Who They Currently Sell To:
-    Value Proposition:
-    Top Business Goals:
-    Challenges:
-    Company Overview / About Summary:
-    Core Values / Brand Personality:
-    Unique Selling Points (USPs):
-    Competitive Advantage / What Sets Them Apart:
-    Market Positioning Statement:
-    Customer Segments:
-    Proof Points / Case Studies / Testimonials Summary:
-    Key Differentiators:
-    Tone of Voice / Brand Personality Keywords:
-    Core Features / Capabilities:
-    Business Model:
-    Technology Stack / Tools / Platform:
-    Geographic Presence:
-    Leadership / Founder Info:
-    Company Values / Culture:
-    Strategic Initiatives / Future Plans:
-    Awards / Recognition / Partnerships:
-    Press Mentions or Achievements:
-    Client or Industry Verticals Served:
- 
-    Notes:
-    - Keep responses concise and factual.
-    - Avoid any assumptions or generation of new data.
-    - Use sentence form, not bullet lists, except where lists are explicitly more natural.
-    """
+You are an expert business and marketing analyst specializing in B2B brand strategy.
+
+You are given structured company information (scraped and pre-organized in JSON or markdown):
+{str(all_content)}
+
+Your task:
+1. Extract all key information relevant to building a detailed and personalized business profile.
+2. Use only factual data found in the input. Do not infer or invent data.
+3. Return the response in the exact format below using the same headings and order.
+4. If any field cannot be determined confidently, leave it blank (do not make assumptions).
+
+Return your answer in this format exactly:
+
+Business Name:
+Industry / Sector:
+Mission:
+Vision:
+Objective / Purpose Statement:
+Business Concept:
+Products or Services Offered:
+Target Market:
+Who They Currently Sell To:
+Value Proposition:
+Top Business Goals:
+Challenges:
+Company Overview / About Summary:
+Core Values / Brand Personality:
+Unique Selling Points (USPs):
+Competitive Advantage / What Sets Them Apart:
+Market Positioning Statement:
+Customer Segments:
+Proof Points / Case Studies / Testimonials Summary:
+Key Differentiators:
+Tone of Voice / Brand Personality Keywords:
+Core Features / Capabilities:
+Business Model:
+Technology Stack / Tools / Platform:
+Geographic Presence:
+Leadership / Founder Info:
+Company Values / Culture:
+Strategic Initiatives / Future Plans:
+Awards / Recognition / Partnerships:
+Press Mentions or Achievements:
+Client or Industry Verticals Served:
+
+Notes:
+- Keep responses concise and factual.
+- Avoid any assumptions or generation of new data.
+- Use sentence form, not bullet lists, except where lists are explicitly more natural.
+"""
 
     structured_info = llm_calling(prompt_structuring)
     relevant_info = llm_calling(prompt_relevancy)
 
     prompt_finalize = f"""
-    You are an expert business analyst.
-    Using the structured information below, create a professional company profile.
+You are an expert business analyst.
+Using the structured information below, create a professional company profile.
 
-    {str(relevant_info)}
+{str(relevant_info)}
 
-    Return the output using these exact headings:
-    Business Name:
-    Industry / Sector:
-    Mission:
-    Vision:
-    Products or Services Offered:
-    Target Market:
-    Value Proposition:
-    Company Overview:
+Return the output using these exact headings:
+Business Name:
+Industry / Sector:
+Mission:
+Vision:
+Products or Services Offered:
+Target Market:
+Value Proposition:
+Company Overview:
 
-    Please return response into the plan text format. Dont provide me in the markdown format.
-    """
+Please return the response in plain text format. Do not use markdown.
+"""
 
     finalize_info = llm_calling(prompt_finalize)
 
-    s3_key = f"url_parsing/{org_id}/{project_id}/{user_id}/web_scraping.txt"
+    s3_key = f"url_parsing/{project_id}/{user_id}/web_scraping.txt"
 
     s3.put_object(
         Bucket=BUCKET_NAME,
@@ -168,12 +174,10 @@ def lambda_handler(event, context):
 
     response_body = {
         "website": website,
-        "org_id": org_id,
         "project_id": project_id,
         "user_id": user_id,
         "email": email,
-        "s3_url": s3_url,
-        "structured_profile": finalize_info
+        "s3_url": s3_url
     }
 
     return build_response(200, response_body)
