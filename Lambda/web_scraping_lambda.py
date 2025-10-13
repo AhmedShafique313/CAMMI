@@ -2,14 +2,16 @@ import json, boto3
 from boto3.dynamodb.conditions import Attr
 from hyperbrowser import Hyperbrowser
 from hyperbrowser.models import StartScrapeJobParams, ScrapeOptions
-from huggingface_hub import InferenceClient
 
+# --- AWS Clients ---
 dynamodb = boto3.resource("dynamodb")
 s3 = boto3.client("s3")
+bedrock_runtime = boto3.client("bedrock-runtime", region_name="us-east-1")
+
+# --- Configuration ---
 BUCKET_NAME = "cammi"
 users_table = dynamodb.Table("Users")
 client_scraper = Hyperbrowser(api_key="")
-client = InferenceClient(provider="fireworks-ai", api_key="")
 
 
 def scrape_links(url):
@@ -34,13 +36,30 @@ def scrape_page_content(url):
     return result.data.markdown or ""
 
 
-def llm_calling(prompt):
-    """Call the Fireworks/Groq model using HuggingFace client."""
-    response = client.chat.completions.create(
-        model="openai/gpt-oss-120b",
-        messages=[{"role": "user", "content": str(prompt)}]
+def llm_calling(prompt, model_id, session_id="default-session"):
+    """Call AWS Bedrock LLM. (No try/except — errors will propagate for visibility.)"""
+    conversation = [
+        {
+            "role": "user",
+            "content": [{"text": str(prompt)}]
+        }
+    ]
+
+    response = bedrock_runtime.converse(
+        modelId=model_id,
+        messages=conversation,
+        inferenceConfig={
+            "maxTokens": 60000,  # increased for long inputs
+            "temperature": 0.7,
+            "topP": 0.9
+        },
+        requestMetadata={
+            "sessionId": session_id
+        }
     )
-    return response.choices[0].message.content.strip()
+
+    response_text = response["output"]["message"]["content"][0]["text"]
+    return response_text.strip()
 
 
 def lambda_handler(event, context):
@@ -51,6 +70,7 @@ def lambda_handler(event, context):
     session_id = body.get("session_id")
     website = body.get("website")
     project_id = body.get("project_id")
+    model_id = event.get("model_id", "us.anthropic.claude-sonnet-4-20250514-v1:0")  # ✅ Dynamic model_id with default
 
     if not session_id or not website or not project_id:
         return build_response(400, {"error": "Missing required fields: session_id, project_id, or website"})
@@ -137,8 +157,8 @@ Notes:
 - Use sentence form, not bullet lists, except where lists are explicitly more natural.
 """
 
-    structured_info = llm_calling(prompt_structuring)
-    relevant_info = llm_calling(prompt_relevancy)
+    structured_info = llm_calling(prompt_structuring, model_id, session_id)
+    relevant_info = llm_calling(prompt_relevancy, model_id, session_id)
 
     prompt_finalize = f"""
 You are an expert business analyst.
@@ -159,14 +179,25 @@ Company Overview:
 Please return the response in plain text format. Do not use markdown.
 """
 
-    finalize_info = llm_calling(prompt_finalize)
+    finalize_info = llm_calling(prompt_finalize, model_id, session_id)
 
     s3_key = f"url_parsing/{project_id}/{user_id}/web_scraping.txt"
 
+    # ✅ Check if file exists and append content
+    try:
+        existing_obj = s3.get_object(Bucket=BUCKET_NAME, Key=s3_key)
+        existing_content = existing_obj["Body"].read().decode("utf-8")
+    except s3.exceptions.NoSuchKey:
+        existing_content = ""
+
+    # Concatenate existing + new content
+    combined_content = existing_content + "\n\n" + finalize_info
+
+    # Save back to S3
     s3.put_object(
         Bucket=BUCKET_NAME,
         Key=s3_key,
-        Body=finalize_info.encode("utf-8"),
+        Body=combined_content.encode("utf-8"),
         ContentType="text/plain"
     )
 
@@ -177,7 +208,8 @@ Please return the response in plain text format. Do not use markdown.
         "project_id": project_id,
         "user_id": user_id,
         "email": email,
-        "s3_url": s3_url
+        "s3_url": s3_url,
+        "model_id": model_id
     }
 
     return build_response(200, response_body)
