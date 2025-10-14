@@ -8,6 +8,7 @@ from email.mime.multipart import MIMEMultipart
 from google_auth_oauthlib.flow import Flow
 from google.oauth2 import id_token
 import google.auth.transport.requests
+from urllib.parse import urlencode
 
 # ------------------------
 # Config
@@ -15,9 +16,10 @@ import google.auth.transport.requests
 CLIENT_ID = ""
 CLIENT_SECRET = ""
 REDIRECT_URI = "https://o3uzr46ro5.execute-api.us-east-1.amazonaws.com/cammi-dev/google-callback"
+# REDIRECT_URI = "http://localhost:3000"
 
 ZOHO_EMAIL = "info@cammi.ai"
-ZOHO_APP_PASSWORD = "nwjDuyhZTG0Q"
+ZOHO_APP_PASSWORD = ""
 USERS_TABLE = "Users"
 
 CORS_HEADERS = {
@@ -124,7 +126,6 @@ def callback_lambda(event, context):
                 print("Failed to parse body:", str(e))
 
         # Construct authorization_response (URL-encoded)
-        from urllib.parse import urlencode
         authorization_response = REDIRECT_URI + "?" + urlencode(query_params)
 
         # Exchange code for tokens
@@ -162,6 +163,8 @@ def callback_lambda(event, context):
         # ------------------------
         # Onboarding status logic
         # ------------------------
+        frontend_onboarding_status = "true"  # default for new user
+
         existing_user = users_table.get_item(Key={"email": user_info["email"]}).get("Item")
 
         if existing_user:
@@ -172,30 +175,34 @@ def callback_lambda(event, context):
                 UpdateExpression="SET session_id = :session_id, id = :id",
                 ExpressionAttributeValues={":session_id": session_id, ":id": id}
             )
-            # User exists, check onboarding_status
-            if existing_user.get("onboarding_status", "true") == "true":
-                users_table.update_item(
-                    Key={"email": user_info["email"]},
-                    UpdateExpression="SET onboarding_status = :status",
-                    ExpressionAttributeValues={":status": "false"}
-                )
+
+            # User exists → flip onboarding_status to false
+            users_table.update_item(
+                Key={"email": user_info["email"]},
+                UpdateExpression="SET onboarding_status = :status",
+                ExpressionAttributeValues={":status": "false"}
+            )
+            frontend_onboarding_status = "false"
         else:
             id = str(uuid.uuid4())
             user_info["id"] = id
             # New user, insert with onboarding_status = "true"
             users_table.put_item(Item=user_info)
             send_welcome_email(user_info)
+            frontend_onboarding_status = "true"
 
-        # redirect to the dashboard
+        # ------------------------
+        # Redirect to dashboard
+        # ------------------------
         dashboard_url = "http://localhost:3000/callback"
         query_params = {
-            "token": credentials.token,  # ✅ Added access token to query params
+            "token": credentials.token,
             "name": id_info.get("name"),
             "email": id_info.get("email"),
             "picture": id_info.get("picture"),
             "sub": id_info.get("sub"),
             "session_id": session_id,
-            "onboarding_status": existing_user.get("onboarding_status", "true") if existing_user else "true",
+            "onboarding_status": frontend_onboarding_status,  # ✅ controlled value
             "locale": id_info.get("locale"),
             "access_token": credentials.token,
             "expiry": str(credentials.expiry),
@@ -204,23 +211,13 @@ def callback_lambda(event, context):
 
         redirect_url = dashboard_url + "?" + urlencode(query_params)
         return {
-            "statusCode": 302,  # ✅ keep only one return (removed duplicate 200)
+            "statusCode": 302,
             "headers": {
                 "Location": redirect_url,
                 **CORS_HEADERS
             },
             "body": ""
         }
-
-        # Return success message
-        # return {
-        #     "statusCode": 200,
-        #     "headers": CORS_HEADERS,
-        #     "body": json.dumps({
-        #         "message": "Login successful",
-        #         "user": user_info
-        #     })
-        # }
 
     except Exception as e:
         return {
@@ -233,14 +230,11 @@ def callback_lambda(event, context):
 # Main Lambda handler
 # ------------------------
 def lambda_handler(event, context):
-    # Use path, handle API Gateway stage (/test)
     path = event.get("requestContext", {}).get("http", {}).get("path", "") \
         or event.get("path", "")
 
-    # Debugging
     print("EVENT PATH:", path)
 
-    # Use endswith to handle stage prefix
     if path.endswith("/google-login"):
         return login_lambda(event, context)
     elif path.endswith("/google-callback"):
