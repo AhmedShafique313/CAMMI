@@ -61,19 +61,24 @@ def llm_calling(prompt, model_id, session_id="default-session"):
     response_text = response["output"]["message"]["content"][0]["text"]
     return response_text.strip()
 
+def get_http_method(event):
+    if "httpMethod" in event:
+        return event["httpMethod"]
+    return event.get("requestContext", {}).get("http", {}).get("method", "")
 
 def lambda_handler(event, context):
-    if event.get("httpMethod") == "OPTIONS":
+    method = get_http_method(event)
+    
+    if method == "OPTIONS":
         return build_response(200, {"message": "CORS preflight OK"})
-
     body = json.loads(event.get("body", "{}"))
     session_id = body.get("session_id")
     website = body.get("website")
-    project_id = body.get("project_id")
+    org_id = body.get("org_id")
     model_id = event.get("model_id", "us.anthropic.claude-sonnet-4-20250514-v1:0")  # ✅ Dynamic model_id with default
 
-    if not session_id or not website or not project_id:
-        return build_response(400, {"error": "Missing required fields: session_id, project_id, or website"})
+    if not session_id or not website or not org_id:
+        return build_response(400, {"error": "Missing required fields: session_id, org_id, or website"})
 
     # Only get `id` (user_id) from Users table using session_id
     user_resp = users_table.scan(
@@ -181,7 +186,7 @@ Please return the response in plain text format. Do not use markdown.
 
     finalize_info = llm_calling(prompt_finalize, model_id, session_id)
 
-    s3_key = f"url_parsing/{project_id}/{user_id}/web_scraping.txt"
+    s3_key = f"url_parsing/{org_id}/{user_id}/web_scraping.txt"
 
     # ✅ Check if file exists and append content
     try:
@@ -205,7 +210,7 @@ Please return the response in plain text format. Do not use markdown.
 
     response_body = {
         "website": website,
-        "project_id": project_id,
+        "org_id": org_id,
         "user_id": user_id,
         "email": email,
         "s3_url": s3_url,
