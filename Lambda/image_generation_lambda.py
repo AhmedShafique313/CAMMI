@@ -62,6 +62,7 @@ def is_unsafe_prompt(prompt: str) -> bool:
         "breasts", "genitals", "vagina", "penis", "nipple", "fetish", "explicit",
         "lingerie", "underwear", "xxx", "adult", "sensual", "provocative"
     ]
+
     return any(word in prompt for word in adult_keywords)
 
 def lambda_handler(event, context):
@@ -69,9 +70,16 @@ def lambda_handler(event, context):
     session_id = body.get("session_id")
     prompt = body.get("prompt", "")
 
+    cors_headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
+        "Access-Control-Allow-Headers": "Content-Type,Authorization"
+    }
+
     if not session_id:
         return {
             "statusCode": 400,
+            "headers": cors_headers,
             "body": json.dumps({"error": "Missing session_id"})
         }
 
@@ -79,6 +87,7 @@ def lambda_handler(event, context):
     if not user:
         return {
             "statusCode": 400,
+            "headers": cors_headers,
             "body": "Unknown User"
         }
     
@@ -88,6 +97,7 @@ def lambda_handler(event, context):
     if is_unsafe_prompt(prompt):
         return {
             "statusCode": 400,
+            "headers": cors_headers,
             "body": json.dumps({
                 "session_id": session_id,
                 "error": "Prompt contains restricted or unsafe content"
@@ -97,6 +107,7 @@ def lambda_handler(event, context):
     if total_credits < 2:
         return {
             "statusCode": 402,
+            "headers": cors_headers,
             "body": json.dumps({
                 "session_id": session_id,
                 "error": "Insufficient credits",
@@ -108,7 +119,8 @@ def lambda_handler(event, context):
     update_user_credits(email, new_credits)
 
     client = build_client()
-
+    
+    
     result = client.models.generate_images(
             model="publishers/google/models/imagen-4.0-ultra-generate-001",
             prompt=prompt
@@ -125,6 +137,7 @@ def lambda_handler(event, context):
 
     return {
         "statusCode": 200,
-        "headers": {"Content-Type": "application/json"},
+        "headers": cors_headers,
+        # "headers": {"Content-Type": "application/json"},
         "body": json.dumps(response)
     }
