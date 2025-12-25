@@ -103,6 +103,8 @@ Infer a lightweight, operational brand identity:
 - What the brand should sound like
 - What the brand should avoid
 - Intended audience emotional state
+
+write about brand tone and voice.
 Do NOT invent visuals, colors, logos, or imagery.
 
 Output Rules (Strict):
